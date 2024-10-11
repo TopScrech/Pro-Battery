@@ -6,5 +6,7 @@ struct WidgetsBundle: WidgetBundle {
         ChargeWidgets()
         
         CyclesWidgets()
+        
+        CapacityWidgets()
     }
 }
