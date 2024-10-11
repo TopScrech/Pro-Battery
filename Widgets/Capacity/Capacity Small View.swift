@@ -9,7 +9,7 @@ struct CapacitySmallView: View {
     
     var body: some View {
         VStack {
-            Text("99%")
+            Text("\(entry.capacity)%")
                 .fontSize(250)
                 .minimumScaleFactor(0.01)
             

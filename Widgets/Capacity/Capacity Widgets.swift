@@ -2,7 +2,7 @@ import SwiftUI
 import WidgetKit
 
 struct CapacityWidgets: Widget {
-    let kind = "Capacity"
+    let kind = "Max. Capacity"
     
     var body: some WidgetConfiguration {
         AppIntentConfiguration(
