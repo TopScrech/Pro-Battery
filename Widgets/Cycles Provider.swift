@@ -1,25 +1,25 @@
 import SwiftUI
 import WidgetKit
 
-struct Provider: AppIntentTimelineProvider {
+struct CyclesProvider: AppIntentTimelineProvider {
     func placeholder(
         in context: Context
-    ) -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: ConfigurationAppIntent())
+    ) -> CyclesEntry {
+        CyclesEntry(date: Date(), configuration: CyclesAppIntent())
     }
     
     func snapshot(
-        for configuration: ConfigurationAppIntent,
+        for configuration: CyclesAppIntent,
         in context: Context
-    ) async -> SimpleEntry {
-        SimpleEntry(date: Date(), configuration: configuration)
+    ) async -> CyclesEntry {
+        CyclesEntry(date: Date(), configuration: configuration)
     }
     
     func timeline(
-        for configuration: ConfigurationAppIntent,
+        for configuration: CyclesAppIntent,
         in context: Context
-    ) async -> Timeline<SimpleEntry> {
-        var entries: [SimpleEntry] = []
+    ) async -> Timeline<CyclesEntry> {
+        var entries: [CyclesEntry] = []
         
         // Generate a timeline consisting of five entries an hour apart, starting from the current date
         let currentDate = Date()
@@ -31,7 +31,7 @@ struct Provider: AppIntentTimelineProvider {
                 to: currentDate
             )!
             
-            let entry = SimpleEntry(
+            let entry = CyclesEntry(
                 date: entryDate,
                 configuration: configuration
             )
@@ -42,7 +42,7 @@ struct Provider: AppIntentTimelineProvider {
         return Timeline(entries: entries, policy: .atEnd)
     }
     
-    //    func relevances() async -> WidgetRelevances<ConfigurationAppIntent> {
+    //    func relevances() async -> WidgetRelevances<CyclesAppIntent> {
     //        // Generate a list containing the contexts this widget is relevant in
     //    }
 }

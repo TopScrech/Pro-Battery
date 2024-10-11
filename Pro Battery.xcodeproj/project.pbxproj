@@ -15,20 +15,26 @@
 		F33183262CB5B9E3009D518A /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F33183252CB5B9E3009D518A /* DeviceKit */; };
 		F33183282CB7C483009D518A /* Battery Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183272CB7C483009D518A /* Battery Gauge.swift */; };
 		F341DFB62CB909960001B5EF /* Nav Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFB52CB909960001B5EF /* Nav Container.swift */; };
-		F341DFB92CB90BD90001B5EF /* Medium Widget View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFB82CB90BD90001B5EF /* Medium Widget View.swift */; };
-		F341DFBB2CB90C400001B5EF /* Small Widget View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFBA2CB90C400001B5EF /* Small Widget View.swift */; };
+		F341DFB92CB90BD90001B5EF /* Medium Charge Widget View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFB82CB90BD90001B5EF /* Medium Charge Widget View.swift */; };
+		F341DFBB2CB90C400001B5EF /* Small Charge Widget View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFBA2CB90C400001B5EF /* Small Charge Widget View.swift */; };
 		F341DFBD2CB9168A0001B5EF /* Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFBC2CB9168A0001B5EF /* Param.swift */; };
 		F341DFC02CB916E80001B5EF /* Get Version & Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFBE2CB916C50001B5EF /* Get Version & Build.swift */; };
+		F341DFC32CB92F370001B5EF /* Small Cycle Widget View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFC22CB92F370001B5EF /* Small Cycle Widget View.swift */; };
+		F341DFC72CB9301A0001B5EF /* Cycles Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFC62CB9301A0001B5EF /* Cycles Widgets.swift */; };
+		F341DFC92CB930310001B5EF /* Cycles Entry View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFC82CB930310001B5EF /* Cycles Entry View.swift */; };
+		F341DFCB2CB931900001B5EF /* Cycles Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFCA2CB931900001B5EF /* Cycles Provider.swift */; };
+		F341DFCD2CB931B20001B5EF /* Cycles App Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFCC2CB931B20001B5EF /* Cycles App Intent.swift */; };
+		F341DFCF2CB931F30001B5EF /* Cycles Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFCE2CB931F30001B5EF /* Cycles Entry.swift */; };
 		F3965D812CB8F828004F3AFF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3965D802CB8F828004F3AFF /* WidgetKit.framework */; };
 		F3965D832CB8F828004F3AFF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3965D822CB8F828004F3AFF /* SwiftUI.framework */; };
 		F3965D912CB8F829004F3AFF /* Widgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F3965D7E2CB8F828004F3AFF /* Widgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F3965D9E2CB8F82D004F3AFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3965D982CB8F82D004F3AFF /* Assets.xcassets */; };
-		F3965DA02CB8F82D004F3AFF /* App Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965D972CB8F82D004F3AFF /* App Intent.swift */; };
-		F3965DA12CB8F82D004F3AFF /* Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965D9B2CB8F82D004F3AFF /* Provider.swift */; };
+		F3965DA02CB8F82D004F3AFF /* Charge App Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965D972CB8F82D004F3AFF /* Charge App Intent.swift */; };
+		F3965DA12CB8F82D004F3AFF /* Charge Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965D9B2CB8F82D004F3AFF /* Charge Provider.swift */; };
 		F3965DA22CB8F82D004F3AFF /* Widgets Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965D9C2CB8F82D004F3AFF /* Widgets Bundle.swift */; };
-		F3965DA42CB8F8D9004F3AFF /* Simple Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA32CB8F8D9004F3AFF /* Simple Entry.swift */; };
+		F3965DA42CB8F8D9004F3AFF /* Charge Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA32CB8F8D9004F3AFF /* Charge Entry.swift */; };
 		F3965DA62CB8F8F4004F3AFF /* Widgets Entry View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA52CB8F8F4004F3AFF /* Widgets Entry View.swift */; };
-		F3965DA82CB8F90B004F3AFF /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA72CB8F90B004F3AFF /* Widgets.swift */; };
+		F3965DA82CB8F90B004F3AFF /* Charge Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA72CB8F90B004F3AFF /* Charge Widgets.swift */; };
 		F3965DA92CB8F9B7004F3AFF /* Battery Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183272CB7C483009D518A /* Battery Gauge.swift */; };
 		F3965DAB2CB8F9C5004F3AFF /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3965DAA2CB8F9C5004F3AFF /* ScrechKit */; };
 /* End PBXBuildFile section */
@@ -67,22 +73,28 @@
 		F331831F2CB5B581009D518A /* Battery VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery VM.swift"; sourceTree = "<group>"; };
 		F33183272CB7C483009D518A /* Battery Gauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Gauge.swift"; sourceTree = "<group>"; };
 		F341DFB52CB909960001B5EF /* Nav Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Container.swift"; sourceTree = "<group>"; };
-		F341DFB82CB90BD90001B5EF /* Medium Widget View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medium Widget View.swift"; sourceTree = "<group>"; };
-		F341DFBA2CB90C400001B5EF /* Small Widget View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Small Widget View.swift"; sourceTree = "<group>"; };
+		F341DFB82CB90BD90001B5EF /* Medium Charge Widget View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Medium Charge Widget View.swift"; sourceTree = "<group>"; };
+		F341DFBA2CB90C400001B5EF /* Small Charge Widget View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Small Charge Widget View.swift"; sourceTree = "<group>"; };
 		F341DFBC2CB9168A0001B5EF /* Param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Param.swift; sourceTree = "<group>"; };
 		F341DFBE2CB916C50001B5EF /* Get Version & Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Get Version & Build.swift"; sourceTree = "<group>"; };
+		F341DFC22CB92F370001B5EF /* Small Cycle Widget View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Small Cycle Widget View.swift"; sourceTree = "<group>"; };
+		F341DFC62CB9301A0001B5EF /* Cycles Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cycles Widgets.swift"; sourceTree = "<group>"; };
+		F341DFC82CB930310001B5EF /* Cycles Entry View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cycles Entry View.swift"; sourceTree = "<group>"; };
+		F341DFCA2CB931900001B5EF /* Cycles Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cycles Provider.swift"; sourceTree = "<group>"; };
+		F341DFCC2CB931B20001B5EF /* Cycles App Intent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cycles App Intent.swift"; sourceTree = "<group>"; };
+		F341DFCE2CB931F30001B5EF /* Cycles Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cycles Entry.swift"; sourceTree = "<group>"; };
 		F3965D7E2CB8F828004F3AFF /* Widgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3965D802CB8F828004F3AFF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		F3965D822CB8F828004F3AFF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		F3965D972CB8F82D004F3AFF /* App Intent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Intent.swift"; sourceTree = "<group>"; };
+		F3965D972CB8F82D004F3AFF /* Charge App Intent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge App Intent.swift"; sourceTree = "<group>"; };
 		F3965D982CB8F82D004F3AFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3965D992CB8F82D004F3AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F3965D9A2CB8F82D004F3AFF /* Widgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widgets.entitlements; sourceTree = "<group>"; };
-		F3965D9B2CB8F82D004F3AFF /* Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Provider.swift; sourceTree = "<group>"; };
+		F3965D9B2CB8F82D004F3AFF /* Charge Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Provider.swift"; sourceTree = "<group>"; };
 		F3965D9C2CB8F82D004F3AFF /* Widgets Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Widgets Bundle.swift"; sourceTree = "<group>"; };
-		F3965DA32CB8F8D9004F3AFF /* Simple Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Simple Entry.swift"; sourceTree = "<group>"; };
+		F3965DA32CB8F8D9004F3AFF /* Charge Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Entry.swift"; sourceTree = "<group>"; };
 		F3965DA52CB8F8F4004F3AFF /* Widgets Entry View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Widgets Entry View.swift"; sourceTree = "<group>"; };
-		F3965DA72CB8F90B004F3AFF /* Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Widgets.swift; sourceTree = "<group>"; };
+		F3965DA72CB8F90B004F3AFF /* Charge Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Widgets.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +171,29 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		F341DFC42CB92FCE0001B5EF /* Charge */ = {
+			isa = PBXGroup;
+			children = (
+				F3965DA72CB8F90B004F3AFF /* Charge Widgets.swift */,
+				F3965DA32CB8F8D9004F3AFF /* Charge Entry.swift */,
+				F3965DA52CB8F8F4004F3AFF /* Widgets Entry View.swift */,
+				F341DFBA2CB90C400001B5EF /* Small Charge Widget View.swift */,
+				F341DFB82CB90BD90001B5EF /* Medium Charge Widget View.swift */,
+			);
+			path = Charge;
+			sourceTree = "<group>";
+		};
+		F341DFC52CB92FD70001B5EF /* Cycles */ = {
+			isa = PBXGroup;
+			children = (
+				F341DFC62CB9301A0001B5EF /* Cycles Widgets.swift */,
+				F341DFCE2CB931F30001B5EF /* Cycles Entry.swift */,
+				F341DFC82CB930310001B5EF /* Cycles Entry View.swift */,
+				F341DFC22CB92F370001B5EF /* Small Cycle Widget View.swift */,
+			);
+			path = Cycles;
+			sourceTree = "<group>";
+		};
 		F3965D7F2CB8F828004F3AFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,16 +207,15 @@
 			isa = PBXGroup;
 			children = (
 				F3965D9C2CB8F82D004F3AFF /* Widgets Bundle.swift */,
-				F3965D972CB8F82D004F3AFF /* App Intent.swift */,
+				F3965D972CB8F82D004F3AFF /* Charge App Intent.swift */,
+				F341DFCC2CB931B20001B5EF /* Cycles App Intent.swift */,
 				F3965D992CB8F82D004F3AFF /* Info.plist */,
 				F3965D9A2CB8F82D004F3AFF /* Widgets.entitlements */,
 				F3965D982CB8F82D004F3AFF /* Assets.xcassets */,
-				F3965DA72CB8F90B004F3AFF /* Widgets.swift */,
-				F3965DA32CB8F8D9004F3AFF /* Simple Entry.swift */,
-				F3965D9B2CB8F82D004F3AFF /* Provider.swift */,
-				F3965DA52CB8F8F4004F3AFF /* Widgets Entry View.swift */,
-				F341DFBA2CB90C400001B5EF /* Small Widget View.swift */,
-				F341DFB82CB90BD90001B5EF /* Medium Widget View.swift */,
+				F3965D9B2CB8F82D004F3AFF /* Charge Provider.swift */,
+				F341DFCA2CB931900001B5EF /* Cycles Provider.swift */,
+				F341DFC52CB92FD70001B5EF /* Cycles */,
+				F341DFC42CB92FCE0001B5EF /* Charge */,
 				F341DFC12CB916F50001B5EF /* Components */,
 			);
 			path = Widgets;
@@ -311,15 +345,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F3965DA42CB8F8D9004F3AFF /* Simple Entry.swift in Sources */,
+				F341DFC32CB92F370001B5EF /* Small Cycle Widget View.swift in Sources */,
+				F3965DA42CB8F8D9004F3AFF /* Charge Entry.swift in Sources */,
 				F341DFC02CB916E80001B5EF /* Get Version & Build.swift in Sources */,
+				F341DFC92CB930310001B5EF /* Cycles Entry View.swift in Sources */,
 				F341DFBD2CB9168A0001B5EF /* Param.swift in Sources */,
-				F3965DA82CB8F90B004F3AFF /* Widgets.swift in Sources */,
-				F3965DA02CB8F82D004F3AFF /* App Intent.swift in Sources */,
-				F341DFB92CB90BD90001B5EF /* Medium Widget View.swift in Sources */,
-				F341DFBB2CB90C400001B5EF /* Small Widget View.swift in Sources */,
-				F3965DA12CB8F82D004F3AFF /* Provider.swift in Sources */,
+				F341DFCF2CB931F30001B5EF /* Cycles Entry.swift in Sources */,
+				F341DFCB2CB931900001B5EF /* Cycles Provider.swift in Sources */,
+				F3965DA82CB8F90B004F3AFF /* Charge Widgets.swift in Sources */,
+				F3965DA02CB8F82D004F3AFF /* Charge App Intent.swift in Sources */,
+				F341DFB92CB90BD90001B5EF /* Medium Charge Widget View.swift in Sources */,
+				F341DFBB2CB90C400001B5EF /* Small Charge Widget View.swift in Sources */,
+				F3965DA12CB8F82D004F3AFF /* Charge Provider.swift in Sources */,
 				F3965DA92CB8F9B7004F3AFF /* Battery Gauge.swift in Sources */,
+				F341DFC72CB9301A0001B5EF /* Cycles Widgets.swift in Sources */,
+				F341DFCD2CB931B20001B5EF /* Cycles App Intent.swift in Sources */,
 				F3965DA62CB8F8F4004F3AFF /* Widgets Entry View.swift in Sources */,
 				F3965DA22CB8F82D004F3AFF /* Widgets Bundle.swift in Sources */,
 			);

@@ -1,21 +1,21 @@
 import SwiftUI
 
-struct WidgetsEntryView: View {
+struct CyclesEntryView: View {
     @Environment(\.widgetFamily) private var family
     
-    private var entry: Provider.Entry
+    private var entry: CyclesProvider.Entry
     
-    init(_ entry: Provider.Entry) {
+    init(_ entry: CyclesProvider.Entry) {
         self.entry = entry
     }
     
     var body: some View {
         switch family {
         case .systemSmall:
-            SmallWidgetView(entry)
+            SmallCycleWidgetView(entry)
             
-        case .systemMedium:
-            MediumWidgetView(entry)
+//        case .systemMedium:
+            
             
         default:
             EmptyView()

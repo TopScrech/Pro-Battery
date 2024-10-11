@@ -1,18 +1,18 @@
 import SwiftUI
 import WidgetKit
 
-struct Widgets: Widget {
-    let kind = "Widgets"
+struct CyclesWidgets: Widget {
+    let kind = "Cycles"
     
     var body: some WidgetConfiguration {
         AppIntentConfiguration(
             kind: kind,
-            intent: ConfigurationAppIntent.self,
-            provider: Provider()
+            intent: CyclesAppIntent.self,
+            provider: CyclesProvider()
         ) { entry in
-            WidgetsEntryView(entry)
+            CyclesEntryView(entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
-        .supportedFamilies([.systemSmall, .systemMedium])
+        .supportedFamilies([.systemSmall])
     }
 }

@@ -1,6 +1,6 @@
 import AppIntents
 
-struct ConfigurationAppIntent: WidgetConfigurationIntent {
+struct ChargeAppIntent: WidgetConfigurationIntent {
     static var title: LocalizedStringResource = "Pro Battery"
     static var description: IntentDescription = "Battery level"
     
