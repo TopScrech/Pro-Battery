@@ -1,0 +1,24 @@
+{
+  "originHash" : "c554cbdd94883370a71275e31f8dbd6764c7a80bc69c843760bb58484622c6e2",
+  "pins" : [
+    {
+      "identity" : "devicekit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/devicekit/DeviceKit",
+      "state" : {
+        "revision" : "7ff5331960151aec74fb422e1d45f54ef6cc086d",
+        "version" : "5.5.0"
+      }
+    },
+    {
+      "identity" : "screchkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/TopScrech/ScrechKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "aa7564dc1b64f5601c7cc69f3e2f3b69de490bd7"
+      }
+    }
+  ],
+  "version" : 3
+}

@@ -6,23 +6,34 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		F331831B2CB5B28D009D518A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33183152CB5B28D009D518A /* Assets.xcassets */; };
+		F331831C2CB5B28D009D518A /* Content View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183162CB5B28D009D518A /* Content View.swift */; };
+		F331831D2CB5B28D009D518A /* Pro Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183182CB5B28D009D518A /* Pro Battery.swift */; };
+		F33183202CB5B581009D518A /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331831F2CB5B581009D518A /* Battery VM.swift */; };
+		F33183232CB5B837009D518A /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F33183222CB5B837009D518A /* ScrechKit */; };
+		F33183262CB5B9E3009D518A /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F33183252CB5B9E3009D518A /* DeviceKit */; };
+		F33183282CB7C483009D518A /* Battery Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183272CB7C483009D518A /* Battery Gauge.swift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		F33182F72CB5B26F009D518A /* Pro Battery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pro Battery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F33183152CB5B28D009D518A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F33183162CB5B28D009D518A /* Content View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content View.swift"; sourceTree = "<group>"; };
+		F33183172CB5B28D009D518A /* Pro Battery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pro Battery.entitlements"; sourceTree = "<group>"; };
+		F33183182CB5B28D009D518A /* Pro Battery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro Battery.swift"; sourceTree = "<group>"; };
+		F331831E2CB5B30F009D518A /* Pro-Battery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pro-Battery-Info.plist"; sourceTree = SOURCE_ROOT; };
+		F331831F2CB5B581009D518A /* Battery VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery VM.swift"; sourceTree = "<group>"; };
+		F33183272CB7C483009D518A /* Battery Gauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Gauge.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
-
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F33182F92CB5B26F009D518A /* Pro Battery */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = "Pro Battery";
-			sourceTree = "<group>";
-		};
-/* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		F33182F42CB5B26F009D518A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F33183232CB5B837009D518A /* ScrechKit in Frameworks */,
+				F33183262CB5B9E3009D518A /* DeviceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -32,7 +43,7 @@
 		F33182EE2CB5B26F009D518A = {
 			isa = PBXGroup;
 			children = (
-				F33182F92CB5B26F009D518A /* Pro Battery */,
+				F33183192CB5B28D009D518A /* Pro Battery */,
 				F33182F82CB5B26F009D518A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,6 +54,20 @@
 				F33182F72CB5B26F009D518A /* Pro Battery.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		F33183192CB5B28D009D518A /* Pro Battery */ = {
+			isa = PBXGroup;
+			children = (
+				F33183182CB5B28D009D518A /* Pro Battery.swift */,
+				F331831E2CB5B30F009D518A /* Pro-Battery-Info.plist */,
+				F33183172CB5B28D009D518A /* Pro Battery.entitlements */,
+				F33183152CB5B28D009D518A /* Assets.xcassets */,
+				F33183162CB5B28D009D518A /* Content View.swift */,
+				F33183272CB7C483009D518A /* Battery Gauge.swift */,
+				F331831F2CB5B581009D518A /* Battery VM.swift */,
+			);
+			path = "Pro Battery";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -60,11 +85,10 @@
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				F33182F92CB5B26F009D518A /* Pro Battery */,
-			);
 			name = "Pro Battery";
 			packageProductDependencies = (
+				F33183222CB5B837009D518A /* ScrechKit */,
+				F33183252CB5B9E3009D518A /* DeviceKit */,
 			);
 			productName = "Pro Battery";
 			productReference = F33182F72CB5B26F009D518A /* Pro Battery.app */;
@@ -94,6 +118,10 @@
 			);
 			mainGroup = F33182EE2CB5B26F009D518A;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				F33183212CB5B837009D518A /* XCRemoteSwiftPackageReference "ScrechKit" */,
+				F33183242CB5B9E3009D518A /* XCRemoteSwiftPackageReference "DeviceKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = F33182F82CB5B26F009D518A /* Products */;
 			projectDirPath = "";
@@ -109,6 +137,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F331831B2CB5B28D009D518A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -119,6 +148,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F331831C2CB5B28D009D518A /* Content View.swift in Sources */,
+				F331831D2CB5B28D009D518A /* Pro Battery.swift in Sources */,
+				F33183282CB7C483009D518A /* Battery Gauge.swift in Sources */,
+				F33183202CB5B581009D518A /* Battery VM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -244,14 +277,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Pro Battery/Pro_Battery.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Pro Battery/Pro Battery.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Pro Battery/Preview Content\"";
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pro-Battery-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -270,10 +303,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Pro-Battery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Debug;
@@ -283,14 +316,14 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Pro Battery/Pro_Battery.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Pro Battery/Pro Battery.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"Pro Battery/Preview Content\"";
 				DEVELOPMENT_TEAM = 8FQUA2F388;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Pro-Battery-Info.plist";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphonesimulator*]" = YES;
 				"INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents[sdk=iphoneos*]" = YES;
@@ -309,10 +342,10 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Pro-Battery";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2,7";
 				XROS_DEPLOYMENT_TARGET = 2.0;
 			};
 			name = Release;
@@ -339,6 +372,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F33183212CB5B837009D518A /* XCRemoteSwiftPackageReference "ScrechKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/TopScrech/ScrechKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+		F33183242CB5B9E3009D518A /* XCRemoteSwiftPackageReference "DeviceKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/devicekit/DeviceKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.5.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F33183222CB5B837009D518A /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F33183212CB5B837009D518A /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F33183252CB5B9E3009D518A /* DeviceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F33183242CB5B9E3009D518A /* XCRemoteSwiftPackageReference "DeviceKit" */;
+			productName = DeviceKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F33182EF2CB5B26F009D518A /* Project object */;
 }
