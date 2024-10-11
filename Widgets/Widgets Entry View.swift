@@ -16,6 +16,7 @@ struct WidgetsEntryView: View {
             
         case .systemMedium:
             MediumWidgetView()
+                .padding(.leading, 30)
             
         default:
             EmptyView()
