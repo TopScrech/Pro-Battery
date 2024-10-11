@@ -2,23 +2,30 @@ import SwiftUI
 import WidgetKit
 
 struct CapacityProvider: AppIntentTimelineProvider {
-    func placeholder(
-        in context: Context
-    ) -> CapacityEntry {
-        CapacityEntry(date: Date(), configuration: CapacityConfigIntent())
+    func placeholder(in context: Context) -> CapacityEntry {
+        
+        CapacityEntry(
+            date: Date(),
+            configuration: CapacityConfigIntent()
+        )
     }
     
     func snapshot(
         for configuration: CapacityConfigIntent,
         in context: Context
     ) async -> CapacityEntry {
-        CapacityEntry(date: Date(), configuration: configuration)
+        
+        CapacityEntry(
+            date: Date(),
+            configuration: configuration
+        )
     }
     
     func timeline(
         for configuration: CapacityConfigIntent,
         in context: Context
     ) async -> Timeline<CapacityEntry> {
+        
         var entries: [CapacityEntry] = []
         
         // Generate a timeline consisting of five entries an hour apart, starting from the current date
