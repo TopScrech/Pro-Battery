@@ -14,6 +14,7 @@
 		F33183232CB5B837009D518A /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F33183222CB5B837009D518A /* ScrechKit */; };
 		F33183262CB5B9E3009D518A /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F33183252CB5B9E3009D518A /* DeviceKit */; };
 		F33183282CB7C483009D518A /* Battery Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183272CB7C483009D518A /* Battery Gauge.swift */; };
+		F341DFB62CB909960001B5EF /* Nav Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFB52CB909960001B5EF /* Nav Container.swift */; };
 		F3965D812CB8F828004F3AFF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3965D802CB8F828004F3AFF /* WidgetKit.framework */; };
 		F3965D832CB8F828004F3AFF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3965D822CB8F828004F3AFF /* SwiftUI.framework */; };
 		F3965D912CB8F829004F3AFF /* Widgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F3965D7E2CB8F828004F3AFF /* Widgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -61,6 +62,7 @@
 		F331831E2CB5B30F009D518A /* Pro-Battery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pro-Battery-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F331831F2CB5B581009D518A /* Battery VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery VM.swift"; sourceTree = "<group>"; };
 		F33183272CB7C483009D518A /* Battery Gauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Gauge.swift"; sourceTree = "<group>"; };
+		F341DFB52CB909960001B5EF /* Nav Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Container.swift"; sourceTree = "<group>"; };
 		F3965D7E2CB8F828004F3AFF /* Widgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3965D802CB8F828004F3AFF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		F3965D822CB8F828004F3AFF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -124,11 +126,20 @@
 				F331831E2CB5B30F009D518A /* Pro-Battery-Info.plist */,
 				F33183172CB5B28D009D518A /* Pro Battery.entitlements */,
 				F33183152CB5B28D009D518A /* Assets.xcassets */,
+				F341DFB72CB90A490001B5EF /* Nav */,
 				F33183162CB5B28D009D518A /* Content View.swift */,
 				F331831F2CB5B581009D518A /* Battery VM.swift */,
 				F33183272CB7C483009D518A /* Battery Gauge.swift */,
 			);
 			path = "Pro Battery";
+			sourceTree = "<group>";
+		};
+		F341DFB72CB90A490001B5EF /* Nav */ = {
+			isa = PBXGroup;
+			children = (
+				F341DFB52CB909960001B5EF /* Nav Container.swift */,
+			);
+			path = Nav;
 			sourceTree = "<group>";
 		};
 		F3965D7F2CB8F828004F3AFF /* Frameworks */ = {
@@ -272,6 +283,7 @@
 				F331831D2CB5B28D009D518A /* Pro Battery.swift in Sources */,
 				F33183282CB7C483009D518A /* Battery Gauge.swift in Sources */,
 				F33183202CB5B581009D518A /* Battery VM.swift in Sources */,
+				F341DFB62CB909960001B5EF /* Nav Container.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
