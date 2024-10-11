@@ -27,7 +27,7 @@ struct BatteryGauge: View {
         }
         .gaugeStyle(.accessoryCircularCapacity)
         .tint(tint)
-        .scaleEffect(2)
+        .scaleEffect(2.2)
     }
 }
 

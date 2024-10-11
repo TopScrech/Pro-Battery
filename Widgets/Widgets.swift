@@ -13,5 +13,6 @@ struct Widgets: Widget {
             WidgetsEntryView(entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
+        .supportedFamilies([.systemSmall])
     }
 }
