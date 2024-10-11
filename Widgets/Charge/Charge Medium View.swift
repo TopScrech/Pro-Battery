@@ -11,9 +11,13 @@ struct ChargeMediumView: View {
         entry.configuration.showBuildNumber
     }
     
+    private var isCapacity: Bool {
+        entry.configuration.capacityGauge
+    }
+    
     var body: some View {
         HStack {
-            BatteryGauge(50)
+            BatteryGauge(50, isCapacity: isCapacity)
             
             Spacer()
             

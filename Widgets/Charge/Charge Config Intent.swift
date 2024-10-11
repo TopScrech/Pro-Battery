@@ -6,4 +6,7 @@ struct ChargeConfigIntent: WidgetConfigurationIntent {
     
     @Parameter(title: "Show build number", default: false)
     var showBuildNumber: Bool
+    
+    @Parameter(title: "Capacity gauge", default: true)
+    var capacityGauge: Bool
 }
