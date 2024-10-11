@@ -93,7 +93,7 @@ final class BatteryVM: ObservableObject {
     func fetchPowerModeSettings() {
         // Access the IOPMrootDomain
         let rootDomain = IORegistryEntryFromPath(kIOMainPortDefault, "IOService:/IOResources/IOPMrootDomain")
-
+        
         if rootDomain != 0 {
             // Retrieve the PerformanceMode property
             if let performanceModeCF = IORegistryEntryCreateCFProperty(rootDomain, "PerformanceMode" as CFString, kCFAllocatorDefault, 0)?.takeRetainedValue(),

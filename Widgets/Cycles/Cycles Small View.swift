@@ -9,7 +9,7 @@ struct CyclesSmallView: View {
     
     var body: some View {
         VStack {
-            Text("100")
+            Text("0")
                 .fontSize(250)
                 .minimumScaleFactor(0.01)
             
