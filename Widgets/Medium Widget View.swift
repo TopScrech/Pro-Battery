@@ -1,6 +1,12 @@
 import SwiftUI
 
 struct MediumWidgetView: View {
+    private var entry: Provider.Entry
+    
+    init(_ entry: Provider.Entry) {
+        self.entry = entry
+    }
+    
     var body: some View {
         HStack {
             BatteryGauge(50)
@@ -16,30 +22,19 @@ struct MediumWidgetView: View {
             }
             .frame(maxWidth: 170)
         }
-    }
-}
-
-struct Param: View {
-    private let name: LocalizedStringKey
-    private let param: String
-    
-    init(_ name: LocalizedStringKey, param: String) {
-        self.name = name
-        self.param = param
-    }
-    
-    var body: some View {
-        HStack {
-            Text(name)
-            
-            Spacer()
-            
-            Text("\(param)")
-                .semibold()
+        .padding(.leading, 30)
+        .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .overlay(alignment: .topTrailing) {
+            if entry.configuration.showBuildNumber {
+                Text(version())
+                    .caption2()
+                    .foregroundStyle(.tertiary)
+                    .offset(x: 12, y: -8)
+            }
         }
     }
 }
 
-#Preview {
-    MediumWidgetView()
-}
+//#Preview {
+//    MediumWidgetView()
+//}

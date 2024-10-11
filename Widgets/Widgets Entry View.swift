@@ -12,11 +12,10 @@ struct WidgetsEntryView: View {
     var body: some View {
         switch family {
         case .systemSmall:
-            SmallWidgetView()
+            SmallWidgetView(entry)
             
         case .systemMedium:
-            MediumWidgetView()
-                .padding(.leading, 30)
+            MediumWidgetView(entry)
             
         default:
             EmptyView()
