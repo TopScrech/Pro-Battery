@@ -2,5 +2,5 @@ import WidgetKit
 
 struct ChargeEntry: TimelineEntry {
     let date: Date
-    let configuration: ChargeAppIntent
+    let configuration: ChargeConfigIntent
 }

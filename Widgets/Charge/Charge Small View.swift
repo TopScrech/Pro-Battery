@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct ChargeSmallWidgetView: View {
+struct ChargeSmallView: View {
     private var entry: ChargeProvider.Entry
     
     init(_ entry: ChargeProvider.Entry) {
@@ -24,5 +24,5 @@ struct ChargeSmallWidgetView: View {
 }
 
 //#Preview {
-//    ChargeSmallWidgetView()
+//    ChargeSmallView()
 //}

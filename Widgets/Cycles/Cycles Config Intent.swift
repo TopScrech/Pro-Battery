@@ -1,6 +1,6 @@
 import AppIntents
 
-struct CyclesAppIntent: WidgetConfigurationIntent {
+struct CyclesConfigIntent: WidgetConfigurationIntent {
     static var title: LocalizedStringResource = "Pro Battery"
     static var description: IntentDescription = "Charge cycles"
     

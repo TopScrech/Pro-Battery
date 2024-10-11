@@ -7,7 +7,7 @@ struct CyclesWidgets: Widget {
     var body: some WidgetConfiguration {
         AppIntentConfiguration(
             kind: kind,
-            intent: CyclesAppIntent.self,
+            intent: CyclesConfigIntent.self,
             provider: CyclesProvider()
         ) { entry in
             CyclesEntryView(entry)

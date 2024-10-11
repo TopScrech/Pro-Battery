@@ -12,7 +12,7 @@ struct CyclesEntryView: View {
     var body: some View {
         switch family {
         case .systemSmall:
-            CyclesSmallWidgetView(entry)
+            CyclesSmallView(entry)
             
 //        case .systemMedium:
             

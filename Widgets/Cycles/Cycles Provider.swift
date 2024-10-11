@@ -5,18 +5,18 @@ struct CyclesProvider: AppIntentTimelineProvider {
     func placeholder(
         in context: Context
     ) -> CyclesEntry {
-        CyclesEntry(date: Date(), configuration: CyclesAppIntent())
+        CyclesEntry(date: Date(), configuration: CyclesConfigIntent())
     }
     
     func snapshot(
-        for configuration: CyclesAppIntent,
+        for configuration: CyclesConfigIntent,
         in context: Context
     ) async -> CyclesEntry {
         CyclesEntry(date: Date(), configuration: configuration)
     }
     
     func timeline(
-        for configuration: CyclesAppIntent,
+        for configuration: CyclesConfigIntent,
         in context: Context
     ) async -> Timeline<CyclesEntry> {
         var entries: [CyclesEntry] = []
@@ -42,7 +42,7 @@ struct CyclesProvider: AppIntentTimelineProvider {
         return Timeline(entries: entries, policy: .atEnd)
     }
     
-    //    func relevances() async -> WidgetRelevances<CyclesAppIntent> {
+    //    func relevances() async -> WidgetRelevances<CyclesConfigIntent> {
     //        // Generate a list containing the contexts this widget is relevant in
     //    }
 }

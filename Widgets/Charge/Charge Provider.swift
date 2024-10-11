@@ -5,18 +5,18 @@ struct ChargeProvider: AppIntentTimelineProvider {
     func placeholder(
         in context: Context
     ) -> ChargeEntry {
-        ChargeEntry(date: Date(), configuration: ChargeAppIntent())
+        ChargeEntry(date: Date(), configuration: ChargeConfigIntent())
     }
     
     func snapshot(
-        for configuration: ChargeAppIntent,
+        for configuration: ChargeConfigIntent,
         in context: Context
     ) async -> ChargeEntry {
         ChargeEntry(date: Date(), configuration: configuration)
     }
     
     func timeline(
-        for configuration: ChargeAppIntent,
+        for configuration: ChargeConfigIntent,
         in context: Context
     ) async -> Timeline<ChargeEntry> {
         var entries: [ChargeEntry] = []

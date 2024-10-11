@@ -7,7 +7,7 @@ struct ChargeWidgets: Widget {
     var body: some WidgetConfiguration {
         AppIntentConfiguration(
             kind: kind,
-            intent: ChargeAppIntent.self,
+            intent: ChargeConfigIntent.self,
             provider: ChargeProvider()
         ) { entry in
             ChargeEntryView(entry)

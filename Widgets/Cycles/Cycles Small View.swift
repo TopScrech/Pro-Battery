@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct CyclesSmallWidgetView: View {
+struct CyclesSmallView: View {
     private var entry: CyclesProvider.Entry
     
     init(_ entry: CyclesProvider.Entry) {
@@ -11,7 +11,7 @@ struct CyclesSmallWidgetView: View {
         VStack {
             Text("100")
                 .fontSize(250)
-                .minimumScaleFactor(0.001)
+                .minimumScaleFactor(0.01)
             
             if entry.configuration.showTitle {
                 Text("Charge cycles")
@@ -23,5 +23,5 @@ struct CyclesSmallWidgetView: View {
 }
 
 //#Preview {
-//    CyclesSmallWidgetView()
+//    CyclesSmallView()
 //}

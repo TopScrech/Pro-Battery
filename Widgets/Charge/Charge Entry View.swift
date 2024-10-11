@@ -12,10 +12,10 @@ struct ChargeEntryView: View {
     var body: some View {
         switch family {
         case .systemSmall:
-            ChargeSmallWidgetView(entry)
+            ChargeSmallView(entry)
             
         case .systemMedium:
-            ChargeMediumWidgetView(entry)
+            ChargeMediumView(entry)
             
         default:
             EmptyView()
