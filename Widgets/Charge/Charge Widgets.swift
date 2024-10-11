@@ -10,7 +10,7 @@ struct ChargeWidgets: Widget {
             intent: ChargeAppIntent.self,
             provider: ChargeProvider()
         ) { entry in
-            WidgetsEntryView(entry)
+            ChargeEntryView(entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
         .supportedFamilies([.systemSmall, .systemMedium])

@@ -1,6 +1,6 @@
 import SwiftUI
 
-struct WidgetsEntryView: View {
+struct ChargeEntryView: View {
     @Environment(\.widgetFamily) private var family
     
     private var entry: ChargeProvider.Entry
@@ -12,10 +12,10 @@ struct WidgetsEntryView: View {
     var body: some View {
         switch family {
         case .systemSmall:
-            SmallChargeWidgetView(entry)
+            ChargeSmallWidgetView(entry)
             
         case .systemMedium:
-            MediumChargeWidgetView(entry)
+            ChargeMediumWidgetView(entry)
             
         default:
             EmptyView()
