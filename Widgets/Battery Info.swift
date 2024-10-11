@@ -39,55 +39,22 @@ func fetchBatteryInfo() -> NSDictionary? {
     return props
 }
 
-func fetchCycles() -> Int? {
-    guard let props = fetchBatteryInfo() else {
-        return nil
-    }
-    
-    //        DispatchQueue.main.async {
-    //            // Charge Information
-    //            self.isBelowWarningLevel = (props["AtCriticalLevel"] as? Int) == 1
-    //            self.isFullyCharged = (props["FullyCharged"] as? Int) == 1
-    //            self.isCharging = (props["IsCharging"] as? Int) == 1
-    //
-    //            if let currentCapacity = props["CurrentCapacity"] as? Int,
-    //               let maxCapacity = props["MaxCapacity"] as? Int {
-    //                let state = Int(Double(currentCapacity) / Double(maxCapacity) * 100)
-    //                self.stateOfCharge = state
-    //            }
-    
-    if let cycleCount = props["CycleCount"] as? Int {
-        return cycleCount
-    } else {
+func fetchCycles() -> Int {
+    guard
+        let props = fetchBatteryInfo(),
+        let cycleCount = props["CycleCount"] as? Int
+    else {
         return -1
     }
     
-    //            if let permanentFailureStatus = props["PermanentFailureStatus"] as? Int, permanentFailureStatus == 0 {
-    //                self.condition = "Normal"
-    //            } else {
-    //                self.condition = "Service Battery"
-    //            }
-    //
-    //            if let maxCapacity = props["MaxCapacity"] as? Int {
-    //                self.maximumCapacity = maxCapacity
-    //            }
-    //
-    //            // Power Modes
-    //            self.isLowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled
-    //
-    //            self.isHighPowerMode = false
-    //        }
+    return cycleCount
 }
 
-//func fetchCycles() -> BatteryInfo? {
+//func fetchCycles() -> Int? {
 //    guard let props = fetchBatteryInfo() else {
 //        return nil
 //    }
-//
-//    var info = BatteryInfo(
-//        cycles: -1
-//    )
-//
+//    
 //    //        DispatchQueue.main.async {
 //    //            // Charge Information
 //    //            self.isBelowWarningLevel = (props["AtCriticalLevel"] as? Int) == 1
@@ -99,11 +66,13 @@ func fetchCycles() -> Int? {
 //    //                let state = Int(Double(currentCapacity) / Double(maxCapacity) * 100)
 //    //                self.stateOfCharge = state
 //    //            }
-//
+//    
 //    if let cycleCount = props["CycleCount"] as? Int {
-//        info.cycles = cycleCount
+//        return cycleCount
+//    } else {
+//        return -1
 //    }
-//
+//    
 //    //            if let permanentFailureStatus = props["PermanentFailureStatus"] as? Int, permanentFailureStatus == 0 {
 //    //                self.condition = "Normal"
 //    //            } else {
@@ -119,6 +88,15 @@ func fetchCycles() -> Int? {
 //    //
 //    //            self.isHighPowerMode = false
 //    //        }
-//
-//    return info
 //}
+
+func fetchCapacity() -> Int {
+    guard
+        let props = fetchBatteryInfo(),
+        let maxCapacity = props["MaxCapacity"] as? Int
+    else {
+        return -1
+    }
+    
+    return maxCapacity
+}

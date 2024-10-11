@@ -3,17 +3,9 @@ import WidgetKit
 struct CyclesProvider: AppIntentTimelineProvider {
     func placeholder(in context: Context) -> CyclesEntry {
         
-        guard let cycles = fetchCycles() else {
-            return CyclesEntry(
-                date: Date(),
-                cycles: -1,
-                configuration: CyclesConfigIntent()
-            )
-        }
-        
-        return CyclesEntry(
+        CyclesEntry(
             date: Date(),
-            cycles: cycles,
+            cycles: fetchCycles(),
             configuration: CyclesConfigIntent()
         )
     }
@@ -23,17 +15,9 @@ struct CyclesProvider: AppIntentTimelineProvider {
         in context: Context
     ) async -> CyclesEntry {
         
-        guard let cycles = fetchCycles() else {
-            return CyclesEntry(
-                date: Date(),
-                cycles: -1,
-                configuration: CyclesConfigIntent()
-            )
-        }
-        
-        return CyclesEntry(
+        CyclesEntry(
             date: Date(),
-            cycles: cycles,
+            cycles: fetchCycles(),
             configuration: CyclesConfigIntent()
         )
     }
@@ -43,22 +27,10 @@ struct CyclesProvider: AppIntentTimelineProvider {
         in context: Context
     ) async -> Timeline<CyclesEntry> {
         
-        guard let cycles = fetchCycles() else {
-            let entries = [
-                CyclesEntry(
-                    date: Date(),
-                    cycles: -1,
-                    configuration: CyclesConfigIntent()
-                )
-            ]
-            
-            return Timeline(entries: entries, policy: .atEnd)
-        }
-        
         let entries = [
             CyclesEntry(
                 date: Date(),
-                cycles: cycles,
+                cycles: fetchCycles(),
                 configuration: configuration
             )
         ]
