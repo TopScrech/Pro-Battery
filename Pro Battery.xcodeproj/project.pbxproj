@@ -24,6 +24,8 @@
 		F3965DA42CB8F8D9004F3AFF /* Simple Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA32CB8F8D9004F3AFF /* Simple Entry.swift */; };
 		F3965DA62CB8F8F4004F3AFF /* Widgets Entry View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA52CB8F8F4004F3AFF /* Widgets Entry View.swift */; };
 		F3965DA82CB8F90B004F3AFF /* Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA72CB8F90B004F3AFF /* Widgets.swift */; };
+		F3965DA92CB8F9B7004F3AFF /* Battery Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183272CB7C483009D518A /* Battery Gauge.swift */; };
+		F3965DAB2CB8F9C5004F3AFF /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3965DAA2CB8F9C5004F3AFF /* ScrechKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F3965DAB2CB8F9C5004F3AFF /* ScrechKit in Frameworks */,
 				F3965D832CB8F828004F3AFF /* SwiftUI.framework in Frameworks */,
 				F3965D812CB8F828004F3AFF /* WidgetKit.framework in Frameworks */,
 			);
@@ -145,10 +148,10 @@
 				F3965D9A2CB8F82D004F3AFF /* Widgets.entitlements */,
 				F3965D982CB8F82D004F3AFF /* Assets.xcassets */,
 				F3965D972CB8F82D004F3AFF /* App Intent.swift */,
+				F3965DA32CB8F8D9004F3AFF /* Simple Entry.swift */,
 				F3965D9B2CB8F82D004F3AFF /* Provider.swift */,
 				F3965DA72CB8F90B004F3AFF /* Widgets.swift */,
 				F3965DA52CB8F8F4004F3AFF /* Widgets Entry View.swift */,
-				F3965DA32CB8F8D9004F3AFF /* Simple Entry.swift */,
 			);
 			path = Widgets;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			);
 			name = Widgets;
 			packageProductDependencies = (
+				F3965DAA2CB8F9C5004F3AFF /* ScrechKit */,
 			);
 			productName = WidgetsExtension;
 			productReference = F3965D7E2CB8F828004F3AFF /* Widgets.appex */;
@@ -279,6 +283,7 @@
 				F3965DA82CB8F90B004F3AFF /* Widgets.swift in Sources */,
 				F3965DA02CB8F82D004F3AFF /* App Intent.swift in Sources */,
 				F3965DA12CB8F82D004F3AFF /* Provider.swift in Sources */,
+				F3965DA92CB8F9B7004F3AFF /* Battery Gauge.swift in Sources */,
 				F3965DA62CB8F8F4004F3AFF /* Widgets Entry View.swift in Sources */,
 				F3965DA22CB8F82D004F3AFF /* Widgets Bundle.swift in Sources */,
 			);
@@ -612,6 +617,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F33183242CB5B9E3009D518A /* XCRemoteSwiftPackageReference "DeviceKit" */;
 			productName = DeviceKit;
+		};
+		F3965DAA2CB8F9C5004F3AFF /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F33183212CB5B837009D518A /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
