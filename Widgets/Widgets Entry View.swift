@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct WidgetsEntryView: View {
+    @Environment(\.widgetFamily) private var family
+    
     private var entry: Provider.Entry
     
     init(_ entry: Provider.Entry) {
@@ -8,6 +10,15 @@ struct WidgetsEntryView: View {
     }
     
     var body: some View {
-        BatteryGauge(50)
+        switch family {
+        case .systemSmall:
+            SmallWidgetView()
+            
+        case .systemMedium:
+            MediumWidgetView()
+            
+        default:
+            EmptyView()
+        }
     }
 }
