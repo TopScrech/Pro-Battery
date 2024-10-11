@@ -7,13 +7,17 @@ struct MediumWidgetView: View {
         self.entry = entry
     }
     
+    private var showVersion: Bool {
+        entry.configuration.showBuildNumber
+    }
+    
     var body: some View {
         HStack {
             BatteryGauge(50)
             
             Spacer()
             
-            VStack(alignment: .leading) {
+            VStack(alignment: .leading, spacing: 5) {
                 Param("Max. capacity", param: "16")
                 
                 Param("Charge cycles", param: "16")
@@ -22,10 +26,10 @@ struct MediumWidgetView: View {
             }
             .frame(maxWidth: 170)
         }
-        .padding(.leading, 30)
+        .padding(.leading, 35)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .overlay(alignment: .topTrailing) {
-            if entry.configuration.showBuildNumber {
+            if showVersion {
                 Text(version())
                     .caption2()
                     .foregroundStyle(.tertiary)
