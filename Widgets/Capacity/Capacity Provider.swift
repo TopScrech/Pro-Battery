@@ -1,4 +1,3 @@
-import SwiftUI
 import WidgetKit
 
 struct CapacityProvider: AppIntentTimelineProvider {
@@ -26,25 +25,12 @@ struct CapacityProvider: AppIntentTimelineProvider {
         in context: Context
     ) async -> Timeline<CapacityEntry> {
         
-        var entries: [CapacityEntry] = []
-        
-        // Generate a timeline consisting of five entries an hour apart, starting from the current date
-        let currentDate = Date()
-        
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(
-                byAdding: .hour,
-                value: hourOffset,
-                to: currentDate
-            )!
-            
-            let entry = CapacityEntry(
-                date: entryDate,
+        let entries = [
+            CapacityEntry(
+                date: Date(),
                 configuration: configuration
             )
-            
-            entries.append(entry)
-        }
+        ]
         
         return Timeline(entries: entries, policy: .atEnd)
     }
