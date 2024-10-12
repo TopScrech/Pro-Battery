@@ -1,45 +1,36 @@
 import WidgetKit
 
-struct ChargeProvider: AppIntentTimelineProvider {
-    private let previewEntry = ChargeEntry(
+struct ChargeTextProvider: AppIntentTimelineProvider {
+    private let previewEntry = ChargeTextEntry(
         date: Date(),
         charge: fetchBatteryLevel(),
-        cycles: fetchCycles(),
-        capacity: fetchCapacity(),
-        condition: fetchCondition(),
-        configuration: ChargeConfigIntent()
+        configuration: ChargeTextConfigIntent()
     )
     
-    func placeholder(in context: Context) -> ChargeEntry {
+    func placeholder(in context: Context) -> ChargeTextEntry {
         previewEntry
     }
     
     func snapshot(
-        for configuration: ChargeConfigIntent,
+        for configuration: ChargeTextConfigIntent,
         in context: Context
-    ) async -> ChargeEntry {
-        ChargeEntry(
+    ) async -> ChargeTextEntry {
+        ChargeTextEntry(
             date: Date(),
             charge: fetchBatteryLevel(),
-            cycles: fetchCycles(),
-            capacity: fetchCapacity(),
-            condition: fetchCondition(),
             configuration: configuration
         )
     }
     
     func timeline(
-        for configuration: ChargeConfigIntent,
+        for configuration: ChargeTextConfigIntent,
         in context: Context
-    ) async -> Timeline<ChargeEntry> {
+    ) async -> Timeline<ChargeTextEntry> {
         
         let entries = [
-            ChargeEntry(
+            ChargeTextEntry(
                 date: Date(),
                 charge: fetchBatteryLevel(),
-                cycles: fetchCycles(),
-                capacity: fetchCapacity(),
-                condition: fetchCondition(),
                 configuration: configuration
             )
         ]

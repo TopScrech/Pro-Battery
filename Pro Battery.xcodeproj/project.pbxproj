@@ -9,6 +9,12 @@
 /* Begin PBXBuildFile section */
 		F30950062CBA59EF00DA2148 /* Fetch battery level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30950052CBA59EF00DA2148 /* Fetch battery level.swift */; };
 		F30950072CBA59FF00DA2148 /* Fetch battery level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30950052CBA59EF00DA2148 /* Fetch battery level.swift */; };
+		F309500A2CBA5ED500DA2148 /* Charge Text Config Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30950092CBA5ED500DA2148 /* Charge Text Config Intent.swift */; };
+		F309500C2CBA5EFE00DA2148 /* Charge Text Small View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309500B2CBA5EFD00DA2148 /* Charge Text Small View.swift */; };
+		F309500E2CBA5F4D00DA2148 /* Charge Text Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309500D2CBA5F4D00DA2148 /* Charge Text Provider.swift */; };
+		F30950102CBA5F5D00DA2148 /* Charge Text Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309500F2CBA5F5D00DA2148 /* Charge Text Entry.swift */; };
+		F30950122CBA5FD000DA2148 /* Charge Text Entry View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30950112CBA5FD000DA2148 /* Charge Text Entry View.swift */; };
+		F30950142CBA600300DA2148 /* Charge Text Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30950132CBA600300DA2148 /* Charge Text Widget.swift */; };
 		F331831B2CB5B28D009D518A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33183152CB5B28D009D518A /* Assets.xcassets */; };
 		F331831C2CB5B28D009D518A /* Content View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183162CB5B28D009D518A /* Content View.swift */; };
 		F331831D2CB5B28D009D518A /* Pro Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183182CB5B28D009D518A /* Pro Battery.swift */; };
@@ -33,7 +39,7 @@
 		F341DFD82CB935BD0001B5EF /* Capacity Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFD72CB935BD0001B5EF /* Capacity Entry.swift */; };
 		F341DFDB2CB935C10001B5EF /* Capacity Small View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFDA2CB935C10001B5EF /* Capacity Small View.swift */; };
 		F341DFDC2CB935C10001B5EF /* Capacity Entry View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFD92CB935C10001B5EF /* Capacity Entry View.swift */; };
-		F370B2432CB9AE7F00D70865 /* Battery Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B2422CB9AE7F00D70865 /* Battery Info.swift */; };
+		F370B2432CB9AE7F00D70865 /* Fetch Battery Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B2422CB9AE7F00D70865 /* Fetch Battery Info.swift */; };
 		F3965D812CB8F828004F3AFF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3965D802CB8F828004F3AFF /* WidgetKit.framework */; };
 		F3965D832CB8F828004F3AFF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3965D822CB8F828004F3AFF /* SwiftUI.framework */; };
 		F3965D912CB8F829004F3AFF /* Widgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F3965D7E2CB8F828004F3AFF /* Widgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -74,6 +80,12 @@
 
 /* Begin PBXFileReference section */
 		F30950052CBA59EF00DA2148 /* Fetch battery level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch battery level.swift"; sourceTree = "<group>"; };
+		F30950092CBA5ED500DA2148 /* Charge Text Config Intent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Text Config Intent.swift"; sourceTree = "<group>"; };
+		F309500B2CBA5EFD00DA2148 /* Charge Text Small View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Text Small View.swift"; sourceTree = "<group>"; };
+		F309500D2CBA5F4D00DA2148 /* Charge Text Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Text Provider.swift"; sourceTree = "<group>"; };
+		F309500F2CBA5F5D00DA2148 /* Charge Text Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Text Entry.swift"; sourceTree = "<group>"; };
+		F30950112CBA5FD000DA2148 /* Charge Text Entry View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Text Entry View.swift"; sourceTree = "<group>"; };
+		F30950132CBA600300DA2148 /* Charge Text Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Text Widget.swift"; sourceTree = "<group>"; };
 		F33182F72CB5B26F009D518A /* Pro Battery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pro Battery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33183152CB5B28D009D518A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F33183162CB5B28D009D518A /* Content View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content View.swift"; sourceTree = "<group>"; };
@@ -99,7 +111,7 @@
 		F341DFD72CB935BD0001B5EF /* Capacity Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Capacity Entry.swift"; sourceTree = "<group>"; };
 		F341DFD92CB935C10001B5EF /* Capacity Entry View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Capacity Entry View.swift"; sourceTree = "<group>"; };
 		F341DFDA2CB935C10001B5EF /* Capacity Small View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Capacity Small View.swift"; sourceTree = "<group>"; };
-		F370B2422CB9AE7F00D70865 /* Battery Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Info.swift"; sourceTree = "<group>"; };
+		F370B2422CB9AE7F00D70865 /* Fetch Battery Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Battery Info.swift"; sourceTree = "<group>"; };
 		F3965D7E2CB8F828004F3AFF /* Widgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3965D802CB8F828004F3AFF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		F3965D822CB8F828004F3AFF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -137,6 +149,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F30950082CBA5EAE00DA2148 /* Without gauge */ = {
+			isa = PBXGroup;
+			children = (
+				F309500D2CBA5F4D00DA2148 /* Charge Text Provider.swift */,
+				F30950092CBA5ED500DA2148 /* Charge Text Config Intent.swift */,
+				F30950132CBA600300DA2148 /* Charge Text Widget.swift */,
+				F30950112CBA5FD000DA2148 /* Charge Text Entry View.swift */,
+				F309500B2CBA5EFD00DA2148 /* Charge Text Small View.swift */,
+				F309500F2CBA5F5D00DA2148 /* Charge Text Entry.swift */,
+			);
+			path = "Without gauge";
+			sourceTree = "<group>";
+		};
 		F33182EE2CB5B26F009D518A = {
 			isa = PBXGroup;
 			children = (
@@ -199,6 +224,7 @@
 				F3965DA52CB8F8F4004F3AFF /* Charge Entry View.swift */,
 				F341DFBA2CB90C400001B5EF /* Charge Small View.swift */,
 				F341DFB82CB90BD90001B5EF /* Charge Medium View.swift */,
+				F30950082CBA5EAE00DA2148 /* Without gauge */,
 			);
 			path = Charge;
 			sourceTree = "<group>";
@@ -245,7 +271,7 @@
 				F3965D992CB8F82D004F3AFF /* Info.plist */,
 				F3965D9A2CB8F82D004F3AFF /* Widgets.entitlements */,
 				F3965D982CB8F82D004F3AFF /* Assets.xcassets */,
-				F370B2422CB9AE7F00D70865 /* Battery Info.swift */,
+				F370B2422CB9AE7F00D70865 /* Fetch Battery Info.swift */,
 				F341DFD02CB935AB0001B5EF /* Capacity */,
 				F341DFC52CB92FD70001B5EF /* Cycles */,
 				F341DFC42CB92FCE0001B5EF /* Charge */,
@@ -382,18 +408,22 @@
 				F341DFC32CB92F370001B5EF /* Cycles Small View.swift in Sources */,
 				F3965DA42CB8F8D9004F3AFF /* Charge Entry.swift in Sources */,
 				F341DFC02CB916E80001B5EF /* Get Version & Build.swift in Sources */,
+				F309500A2CBA5ED500DA2148 /* Charge Text Config Intent.swift in Sources */,
 				F341DFC92CB930310001B5EF /* Cycles Entry View.swift in Sources */,
 				F341DFBD2CB9168A0001B5EF /* Param.swift in Sources */,
 				F341DFCF2CB931F30001B5EF /* Cycles Entry.swift in Sources */,
 				F341DFCB2CB931900001B5EF /* Cycles Provider.swift in Sources */,
+				F309500E2CBA5F4D00DA2148 /* Charge Text Provider.swift in Sources */,
 				F3965DA82CB8F90B004F3AFF /* Charge Widgets.swift in Sources */,
 				F341DFD22CB935B70001B5EF /* Capacity Provider.swift in Sources */,
 				F341DFD82CB935BD0001B5EF /* Capacity Entry.swift in Sources */,
 				F341DFD62CB935BC0001B5EF /* Capacity Widgets.swift in Sources */,
 				F3965DA02CB8F82D004F3AFF /* Charge Config Intent.swift in Sources */,
 				F30950072CBA59FF00DA2148 /* Fetch battery level.swift in Sources */,
+				F30950122CBA5FD000DA2148 /* Charge Text Entry View.swift in Sources */,
 				F341DFB92CB90BD90001B5EF /* Charge Medium View.swift in Sources */,
-				F370B2432CB9AE7F00D70865 /* Battery Info.swift in Sources */,
+				F370B2432CB9AE7F00D70865 /* Fetch Battery Info.swift in Sources */,
+				F309500C2CBA5EFE00DA2148 /* Charge Text Small View.swift in Sources */,
 				F341DFBB2CB90C400001B5EF /* Charge Small View.swift in Sources */,
 				F3965DA12CB8F82D004F3AFF /* Charge Provider.swift in Sources */,
 				F341DFDB2CB935C10001B5EF /* Capacity Small View.swift in Sources */,
@@ -401,6 +431,8 @@
 				F341DFD42CB935BA0001B5EF /* Capacity Config Intent.swift in Sources */,
 				F3965DA92CB8F9B7004F3AFF /* Battery Gauge.swift in Sources */,
 				F341DFC72CB9301A0001B5EF /* Cycles Widgets.swift in Sources */,
+				F30950102CBA5F5D00DA2148 /* Charge Text Entry.swift in Sources */,
+				F30950142CBA600300DA2148 /* Charge Text Widget.swift in Sources */,
 				F341DFCD2CB931B20001B5EF /* Cycles Config Intent.swift in Sources */,
 				F3965DA62CB8F8F4004F3AFF /* Charge Entry View.swift in Sources */,
 				F3965DA22CB8F82D004F3AFF /* Widgets Bundle.swift in Sources */,

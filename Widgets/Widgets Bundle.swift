@@ -8,5 +8,7 @@ struct WidgetsBundle: WidgetBundle {
         CyclesWidgets()
         
         CapacityWidgets()
+        
+        ChargeTextWidget()
     }
 }

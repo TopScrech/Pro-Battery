@@ -26,10 +26,7 @@ struct ChargeMediumView: View {
                 
                 Param("Charge cycles", param: entry.cycles)
                 
-#warning("Connect")
-#if DEBUG
-                Param("Condition", param: "Normal")
-#endif
+                Param("Condition", param: entry.condition)
             }
             .frame(maxWidth: 170)
         }
