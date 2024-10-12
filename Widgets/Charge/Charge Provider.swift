@@ -3,6 +3,7 @@ import WidgetKit
 struct ChargeProvider: AppIntentTimelineProvider {
     private let previewEntry = ChargeEntry(
         date: Date(),
+        charge: fetchBatteryLevel(),
         configuration: ChargeConfigIntent()
     )
     
@@ -14,11 +15,7 @@ struct ChargeProvider: AppIntentTimelineProvider {
         for configuration: ChargeConfigIntent,
         in context: Context
     ) async -> ChargeEntry {
-        
-        ChargeEntry(
-            date: Date(),
-            configuration: configuration
-        )
+        previewEntry
     }
     
     func timeline(
@@ -27,10 +24,7 @@ struct ChargeProvider: AppIntentTimelineProvider {
     ) async -> Timeline<ChargeEntry> {
         
         let entries = [
-            ChargeEntry(
-                date: Date(),
-                configuration: configuration
-            )
+            previewEntry
         ]
         
         return Timeline(entries: entries, policy: .atEnd)

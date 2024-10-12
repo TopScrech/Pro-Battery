@@ -17,7 +17,7 @@ struct ChargeSmallView: View {
     
     var body: some View {
         VStack {
-            BatteryGauge(50, isCapacity: isCapacity)
+            BatteryGauge(entry.charge, isCapacity: isCapacity)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         .overlay(alignment: .topTrailing) {

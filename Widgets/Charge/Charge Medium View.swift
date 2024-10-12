@@ -17,7 +17,7 @@ struct ChargeMediumView: View {
     
     var body: some View {
         HStack {
-            BatteryGauge(50, isCapacity: isCapacity)
+            BatteryGauge(entry.charge, isCapacity: isCapacity)
             
             Spacer()
             
