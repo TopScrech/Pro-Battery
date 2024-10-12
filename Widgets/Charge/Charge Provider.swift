@@ -4,6 +4,8 @@ struct ChargeProvider: AppIntentTimelineProvider {
     private let previewEntry = ChargeEntry(
         date: Date(),
         charge: fetchBatteryLevel(),
+        cycles: fetchCycles(),
+        capacity: fetchCapacity(),
         configuration: ChargeConfigIntent()
     )
     
@@ -15,7 +17,13 @@ struct ChargeProvider: AppIntentTimelineProvider {
         for configuration: ChargeConfigIntent,
         in context: Context
     ) async -> ChargeEntry {
-        previewEntry
+        ChargeEntry(
+            date: Date(),
+            charge: fetchBatteryLevel(),
+            cycles: fetchCycles(),
+            capacity: fetchCapacity(),
+            configuration: configuration
+        )
     }
     
     func timeline(
@@ -24,7 +32,13 @@ struct ChargeProvider: AppIntentTimelineProvider {
     ) async -> Timeline<ChargeEntry> {
         
         let entries = [
-            previewEntry
+            ChargeEntry(
+                date: Date(),
+                charge: fetchBatteryLevel(),
+                cycles: fetchCycles(),
+                capacity: fetchCapacity(),
+                configuration: configuration
+            )
         ]
         
         return Timeline(entries: entries, policy: .atEnd)

@@ -22,11 +22,14 @@ struct ChargeMediumView: View {
             Spacer()
             
             VStack(alignment: .leading, spacing: 5) {
-                Param("Max. capacity", param: "16")
+                Param("Max. capacity", param: "\(entry.capacity)%")
                 
-                Param("Charge cycles", param: "16")
+                Param("Charge cycles", param: entry.cycles)
                 
+#warning("Connect")
+#if DEBUG
                 Param("Condition", param: "Normal")
+#endif
             }
             .frame(maxWidth: 170)
         }

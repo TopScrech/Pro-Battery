@@ -9,6 +9,11 @@ struct Param: View {
         self.param = param
     }
     
+    init(_ name: LocalizedStringKey, param: Int) {
+        self.name = name
+        self.param = param.description
+    }
+    
     var body: some View {
         HStack {
             Text(name)
