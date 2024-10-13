@@ -1,8 +1,34 @@
 import SwiftUI
 
-//struct BatteryInfo {
-//    var cycles: Int
-//}
+struct ChargeWidgetInfo {
+    let charge: Double
+    let cycles: Int
+    let capacity: Int
+    let condition: String
+}
+
+func fetchChargeWidgetInfo() -> ChargeWidgetInfo {
+    guard let props = fetchBatteryInfo() else {
+        return ChargeWidgetInfo(
+            charge: -1,
+            cycles: -1,
+            capacity: -1,
+            condition: "Unknown"
+        )
+    }
+    
+    let charge = fetchBatteryLevel()
+    let cycles = fetchCycles(props)
+    let capacity = fetchCapacity(props)
+    let condition = fetchCondition(props)
+    
+    return ChargeWidgetInfo(
+        charge: charge,
+        cycles: cycles,
+        capacity: capacity,
+        condition: condition
+    )
+}
 
 func fetchBatteryInfo() -> NSDictionary? {
     // Create a matching dictionary to find the battery service
@@ -37,38 +63,4 @@ func fetchBatteryInfo() -> NSDictionary? {
     }
     
     return props
-}
-
-func fetchCycles() -> Int {
-    guard
-        let props = fetchBatteryInfo(),
-        let cycleCount = props["CycleCount"] as? Int
-    else {
-        return -1
-    }
-    
-    return cycleCount
-}
-
-func fetchCondition() -> String {
-    guard let props = fetchBatteryInfo() else {
-        return "Unknown"
-    }
-    
-    if let permanentFailureStatus = props["PermanentFailureStatus"] as? Int, permanentFailureStatus == 0 {
-        return "Normal"
-    } else {
-        return "Service recommended"
-    }
-}
-
-func fetchCapacity() -> Int {
-    guard
-        let props = fetchBatteryInfo(),
-        let maxCapacity = props["MaxCapacity"] as? Int
-    else {
-        return -1
-    }
-    
-    return maxCapacity
 }

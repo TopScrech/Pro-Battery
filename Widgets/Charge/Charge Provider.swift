@@ -1,17 +1,33 @@
 import WidgetKit
 
 struct ChargeProvider: AppIntentTimelineProvider {
-    private let previewEntry = ChargeEntry(
-        date: Date(),
-        charge: fetchBatteryLevel(),
-        cycles: fetchCycles(),
-        capacity: fetchCapacity(),
-        condition: fetchCondition(),
-        configuration: ChargeConfigIntent()
-    )
+    private let info = fetchChargeWidgetInfo()
+    
+    private var charge: Double {
+        info.charge
+    }
+    
+    private var capacity: Int {
+        info.capacity
+    }
+    
+    private var cycles: Int {
+        info.cycles
+    }
+    
+    private var condition: String {
+        info.condition
+    }
     
     func placeholder(in context: Context) -> ChargeEntry {
-        previewEntry
+        ChargeEntry(
+            date: Date(),
+            charge: charge,
+            cycles: cycles,
+            capacity: capacity,
+            condition: condition,
+            configuration: ChargeConfigIntent()
+        )
     }
     
     func snapshot(
@@ -20,10 +36,10 @@ struct ChargeProvider: AppIntentTimelineProvider {
     ) async -> ChargeEntry {
         ChargeEntry(
             date: Date(),
-            charge: fetchBatteryLevel(),
-            cycles: fetchCycles(),
-            capacity: fetchCapacity(),
-            condition: fetchCondition(),
+            charge: charge,
+            cycles: cycles,
+            capacity: capacity,
+            condition: condition,
             configuration: configuration
         )
     }
@@ -36,10 +52,10 @@ struct ChargeProvider: AppIntentTimelineProvider {
         let entries = [
             ChargeEntry(
                 date: Date(),
-                charge: fetchBatteryLevel(),
-                cycles: fetchCycles(),
-                capacity: fetchCapacity(),
-                condition: fetchCondition(),
+                charge: charge,
+                cycles: cycles,
+                capacity: capacity,
+                condition: condition,
                 configuration: configuration
             )
         ]
