@@ -1,23 +1,7 @@
 import WidgetKit
 
 struct ChargeProvider: AppIntentTimelineProvider {
-    private let info = fetchChargeWidgetInfo()
-    
-    private var charge: Double {
-        info.charge
-    }
-    
-    private var capacity: Int {
-        info.capacity
-    }
-    
-    private var cycles: Int {
-        info.cycles
-    }
-    
-    private var condition: String {
-        info.condition
-    }
+    let info = fetchChargeWidgetInfo()
     
     func placeholder(in context: Context) -> ChargeEntry {
         ChargeEntry(
@@ -34,6 +18,7 @@ struct ChargeProvider: AppIntentTimelineProvider {
         for configuration: ChargeConfigIntent,
         in context: Context
     ) async -> ChargeEntry {
+        
         ChargeEntry(
             date: Date(),
             charge: charge,
