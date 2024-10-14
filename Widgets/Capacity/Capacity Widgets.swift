@@ -13,6 +13,6 @@ struct CapacityWidgets: Widget {
             CapacityEntryView(entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
-        .supportedFamilies([.systemSmall])
+        .supportedFamilies([.systemSmall, .systemMedium])
     }
 }

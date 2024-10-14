@@ -1,0 +1,27 @@
+import SwiftUI
+
+struct CyclesMediumView: View {
+    private var entry: CyclesProvider.Entry
+    
+    init(_ entry: CyclesProvider.Entry) {
+        self.entry = entry
+    }
+    
+    var body: some View {
+        VStack {
+            Text(entry.cycles)
+                .fontSize(250)
+                .minimumScaleFactor(0.01)
+            
+            if entry.configuration.showTitle {
+                Text("Charge cycles")
+                    .secondary()
+            }
+        }
+        .rounded()
+    }
+}
+
+//#Preview {
+//    CyclesMediumView()
+//}

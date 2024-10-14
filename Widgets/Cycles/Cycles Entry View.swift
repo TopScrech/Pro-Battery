@@ -14,8 +14,8 @@ struct CyclesEntryView: View {
         case .systemSmall:
             CyclesSmallView(entry)
             
-//        case .systemMedium:
-            
+        case .systemMedium:
+            CyclesMediumView(entry)
             
         default:
             EmptyView()

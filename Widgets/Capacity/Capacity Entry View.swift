@@ -14,8 +14,8 @@ struct CapacityEntryView: View {
         case .systemSmall:
             CapacitySmallView(entry)
             
-//        case .systemMedium:
-            
+        case .systemMedium:
+            CapacityMediumView(entry)
             
         default:
             EmptyView()
