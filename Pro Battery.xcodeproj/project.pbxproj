@@ -53,6 +53,8 @@
 		F369EB402CBD3734003F0AF6 /* Fetch Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252F2CBBAB220026D36E /* Fetch Condition.swift */; };
 		F369EB422CBD4325003F0AF6 /* Capacity Medium View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB412CBD4325003F0AF6 /* Capacity Medium View.swift */; };
 		F369EB442CBD4351003F0AF6 /* Cycles Medium View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB432CBD4351003F0AF6 /* Cycles Medium View.swift */; };
+		F369EB462CBD47F9003F0AF6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F369EB452CBD47F9003F0AF6 /* Localizable.xcstrings */; };
+		F369EB472CBD47F9003F0AF6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F369EB452CBD47F9003F0AF6 /* Localizable.xcstrings */; };
 		F370B2432CB9AE7F00D70865 /* Fetch Battery Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B2422CB9AE7F00D70865 /* Fetch Battery Info.swift */; };
 		F3965D812CB8F828004F3AFF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3965D802CB8F828004F3AFF /* WidgetKit.framework */; };
 		F3965D832CB8F828004F3AFF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3965D822CB8F828004F3AFF /* SwiftUI.framework */; };
@@ -143,6 +145,7 @@
 		F369EB3B2CBD3267003F0AF6 /* Charge Text Medium View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Text Medium View.swift"; sourceTree = "<group>"; };
 		F369EB412CBD4325003F0AF6 /* Capacity Medium View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Capacity Medium View.swift"; sourceTree = "<group>"; };
 		F369EB432CBD4351003F0AF6 /* Cycles Medium View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cycles Medium View.swift"; sourceTree = "<group>"; };
+		F369EB452CBD47F9003F0AF6 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
 		F370B2422CB9AE7F00D70865 /* Fetch Battery Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Battery Info.swift"; sourceTree = "<group>"; };
 		F3965D7E2CB8F828004F3AFF /* Widgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3965D802CB8F828004F3AFF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -230,6 +233,7 @@
 				F331831E2CB5B30F009D518A /* Pro-Battery-Info.plist */,
 				F33183172CB5B28D009D518A /* Pro Battery.entitlements */,
 				F33183152CB5B28D009D518A /* Assets.xcassets */,
+				F369EB452CBD47F9003F0AF6 /* Localizable.xcstrings */,
 				F341DFB72CB90A490001B5EF /* Nav */,
 				F33183162CB5B28D009D518A /* Content View.swift */,
 				F331831F2CB5B581009D518A /* Battery VM.swift */,
@@ -432,6 +436,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ru,
 			);
 			mainGroup = F33182EE2CB5B26F009D518A;
 			minimizedProjectReferenceProxies = 1;
@@ -456,6 +461,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F369EB462CBD47F9003F0AF6 /* Localizable.xcstrings in Resources */,
 				F331831B2CB5B28D009D518A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,6 +477,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F369EB472CBD47F9003F0AF6 /* Localizable.xcstrings in Resources */,
 				F3965D9E2CB8F82D004F3AFF /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -623,6 +630,7 @@
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -677,6 +685,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
 			name = Release;
 		};
