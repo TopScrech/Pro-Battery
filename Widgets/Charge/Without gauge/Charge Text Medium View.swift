@@ -8,13 +8,13 @@ struct ChargeTextMediumView: View {
     }
     
     private var charge: String {
-        String(format: "%.1f", entry.charge)
+        String(format: "%.0f", entry.charge)
     }
     
     var body: some View {
         VStack {
-            Text(charge)
-                .fontSize(250)
+            Text("\(charge)%")
+                .fontSize(300)
                 .minimumScaleFactor(0.01)
             
             if entry.configuration.showTitle {
