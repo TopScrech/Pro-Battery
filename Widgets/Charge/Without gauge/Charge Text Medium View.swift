@@ -1,20 +1,24 @@
 import SwiftUI
 
-struct CyclesSmallView: View {
-    private var entry: CyclesProvider.Entry
+struct ChargeTextMediumView: View {
+    private var entry: ChargeTextProvider.Entry
     
-    init(_ entry: CyclesProvider.Entry) {
+    init(_ entry: ChargeTextProvider.Entry) {
         self.entry = entry
+    }
+    
+    private var charge: String {
+        String(format: "%.1f", entry.charge)
     }
     
     var body: some View {
         VStack {
-            Text(entry.cycles)
+            Text(charge)
                 .fontSize(250)
                 .minimumScaleFactor(0.01)
             
             if entry.configuration.showTitle {
-                Text("Charge cycles")
+                Text("Battery level")
                     .secondary()
             }
         }
@@ -23,5 +27,5 @@ struct CyclesSmallView: View {
 }
 
 //#Preview {
-//    CyclesSmallView()
+//    ChargeTextMediumView()
 //}

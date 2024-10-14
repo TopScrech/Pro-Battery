@@ -14,6 +14,9 @@ struct ChargeTextEntryView: View {
         case .systemSmall:
             ChargeTextSmallView(entry)
             
+        case .systemMedium:
+            ChargeTextMediumView(entry)
+            
         default:
             EmptyView()
         }

@@ -9,7 +9,7 @@ struct ChargeTextSmallView: View {
     
     var body: some View {
         VStack {
-            Text(entry.charge)
+            Text("\(entry.charge)%")
                 .fontSize(250)
                 .minimumScaleFactor(0.01)
             

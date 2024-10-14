@@ -45,6 +45,8 @@
 		F341DFDC2CB935C10001B5EF /* Capacity Entry View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFD92CB935C10001B5EF /* Capacity Entry View.swift */; };
 		F34484412CBD1A68009A1144 /* Charge Widget Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34484402CBD1A68009A1144 /* Charge Widget Info.swift */; };
 		F34484432CBD1A79009A1144 /* Fetch Charge Widget Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34484422CBD1A79009A1144 /* Fetch Charge Widget Info.swift */; };
+		F369EB3A2CBD22CA003F0AF6 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB382CBD22CA003F0AF6 /* Unit Tests.swift */; };
+		F369EB3C2CBD3267003F0AF6 /* Charge Text Medium View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB3B2CBD3267003F0AF6 /* Charge Text Medium View.swift */; };
 		F370B2432CB9AE7F00D70865 /* Fetch Battery Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B2422CB9AE7F00D70865 /* Fetch Battery Info.swift */; };
 		F3965D812CB8F828004F3AFF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3965D802CB8F828004F3AFF /* WidgetKit.framework */; };
 		F3965D832CB8F828004F3AFF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3965D822CB8F828004F3AFF /* SwiftUI.framework */; };
@@ -61,6 +63,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F369EB332CBD22C7003F0AF6 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F33182EF2CB5B26F009D518A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F33182F62CB5B26F009D518A;
+			remoteInfo = "Pro Battery";
+		};
 		F3965D8F2CB8F829004F3AFF /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F33182EF2CB5B26F009D518A /* Project object */;
@@ -123,6 +132,9 @@
 		F341DFDA2CB935C10001B5EF /* Capacity Small View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Capacity Small View.swift"; sourceTree = "<group>"; };
 		F34484402CBD1A68009A1144 /* Charge Widget Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Widget Info.swift"; sourceTree = "<group>"; };
 		F34484422CBD1A79009A1144 /* Fetch Charge Widget Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Charge Widget Info.swift"; sourceTree = "<group>"; };
+		F369EB2F2CBD22C7003F0AF6 /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F369EB382CBD22CA003F0AF6 /* Unit Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit Tests.swift"; sourceTree = "<group>"; };
+		F369EB3B2CBD3267003F0AF6 /* Charge Text Medium View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Text Medium View.swift"; sourceTree = "<group>"; };
 		F370B2422CB9AE7F00D70865 /* Fetch Battery Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Battery Info.swift"; sourceTree = "<group>"; };
 		F3965D7E2CB8F828004F3AFF /* Widgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3965D802CB8F828004F3AFF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -148,6 +160,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F369EB2C2CBD22C7003F0AF6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		F3965D7B2CB8F828004F3AFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -169,6 +188,7 @@
 				F30950132CBA600300DA2148 /* Charge Text Widget.swift */,
 				F30950112CBA5FD000DA2148 /* Charge Text Entry View.swift */,
 				F309500B2CBA5EFD00DA2148 /* Charge Text Small View.swift */,
+				F369EB3B2CBD3267003F0AF6 /* Charge Text Medium View.swift */,
 				F309500F2CBA5F5D00DA2148 /* Charge Text Entry.swift */,
 			);
 			path = "Without gauge";
@@ -179,6 +199,7 @@
 			children = (
 				F33183192CB5B28D009D518A /* Pro Battery */,
 				F3965D9D2CB8F82D004F3AFF /* Widgets */,
+				F369EB392CBD22CA003F0AF6 /* Unit Tests */,
 				F3965D7F2CB8F828004F3AFF /* Frameworks */,
 				F33182F82CB5B26F009D518A /* Products */,
 			);
@@ -189,6 +210,7 @@
 			children = (
 				F33182F72CB5B26F009D518A /* Pro Battery.app */,
 				F3965D7E2CB8F828004F3AFF /* Widgets.appex */,
+				F369EB2F2CBD22C7003F0AF6 /* Unit Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -267,6 +289,14 @@
 			path = Capacity;
 			sourceTree = "<group>";
 		};
+		F369EB392CBD22CA003F0AF6 /* Unit Tests */ = {
+			isa = PBXGroup;
+			children = (
+				F369EB382CBD22CA003F0AF6 /* Unit Tests.swift */,
+			);
+			path = "Unit Tests";
+			sourceTree = "<group>";
+		};
 		F3965D7F2CB8F828004F3AFF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,6 +354,26 @@
 			productReference = F33182F72CB5B26F009D518A /* Pro Battery.app */;
 			productType = "com.apple.product-type.application";
 		};
+		F369EB2E2CBD22C7003F0AF6 /* Unit Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F369EB372CBD22C7003F0AF6 /* Build configuration list for PBXNativeTarget "Unit Tests" */;
+			buildPhases = (
+				F369EB2B2CBD22C7003F0AF6 /* Sources */,
+				F369EB2C2CBD22C7003F0AF6 /* Frameworks */,
+				F369EB2D2CBD22C7003F0AF6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F369EB342CBD22C7003F0AF6 /* PBXTargetDependency */,
+			);
+			name = "Unit Tests";
+			packageProductDependencies = (
+			);
+			productName = "Unit Tests";
+			productReference = F369EB2F2CBD22C7003F0AF6 /* Unit Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 		F3965D7D2CB8F828004F3AFF /* Widgets */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = F3965D932CB8F829004F3AFF /* Build configuration list for PBXNativeTarget "Widgets" */;
@@ -357,6 +407,10 @@
 					F33182F62CB5B26F009D518A = {
 						CreatedOnToolsVersion = 16.0;
 					};
+					F369EB2E2CBD22C7003F0AF6 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = F33182F62CB5B26F009D518A;
+					};
 					F3965D7D2CB8F828004F3AFF = {
 						CreatedOnToolsVersion = 16.0;
 					};
@@ -382,6 +436,7 @@
 			targets = (
 				F33182F62CB5B26F009D518A /* Pro Battery */,
 				F3965D7D2CB8F828004F3AFF /* Widgets */,
+				F369EB2E2CBD22C7003F0AF6 /* Unit Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -392,6 +447,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F331831B2CB5B28D009D518A /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F369EB2D2CBD22C7003F0AF6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -416,6 +478,14 @@
 				F33183282CB7C483009D518A /* Battery Gauge.swift in Sources */,
 				F33183202CB5B581009D518A /* Battery VM.swift in Sources */,
 				F341DFB62CB909960001B5EF /* Nav Container.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F369EB2B2CBD22C7003F0AF6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F369EB3A2CBD22CA003F0AF6 /* Unit Tests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -446,6 +516,7 @@
 				F34484412CBD1A68009A1144 /* Charge Widget Info.swift in Sources */,
 				F370B2432CB9AE7F00D70865 /* Fetch Battery Info.swift in Sources */,
 				F309500C2CBA5EFE00DA2148 /* Charge Text Small View.swift in Sources */,
+				F369EB3C2CBD3267003F0AF6 /* Charge Text Medium View.swift in Sources */,
 				F341DFBB2CB90C400001B5EF /* Charge Small View.swift in Sources */,
 				F3965DA12CB8F82D004F3AFF /* Charge Provider.swift in Sources */,
 				F341DFDB2CB935C10001B5EF /* Capacity Small View.swift in Sources */,
@@ -466,6 +537,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F369EB342CBD22C7003F0AF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F33182F62CB5B26F009D518A /* Pro Battery */;
+			targetProxy = F369EB332CBD22C7003F0AF6 /* PBXContainerItemProxy */;
+		};
 		F3965D902CB8F829004F3AFF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F3965D7D2CB8F828004F3AFF /* Widgets */;
@@ -670,6 +746,44 @@
 			};
 			name = Release;
 		};
+		F369EB352CBD22C7003F0AF6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Pro-Battery.Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pro Battery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pro Battery";
+			};
+			name = Debug;
+		};
+		F369EB362CBD22C7003F0AF6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8FQUA2F388;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 15.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "dev.topscrech.Pro-Battery.Unit-Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Pro Battery.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Pro Battery";
+			};
+			name = Release;
+		};
 		F3965D942CB8F829004F3AFF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -747,6 +861,15 @@
 			buildConfigurations = (
 				F33183072CB5B26F009D518A /* Debug */,
 				F33183082CB5B26F009D518A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F369EB372CBD22C7003F0AF6 /* Build configuration list for PBXNativeTarget "Unit Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F369EB352CBD22C7003F0AF6 /* Debug */,
+				F369EB362CBD22C7003F0AF6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
