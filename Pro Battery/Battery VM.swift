@@ -61,7 +61,9 @@ final class BatteryVM: ObservableObject {
             DispatchQueue.main.async {
                 // Charge Information
                 self.isBelowWarningLevel = (props["AtCriticalLevel"] as? Int) == 1
+                
                 self.isFullyCharged = (props["FullyCharged"] as? Int) == 1
+                
                 self.isCharging = (props["IsCharging"] as? Int) == 1
                 
                 if let currentCapacity = props["CurrentCapacity"] as? Int,
