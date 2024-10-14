@@ -22,7 +22,7 @@ struct ProBattery: App {
         MenuBarExtra("Pro Battery", systemImage: icon) {
             NavContainer()
                 .frame(maxWidth: 400)
-                .frame(minHeight: 100, maxHeight: 300)
+                .frame(minHeight: 100, maxHeight: 500)
         }
         .menuBarExtraStyle(.window)
     }
