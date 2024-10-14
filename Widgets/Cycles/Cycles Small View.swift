@@ -9,6 +9,8 @@ struct CyclesSmallView: View {
     
     var body: some View {
         VStack {
+            Text("Test")
+            
             Text(entry.cycles)
                 .fontSize(250)
                 .minimumScaleFactor(0.01)

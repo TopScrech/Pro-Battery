@@ -1,34 +1,4 @@
-import SwiftUI
-
-struct ChargeWidgetInfo {
-    let charge: Double
-    let cycles: Int
-    let capacity: Int
-    let condition: String
-}
-
-func fetchChargeWidgetInfo() -> ChargeWidgetInfo {
-    guard let props = fetchBatteryInfo() else {
-        return ChargeWidgetInfo(
-            charge: -1,
-            cycles: -1,
-            capacity: -1,
-            condition: "Unknown"
-        )
-    }
-    
-    let charge = fetchBatteryLevel()
-    let cycles = fetchCycles(props)
-    let capacity = fetchCapacity(props)
-    let condition = fetchCondition(props)
-    
-    return ChargeWidgetInfo(
-        charge: charge,
-        cycles: cycles,
-        capacity: capacity,
-        condition: condition
-    )
-}
+import Foundation
 
 func fetchBatteryInfo() -> NSDictionary? {
     // Create a matching dictionary to find the battery service
