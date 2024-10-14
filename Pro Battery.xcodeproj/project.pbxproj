@@ -47,6 +47,10 @@
 		F34484432CBD1A79009A1144 /* Fetch Charge Widget Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34484422CBD1A79009A1144 /* Fetch Charge Widget Info.swift */; };
 		F369EB3A2CBD22CA003F0AF6 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB382CBD22CA003F0AF6 /* Unit Tests.swift */; };
 		F369EB3C2CBD3267003F0AF6 /* Charge Text Medium View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB3B2CBD3267003F0AF6 /* Charge Text Medium View.swift */; };
+		F369EB3D2CBD3655003F0AF6 /* Fetch Capacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252B2CBBAAC10026D36E /* Fetch Capacity.swift */; };
+		F369EB3E2CBD365C003F0AF6 /* Fetch Battery Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B2422CB9AE7F00D70865 /* Fetch Battery Info.swift */; };
+		F369EB3F2CBD36F8003F0AF6 /* Fetch Cycles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252D2CBBAB050026D36E /* Fetch Cycles.swift */; };
+		F369EB402CBD3734003F0AF6 /* Fetch Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252F2CBBAB220026D36E /* Fetch Condition.swift */; };
 		F370B2432CB9AE7F00D70865 /* Fetch Battery Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B2422CB9AE7F00D70865 /* Fetch Battery Info.swift */; };
 		F3965D812CB8F828004F3AFF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3965D802CB8F828004F3AFF /* WidgetKit.framework */; };
 		F3965D832CB8F828004F3AFF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3965D822CB8F828004F3AFF /* SwiftUI.framework */; };
@@ -476,8 +480,12 @@
 				F30950062CBA59EF00DA2148 /* Fetch battery level.swift in Sources */,
 				F331831D2CB5B28D009D518A /* Pro Battery.swift in Sources */,
 				F33183282CB7C483009D518A /* Battery Gauge.swift in Sources */,
+				F369EB3E2CBD365C003F0AF6 /* Fetch Battery Info.swift in Sources */,
 				F33183202CB5B581009D518A /* Battery VM.swift in Sources */,
 				F341DFB62CB909960001B5EF /* Nav Container.swift in Sources */,
+				F369EB402CBD3734003F0AF6 /* Fetch Condition.swift in Sources */,
+				F369EB3D2CBD3655003F0AF6 /* Fetch Capacity.swift in Sources */,
+				F369EB3F2CBD36F8003F0AF6 /* Fetch Cycles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

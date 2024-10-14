@@ -15,7 +15,7 @@ final class BatteryVM: ObservableObject {
     var maximumCapacity = 0
     
     // Power Modes
-    var isHighPowerMode = false
+//    var isHighPowerMode = false
     var isLowPowerMode = false
     
     init() {
@@ -67,46 +67,13 @@ final class BatteryVM: ObservableObject {
                     self.stateOfCharge = state
                 }
                 
-                // Health Information
-                if let cycleCount = props["CycleCount"] as? Int {
-                    self.cycleCount = cycleCount
-                }
-                
-                if let permanentFailureStatus = props["PermanentFailureStatus"] as? Int, permanentFailureStatus == 0 {
-                    self.condition = "Normal"
-                } else {
-                    self.condition = "Service Battery"
-                }
-                
-                if let maxCapacity = props["MaxCapacity"] as? Int {
-                    self.maximumCapacity = maxCapacity
-                }
+                self.cycleCount      = fetchCyclesCount(props)
+                self.condition       = fetchCondition(props)
+                self.maximumCapacity = fetchMaxCapacity(props)
                 
                 // Power Modes
                 self.isLowPowerMode = ProcessInfo.processInfo.isLowPowerModeEnabled
-                
-                self.isHighPowerMode = false
             }
-        }
-    }
-    
-    func fetchPowerModeSettings() {
-        // Access the IOPMrootDomain
-        let rootDomain = IORegistryEntryFromPath(kIOMainPortDefault, "IOService:/IOResources/IOPMrootDomain")
-        
-        if rootDomain != 0 {
-            // Retrieve the PerformanceMode property
-            if let performanceModeCF = IORegistryEntryCreateCFProperty(rootDomain, "PerformanceMode" as CFString, kCFAllocatorDefault, 0)?.takeRetainedValue(),
-               let performanceMode = performanceModeCF as? Int {
-                DispatchQueue.main.async {
-                    self.isHighPowerMode = performanceMode == 1
-                }
-            } else {
-                print("PerformanceMode key not found")
-            }
-            IOObjectRelease(rootDomain)
-        } else {
-            print("Failed to access IOPMrootDomain")
         }
     }
 }

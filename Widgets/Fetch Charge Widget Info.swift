@@ -9,8 +9,8 @@ func fetchChargeWidgetInfo() -> ChargeWidgetInfo {
     }
     
     let charge = fetchBatteryLevel()
-    let cycles = fetchCycles(props)
-    let capacity = fetchCapacity(props)
+    let cycles = fetchCyclesCount(props)
+    let capacity = fetchMaxCapacity(props)
     let condition = fetchCondition(props)
     
     return ChargeWidgetInfo(

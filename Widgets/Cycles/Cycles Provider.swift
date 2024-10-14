@@ -5,7 +5,7 @@ struct CyclesProvider: AppIntentTimelineProvider {
         
         CyclesEntry(
             date: Date(),
-            cycles: fetchCycles(),
+            cycles: fetchCycleCount(),
             configuration: CyclesConfigIntent()
         )
     }
@@ -17,7 +17,7 @@ struct CyclesProvider: AppIntentTimelineProvider {
         
         CyclesEntry(
             date: Date(),
-            cycles: fetchCycles(),
+            cycles: fetchCycleCount(),
             configuration: CyclesConfigIntent()
         )
     }
@@ -30,7 +30,7 @@ struct CyclesProvider: AppIntentTimelineProvider {
         let entries = [
             CyclesEntry(
                 date: Date(),
-                cycles: fetchCycles(),
+                cycles: fetchCycleCount(),
                 configuration: configuration
             )
         ]

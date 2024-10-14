@@ -1,6 +1,6 @@
 import Foundation
 
-func fetchCycles() -> Int {
+func fetchCycleCount() -> Int {
     guard
         let props = fetchBatteryInfo(),
         let cycleCount = props["CycleCount"] as? Int
@@ -11,7 +11,7 @@ func fetchCycles() -> Int {
     return cycleCount
 }
 
-func fetchCycles(_ props: NSDictionary) -> Int {
+func fetchCyclesCount(_ props: NSDictionary) -> Int {
     guard
         let cycleCount = props["CycleCount"] as? Int
     else {

@@ -5,7 +5,7 @@ struct CapacityProvider: AppIntentTimelineProvider {
         
         CapacityEntry(
             date: Date(),
-            capacity: fetchCapacity(),
+            capacity: fetchMaxCapacity(),
             configuration: CapacityConfigIntent()
         )
     }
@@ -17,7 +17,7 @@ struct CapacityProvider: AppIntentTimelineProvider {
         
         CapacityEntry(
             date: Date(),
-            capacity: fetchCapacity(),
+            capacity: fetchMaxCapacity(),
             configuration: configuration
         )
     }
@@ -30,7 +30,7 @@ struct CapacityProvider: AppIntentTimelineProvider {
         let entries = [
             CapacityEntry(
                 date: Date(),
-                capacity: fetchCapacity(),
+                capacity: fetchMaxCapacity(),
                 configuration: configuration
             )
         ]

@@ -1,8 +1,7 @@
 import Foundation
 
-func fetchCapacity() -> Int {
+func fetchMaxCapacity(_ props: NSDictionary) -> Int {
     guard
-        let props = fetchBatteryInfo(),
         let designCapacity = props["DesignCapacity"] as? Double,
         let maxCapacity = props["AppleRawMaxCapacity"] as? Double
     else {
@@ -13,8 +12,9 @@ func fetchCapacity() -> Int {
     return Int(percentage)
 }
 
-func fetchCapacity(_ props: NSDictionary) -> Int {
+func fetchMaxCapacity() -> Int {
     guard
+        let props = fetchBatteryInfo(),
         let designCapacity = props["DesignCapacity"] as? Double,
         let maxCapacity = props["AppleRawMaxCapacity"] as? Double
     else {

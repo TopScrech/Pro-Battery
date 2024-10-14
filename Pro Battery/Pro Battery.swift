@@ -21,8 +21,8 @@ struct ProBattery: App {
     var body: some Scene {
         MenuBarExtra("Pro Battery", systemImage: icon) {
             NavContainer()
-                .frame(width: 400)
-                .frame(minHeight: 250, maxHeight: 300)
+                .frame(maxWidth: 400)
+                .frame(minHeight: 100, maxHeight: 300)
         }
         .menuBarExtraStyle(.window)
     }
