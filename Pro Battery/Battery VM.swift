@@ -11,12 +11,15 @@ final class BatteryVM: ObservableObject {
     
     // Health Information
     var cycleCount = 0
+    var designCycleCount = 0
     var condition = ""
     var maximumCapacity = 0
+    var timeRemaining = 0
+    var amperage = 0
     
-    // Power Modes
-//    var isHighPowerMode = false
+    var temperature = 0.0
     var isLowPowerMode = false
+    //    var isHighPowerMode = false
     
     init() {
         fetchBatteryInfo()
@@ -65,6 +68,26 @@ final class BatteryVM: ObservableObject {
                    let maxCapacity = props["MaxCapacity"] as? Int {
                     let state = Int(Double(currentCapacity) / Double(maxCapacity) * 100)
                     self.stateOfCharge = state
+                }
+                
+                if let temp = props["Temperature"] as? Int {
+                    self.temperature = Double(temp) / 100
+                }
+                
+                if let designCycleCount = props["DesignCycleCount9C"] as? Int {
+                    self.designCycleCount = designCycleCount
+                }
+                
+                if let timeRemaining = props["TimeRemaining"] as? Int {
+                    self.timeRemaining = timeRemaining
+                }
+                
+                if let amperage = props["Amperage"] as? Int {
+                    self.amperage = amperage / 100
+                }
+                
+                if let temp = props["Temperature"] as? Int {
+                    self.temperature = Double(temp) / 100
                 }
                 
                 self.cycleCount      = fetchCyclesCount(props)
