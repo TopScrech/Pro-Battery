@@ -15,14 +15,16 @@ struct ContentView: View {
                 ListParam("Temperature", param: "\(vm.temperature) °C")
             }
             
-#warning("Have to be checked")
+#if DEBUG
             ListParam("(Dis)Charging/ with", param: "\(vm.amperage) Watts")
             ListParam("Time Remaining", param: vm.timeRemaining.description)
+            
+#warning("Have to be checked")
             ListParam("Below warning level", param: vm.isBelowWarningLevel ? "Yes" : "No")
             ListParam("Fully charged", param: vm.isFullyCharged ? "Yes" : "No")
             ListParam("Charging", param: vm.isCharging ? "Yes" : "No")
-            
             //            ListParam("High Power Mode", param: vm.isHighPowerMode ? "Yes" : "No")
+#endif
             
             Section {
                 HStack {
