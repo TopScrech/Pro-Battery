@@ -205,6 +205,16 @@
 			path = "Without gauge";
 			sourceTree = "<group>";
 		};
+		F3237FFA2CBEA4BC001C6D05 /* Fetching */ = {
+			isa = PBXGroup;
+			children = (
+				F30A252D2CBBAB050026D36E /* Fetch Cycles.swift */,
+				F30A252B2CBBAAC10026D36E /* Fetch Capacity.swift */,
+				F30A252F2CBBAB220026D36E /* Fetch Condition.swift */,
+			);
+			path = Fetching;
+			sourceTree = "<group>";
+		};
 		F33182EE2CB5B26F009D518A = {
 			isa = PBXGroup;
 			children = (
@@ -239,6 +249,7 @@
 				F331831F2CB5B581009D518A /* Battery VM.swift */,
 				F33183272CB7C483009D518A /* Battery Gauge.swift */,
 				F30950052CBA59EF00DA2148 /* Fetch battery level.swift */,
+				F3237FFA2CBEA4BC001C6D05 /* Fetching */,
 			);
 			path = "Pro Battery";
 			sourceTree = "<group>";
@@ -270,6 +281,7 @@
 				F3965DA52CB8F8F4004F3AFF /* Charge Entry View.swift */,
 				F341DFBA2CB90C400001B5EF /* Charge Small View.swift */,
 				F341DFB82CB90BD90001B5EF /* Charge Medium View.swift */,
+				F34484402CBD1A68009A1144 /* Charge Widget Info.swift */,
 				F34484422CBD1A79009A1144 /* Fetch Charge Widget Info.swift */,
 				F30950082CBA5EAE00DA2148 /* Without gauge */,
 			);
@@ -329,10 +341,6 @@
 				F3965D9A2CB8F82D004F3AFF /* Widgets.entitlements */,
 				F3965D982CB8F82D004F3AFF /* Assets.xcassets */,
 				F370B2422CB9AE7F00D70865 /* Fetch Battery Props.swift */,
-				F34484402CBD1A68009A1144 /* Charge Widget Info.swift */,
-				F30A252D2CBBAB050026D36E /* Fetch Cycles.swift */,
-				F30A252B2CBBAAC10026D36E /* Fetch Capacity.swift */,
-				F30A252F2CBBAB220026D36E /* Fetch Condition.swift */,
 				F341DFC12CB916F50001B5EF /* Components */,
 				F341DFC42CB92FCE0001B5EF /* Charge */,
 				F341DFC52CB92FD70001B5EF /* Cycles */,
