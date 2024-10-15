@@ -10,6 +10,7 @@ struct ChargeProvider: AppIntentTimelineProvider {
             cycles: cycles,
             capacity: capacity,
             condition: condition,
+            temperature: temperature,
             configuration: ChargeConfigIntent()
         )
     }
@@ -25,6 +26,7 @@ struct ChargeProvider: AppIntentTimelineProvider {
             cycles: cycles,
             capacity: capacity,
             condition: condition,
+            temperature: temperature,
             configuration: configuration
         )
     }
@@ -41,6 +43,7 @@ struct ChargeProvider: AppIntentTimelineProvider {
                 cycles: cycles,
                 capacity: capacity,
                 condition: condition,
+                temperature: temperature,
                 configuration: configuration
             )
         ]

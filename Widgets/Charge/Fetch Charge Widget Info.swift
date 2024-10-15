@@ -4,7 +4,8 @@ func fetchChargeWidgetInfo() -> ChargeWidgetInfo {
             charge: -1,
             cycles: -1,
             capacity: -1,
-            condition: "Unknown"
+            condition: "Unknown",
+            temperature: -1
         )
     }
     
@@ -12,11 +13,13 @@ func fetchChargeWidgetInfo() -> ChargeWidgetInfo {
     let cycles = fetchCyclesCount(props)
     let capacity = fetchMaxCapacity(props)
     let condition = fetchCondition(props)
+    let temperature = fetchTemp(props)
     
     return ChargeWidgetInfo(
         charge: charge,
         cycles: cycles,
         capacity: capacity,
-        condition: condition
+        condition: condition,
+        temperature: temperature
     )
 }

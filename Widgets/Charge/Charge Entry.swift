@@ -1,4 +1,3 @@
-import SwiftUI
 import WidgetKit
 
 struct ChargeEntry: TimelineEntry {
@@ -7,5 +6,6 @@ struct ChargeEntry: TimelineEntry {
     let cycles: Int
     let capacity: Int
     let condition: String
+    let temperature: Double
     let configuration: ChargeConfigIntent
 }

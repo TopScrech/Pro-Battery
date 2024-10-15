@@ -27,6 +27,9 @@ struct ChargeMediumView: View {
                 Param("Charge cycles", param: entry.cycles)
                 
                 Param("Condition", param: entry.condition)
+                
+                let temp = String(format: "%.1f °C", entry.temperature)
+                Param("Temperature", param: temp)
             }
             .frame(maxWidth: 170)
         }

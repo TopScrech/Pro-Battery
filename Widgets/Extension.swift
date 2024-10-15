@@ -14,4 +14,8 @@ extension ChargeProvider {
     var condition: String {
         info.condition
     }
+    
+    var temperature: Double {
+        info.temperature
+    }
 }

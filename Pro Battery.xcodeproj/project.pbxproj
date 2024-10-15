@@ -19,6 +19,8 @@
 		F30A252E2CBBAB050026D36E /* Fetch Cycles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252D2CBBAB050026D36E /* Fetch Cycles.swift */; };
 		F30A25302CBBAB220026D36E /* Fetch Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252F2CBBAB220026D36E /* Fetch Condition.swift */; };
 		F30A25322CBBB53B0026D36E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A25312CBBB53B0026D36E /* Extension.swift */; };
+		F3237FFC2CBEA57C001C6D05 /* Fetch Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3237FFB2CBEA57C001C6D05 /* Fetch Temperature.swift */; };
+		F3237FFD2CBEA57C001C6D05 /* Fetch Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3237FFB2CBEA57C001C6D05 /* Fetch Temperature.swift */; };
 		F331831B2CB5B28D009D518A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33183152CB5B28D009D518A /* Assets.xcassets */; };
 		F331831C2CB5B28D009D518A /* Content View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183162CB5B28D009D518A /* Content View.swift */; };
 		F331831D2CB5B28D009D518A /* Pro Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183182CB5B28D009D518A /* Pro Battery.swift */; };
@@ -113,6 +115,7 @@
 		F30A252D2CBBAB050026D36E /* Fetch Cycles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Cycles.swift"; sourceTree = "<group>"; };
 		F30A252F2CBBAB220026D36E /* Fetch Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Condition.swift"; sourceTree = "<group>"; };
 		F30A25312CBBB53B0026D36E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		F3237FFB2CBEA57C001C6D05 /* Fetch Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Temperature.swift"; sourceTree = "<group>"; };
 		F33182F72CB5B26F009D518A /* Pro Battery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pro Battery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33183152CB5B28D009D518A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F33183162CB5B28D009D518A /* Content View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content View.swift"; sourceTree = "<group>"; };
@@ -211,6 +214,7 @@
 				F30A252D2CBBAB050026D36E /* Fetch Cycles.swift */,
 				F30A252B2CBBAAC10026D36E /* Fetch Capacity.swift */,
 				F30A252F2CBBAB220026D36E /* Fetch Condition.swift */,
+				F3237FFB2CBEA57C001C6D05 /* Fetch Temperature.swift */,
 			);
 			path = Fetching;
 			sourceTree = "<group>";
@@ -506,6 +510,7 @@
 				F341DFB62CB909960001B5EF /* Nav Container.swift in Sources */,
 				F369EB402CBD3734003F0AF6 /* Fetch Condition.swift in Sources */,
 				F369EB3D2CBD3655003F0AF6 /* Fetch Capacity.swift in Sources */,
+				F3237FFD2CBEA57C001C6D05 /* Fetch Temperature.swift in Sources */,
 				F369EB3F2CBD36F8003F0AF6 /* Fetch Cycles.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -532,6 +537,7 @@
 				F341DFCF2CB931F30001B5EF /* Cycles Entry.swift in Sources */,
 				F341DFCB2CB931900001B5EF /* Cycles Provider.swift in Sources */,
 				F309500E2CBA5F4D00DA2148 /* Charge Text Provider.swift in Sources */,
+				F3237FFC2CBEA57C001C6D05 /* Fetch Temperature.swift in Sources */,
 				F3965DA82CB8F90B004F3AFF /* Charge Widgets.swift in Sources */,
 				F34484432CBD1A79009A1144 /* Fetch Charge Widget Info.swift in Sources */,
 				F30A25302CBBAB220026D36E /* Fetch Condition.swift in Sources */,
