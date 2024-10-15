@@ -1,7 +1,7 @@
 import Foundation
 
 func fetchCondition() -> String {
-    guard let props = fetchBatteryInfo() else {
+    guard let props = fetchBatteryProps() else {
         return "Unknown"
     }
     
@@ -14,8 +14,8 @@ func fetchCondition() -> String {
 
 func fetchCondition(_ props: NSDictionary) -> String {
     if let permanentFailureStatus = props["PermanentFailureStatus"] as? Int, permanentFailureStatus == 0 {
-        return "Normal"
+        "Normal"
     } else {
-        return "Service recommended"
+        "Service recommended"
     }
 }

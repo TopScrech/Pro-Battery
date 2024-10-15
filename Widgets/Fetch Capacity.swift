@@ -14,7 +14,7 @@ func fetchMaxCapacity(_ props: NSDictionary) -> Int {
 
 func fetchMaxCapacity() -> Int {
     guard
-        let props = fetchBatteryInfo(),
+        let props = fetchBatteryProps(),
         let designCapacity = props["DesignCapacity"] as? Double,
         let maxCapacity = props["AppleRawMaxCapacity"] as? Double
     else {

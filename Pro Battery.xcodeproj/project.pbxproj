@@ -48,14 +48,14 @@
 		F369EB3A2CBD22CA003F0AF6 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB382CBD22CA003F0AF6 /* Unit Tests.swift */; };
 		F369EB3C2CBD3267003F0AF6 /* Charge Text Medium View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB3B2CBD3267003F0AF6 /* Charge Text Medium View.swift */; };
 		F369EB3D2CBD3655003F0AF6 /* Fetch Capacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252B2CBBAAC10026D36E /* Fetch Capacity.swift */; };
-		F369EB3E2CBD365C003F0AF6 /* Fetch Battery Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B2422CB9AE7F00D70865 /* Fetch Battery Info.swift */; };
+		F369EB3E2CBD365C003F0AF6 /* Fetch Battery Props.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B2422CB9AE7F00D70865 /* Fetch Battery Props.swift */; };
 		F369EB3F2CBD36F8003F0AF6 /* Fetch Cycles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252D2CBBAB050026D36E /* Fetch Cycles.swift */; };
 		F369EB402CBD3734003F0AF6 /* Fetch Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252F2CBBAB220026D36E /* Fetch Condition.swift */; };
 		F369EB422CBD4325003F0AF6 /* Capacity Medium View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB412CBD4325003F0AF6 /* Capacity Medium View.swift */; };
 		F369EB442CBD4351003F0AF6 /* Cycles Medium View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB432CBD4351003F0AF6 /* Cycles Medium View.swift */; };
 		F369EB462CBD47F9003F0AF6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F369EB452CBD47F9003F0AF6 /* Localizable.xcstrings */; };
 		F369EB472CBD47F9003F0AF6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F369EB452CBD47F9003F0AF6 /* Localizable.xcstrings */; };
-		F370B2432CB9AE7F00D70865 /* Fetch Battery Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B2422CB9AE7F00D70865 /* Fetch Battery Info.swift */; };
+		F370B2432CB9AE7F00D70865 /* Fetch Battery Props.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B2422CB9AE7F00D70865 /* Fetch Battery Props.swift */; };
 		F3965D812CB8F828004F3AFF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3965D802CB8F828004F3AFF /* WidgetKit.framework */; };
 		F3965D832CB8F828004F3AFF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3965D822CB8F828004F3AFF /* SwiftUI.framework */; };
 		F3965D912CB8F829004F3AFF /* Widgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F3965D7E2CB8F828004F3AFF /* Widgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -146,7 +146,7 @@
 		F369EB412CBD4325003F0AF6 /* Capacity Medium View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Capacity Medium View.swift"; sourceTree = "<group>"; };
 		F369EB432CBD4351003F0AF6 /* Cycles Medium View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cycles Medium View.swift"; sourceTree = "<group>"; };
 		F369EB452CBD47F9003F0AF6 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		F370B2422CB9AE7F00D70865 /* Fetch Battery Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Battery Info.swift"; sourceTree = "<group>"; };
+		F370B2422CB9AE7F00D70865 /* Fetch Battery Props.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Battery Props.swift"; sourceTree = "<group>"; };
 		F3965D7E2CB8F828004F3AFF /* Widgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3965D802CB8F828004F3AFF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		F3965D822CB8F828004F3AFF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
@@ -270,6 +270,7 @@
 				F3965DA52CB8F8F4004F3AFF /* Charge Entry View.swift */,
 				F341DFBA2CB90C400001B5EF /* Charge Small View.swift */,
 				F341DFB82CB90BD90001B5EF /* Charge Medium View.swift */,
+				F34484422CBD1A79009A1144 /* Fetch Charge Widget Info.swift */,
 				F30950082CBA5EAE00DA2148 /* Without gauge */,
 			);
 			path = Charge;
@@ -327,8 +328,7 @@
 				F3965D992CB8F82D004F3AFF /* Info.plist */,
 				F3965D9A2CB8F82D004F3AFF /* Widgets.entitlements */,
 				F3965D982CB8F82D004F3AFF /* Assets.xcassets */,
-				F370B2422CB9AE7F00D70865 /* Fetch Battery Info.swift */,
-				F34484422CBD1A79009A1144 /* Fetch Charge Widget Info.swift */,
+				F370B2422CB9AE7F00D70865 /* Fetch Battery Props.swift */,
 				F34484402CBD1A68009A1144 /* Charge Widget Info.swift */,
 				F30A252D2CBBAB050026D36E /* Fetch Cycles.swift */,
 				F30A252B2CBBAAC10026D36E /* Fetch Capacity.swift */,
@@ -493,7 +493,7 @@
 				F30950062CBA59EF00DA2148 /* Fetch battery level.swift in Sources */,
 				F331831D2CB5B28D009D518A /* Pro Battery.swift in Sources */,
 				F33183282CB7C483009D518A /* Battery Gauge.swift in Sources */,
-				F369EB3E2CBD365C003F0AF6 /* Fetch Battery Info.swift in Sources */,
+				F369EB3E2CBD365C003F0AF6 /* Fetch Battery Props.swift in Sources */,
 				F33183202CB5B581009D518A /* Battery VM.swift in Sources */,
 				F341DFB62CB909960001B5EF /* Nav Container.swift in Sources */,
 				F369EB402CBD3734003F0AF6 /* Fetch Condition.swift in Sources */,
@@ -537,7 +537,7 @@
 				F341DFB92CB90BD90001B5EF /* Charge Medium View.swift in Sources */,
 				F369EB442CBD4351003F0AF6 /* Cycles Medium View.swift in Sources */,
 				F34484412CBD1A68009A1144 /* Charge Widget Info.swift in Sources */,
-				F370B2432CB9AE7F00D70865 /* Fetch Battery Info.swift in Sources */,
+				F370B2432CB9AE7F00D70865 /* Fetch Battery Props.swift in Sources */,
 				F309500C2CBA5EFE00DA2148 /* Charge Text Small View.swift in Sources */,
 				F369EB3C2CBD3267003F0AF6 /* Charge Text Medium View.swift in Sources */,
 				F341DFBB2CB90C400001B5EF /* Charge Small View.swift in Sources */,

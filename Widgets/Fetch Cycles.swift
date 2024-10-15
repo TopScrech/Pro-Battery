@@ -2,7 +2,7 @@ import Foundation
 
 func fetchCycleCount() -> Int {
     guard
-        let props = fetchBatteryInfo(),
+        let props = fetchBatteryProps(),
         let cycleCount = props["CycleCount"] as? Int
     else {
         return -1

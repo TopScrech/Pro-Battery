@@ -1,5 +1,5 @@
 func fetchChargeWidgetInfo() -> ChargeWidgetInfo {
-    guard let props = fetchBatteryInfo() else {
+    guard let props = fetchBatteryProps() else {
         return ChargeWidgetInfo(
             charge: -1,
             cycles: -1,

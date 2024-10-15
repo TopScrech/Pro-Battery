@@ -1,6 +1,6 @@
 import Foundation
 
-func fetchBatteryInfo() -> NSDictionary? {
+func fetchBatteryProps() -> NSDictionary? {
     // Create a matching dictionary to find the battery service
     guard let matchingDict = IOServiceMatching("AppleSmartBattery") else {
         print("Failed to create matching dictionary")
