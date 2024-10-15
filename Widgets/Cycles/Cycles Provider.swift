@@ -6,6 +6,7 @@ struct CyclesProvider: AppIntentTimelineProvider {
         CyclesEntry(
             date: Date(),
             cycles: fetchCycleCount(),
+            designCycles: fetchDesignCycles(),
             configuration: CyclesConfigIntent()
         )
     }
@@ -18,6 +19,7 @@ struct CyclesProvider: AppIntentTimelineProvider {
         CyclesEntry(
             date: Date(),
             cycles: fetchCycleCount(),
+            designCycles: fetchDesignCycles(),
             configuration: CyclesConfigIntent()
         )
     }
@@ -31,6 +33,7 @@ struct CyclesProvider: AppIntentTimelineProvider {
             CyclesEntry(
                 date: Date(),
                 cycles: fetchCycleCount(),
+                designCycles: fetchDesignCycles(),
                 configuration: configuration
             )
         ]

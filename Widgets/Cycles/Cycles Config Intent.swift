@@ -6,4 +6,7 @@ struct CyclesConfigIntent: WidgetConfigurationIntent {
     
     @Parameter(title: "Show title", default: true)
     var showTitle: Bool
+    
+    @Parameter(title: "Show design cycles", default: false)
+    var showDesignCycles: Bool
 }
