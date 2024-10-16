@@ -1,4 +1,5 @@
 import ScrechKit
+import WidgetKit
 
 struct ContentView: View {
     @State private var vm = BatteryVM()
@@ -31,6 +32,7 @@ struct ContentView: View {
                 HStack {
                     Button("Refresh") {
                         vm.fetchBatteryInfo()
+                        WidgetCenter.shared.reloadAllTimelines()
                     }
                     
                     Button("Quit") {
