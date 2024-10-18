@@ -124,7 +124,7 @@
 		F33183162CB5B28D009D518A /* Content View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content View.swift"; sourceTree = "<group>"; };
 		F33183172CB5B28D009D518A /* Pro Battery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pro Battery.entitlements"; sourceTree = "<group>"; };
 		F33183182CB5B28D009D518A /* Pro Battery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro Battery.swift"; sourceTree = "<group>"; };
-		F331831E2CB5B30F009D518A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = SOURCE_ROOT; };
+		F331831E2CB5B30F009D518A /* Pro-Battery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pro-Battery-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F331831F2CB5B581009D518A /* Battery VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery VM.swift"; sourceTree = "<group>"; };
 		F33183272CB7C483009D518A /* Battery Gauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Gauge.swift"; sourceTree = "<group>"; };
 		F341DFB52CB909960001B5EF /* Nav Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Container.swift"; sourceTree = "<group>"; };
@@ -248,7 +248,7 @@
 			isa = PBXGroup;
 			children = (
 				F33183182CB5B28D009D518A /* Pro Battery.swift */,
-				F331831E2CB5B30F009D518A /* Info.plist */,
+				F331831E2CB5B30F009D518A /* Pro-Battery-Info.plist */,
 				F33183172CB5B28D009D518A /* Pro Battery.entitlements */,
 				F33183152CB5B28D009D518A /* Assets.xcassets */,
 				F369EB452CBD47F9003F0AF6 /* Localizable.xcstrings */,
@@ -721,7 +721,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = "Pro-Battery-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Pro Battery";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -762,7 +762,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Info.plist;
+				INFOPLIST_FILE = "Pro-Battery-Info.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Pro Battery";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
