@@ -15,9 +15,10 @@ struct ContentView: View {
                 ListParam("Battery Level", param: vm.stateOfCharge.description)
                 ListParam("Temperature", param: "\(vm.temperature) °C")
             }
-            
 #if DEBUG
-            ListParam("(Dis)Charging/ with", param: "\(vm.amperage) Watts")
+            let chargingOrDischarging: LocalizedStringKey = vm.amperage >= 0 ? "Charging with" : "Discharging with"
+            ListParam(chargingOrDischarging, param: "\(vm.amperage) Watts")
+            
             ListParam("Time Remaining", param: vm.timeRemaining.description)
             
             ListParam("Charging", param: vm.isCharging ? "Yes" : "No")
@@ -27,7 +28,6 @@ struct ContentView: View {
             ListParam("Fully charged", param: vm.isFullyCharged ? "Yes" : "No")
             //            ListParam("High Power Mode", param: vm.isHighPowerMode ? "Yes" : "No")
 #endif
-            
             Section {
                 HStack {
                     Button("Refresh") {

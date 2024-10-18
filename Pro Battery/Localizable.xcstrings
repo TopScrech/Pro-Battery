@@ -36,6 +36,9 @@
         }
       }
     },
+    "Charging with" : {
+
+    },
     "Condition" : {
       "localizations" : {
         "ru" : {
@@ -45,6 +48,9 @@
           }
         }
       }
+    },
+    "Discharging with" : {
+
     },
     "Max. capacity" : {
       "localizations" : {
