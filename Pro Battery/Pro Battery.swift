@@ -25,5 +25,9 @@ struct ProBattery: App {
                 .frame(minHeight: 100, maxHeight: 500)
         }
         .menuBarExtraStyle(.window)
+        
+        Settings {
+            SettingsView()
+        }
     }
 }
