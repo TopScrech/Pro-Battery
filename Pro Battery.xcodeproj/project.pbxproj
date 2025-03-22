@@ -121,12 +121,12 @@
 		F30A25312CBBB53B0026D36E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
 		F3237FFB2CBEA57C001C6D05 /* Fetch Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Temperature.swift"; sourceTree = "<group>"; };
 		F3237FFE2CBEA812001C6D05 /* Fetch Design Cycles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Design Cycles.swift"; sourceTree = "<group>"; };
+		F32F3AAF2D8EC32200E69B98 /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		F33182F72CB5B26F009D518A /* Pro Battery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pro Battery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33183152CB5B28D009D518A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F33183162CB5B28D009D518A /* Content View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content View.swift"; sourceTree = "<group>"; };
-		F33183172CB5B28D009D518A /* Pro Battery.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "Pro Battery.entitlements"; sourceTree = "<group>"; };
+		F33183172CB5B28D009D518A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		F33183182CB5B28D009D518A /* Pro Battery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro Battery.swift"; sourceTree = "<group>"; };
-		F331831E2CB5B30F009D518A /* Pro-Battery-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Pro-Battery-Info.plist"; sourceTree = SOURCE_ROOT; };
 		F331831F2CB5B581009D518A /* Battery VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery VM.swift"; sourceTree = "<group>"; };
 		F33183272CB7C483009D518A /* Battery Gauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Gauge.swift"; sourceTree = "<group>"; };
 		F341DFB52CB909960001B5EF /* Nav Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Container.swift"; sourceTree = "<group>"; };
@@ -253,8 +253,8 @@
 			children = (
 				F33183182CB5B28D009D518A /* Pro Battery.swift */,
 				F341DFB72CB90A490001B5EF /* Nav */,
-				F331831E2CB5B30F009D518A /* Pro-Battery-Info.plist */,
-				F33183172CB5B28D009D518A /* Pro Battery.entitlements */,
+				F32F3AAF2D8EC32200E69B98 /* macOS.plist */,
+				F33183172CB5B28D009D518A /* macOS.entitlements */,
 				F33183152CB5B28D009D518A /* Assets.xcassets */,
 				F369EB452CBD47F9003F0AF6 /* Localizable.xcstrings */,
 				F33183162CB5B28D009D518A /* Content View.swift */,
@@ -738,7 +738,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Pro Battery/Pro Battery.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Pro Battery/macOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
@@ -746,7 +746,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Pro-Battery-Info.plist";
+				INFOPLIST_FILE = macOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Pro Battery";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
@@ -779,7 +779,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Pro Battery/Pro Battery.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Pro Battery/macOS.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
@@ -787,7 +787,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Pro-Battery-Info.plist";
+				INFOPLIST_FILE = macOS.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Pro Battery";
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				"INFOPLIST_KEY_UIApplicationSceneManifest_Generation[sdk=iphoneos*]" = YES;
