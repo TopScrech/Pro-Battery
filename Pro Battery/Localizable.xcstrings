@@ -23,6 +23,12 @@
         }
       }
     },
+    "Battery Level" : {
+
+    },
+    "Below warning level" : {
+
+    },
     "Capacity gauge" : {
 
     },
@@ -35,6 +41,9 @@
           }
         }
       }
+    },
+    "Charging" : {
+
     },
     "Charging with" : {
 
@@ -49,7 +58,19 @@
         }
       }
     },
+    "Cycle Count" : {
+
+    },
+    "Design cycle count" : {
+
+    },
     "Discharging with" : {
+
+    },
+    "Fully charged" : {
+
+    },
+    "Low Power Mode" : {
 
     },
     "Max. capacity" : {
@@ -61,6 +82,9 @@
           }
         }
       }
+    },
+    "Maximum Capacity" : {
+
     },
     "Pro Battery" : {
       "shouldTranslate" : false
@@ -124,6 +148,9 @@
           }
         }
       }
+    },
+    "Time Remaining" : {
+
     }
   },
   "version" : "1.0"
