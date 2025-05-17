@@ -30,6 +30,7 @@
 		F33183232CB5B837009D518A /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F33183222CB5B837009D518A /* ScrechKit */; };
 		F33183262CB5B9E3009D518A /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F33183252CB5B9E3009D518A /* DeviceKit */; };
 		F33183282CB7C483009D518A /* Battery Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183272CB7C483009D518A /* Battery Gauge.swift */; };
+		F33708772DD92A74006834F8 /* ScrechKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F33183222CB5B837009D518A /* ScrechKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F341DFB62CB909960001B5EF /* Nav Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFB52CB909960001B5EF /* Nav Container.swift */; };
 		F341DFB92CB90BD90001B5EF /* Charge Medium View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFB82CB90BD90001B5EF /* Charge Medium View.swift */; };
 		F341DFBB2CB90C400001B5EF /* Charge Small View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFBA2CB90C400001B5EF /* Charge Small View.swift */; };
@@ -94,6 +95,15 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
+		F33708782DD92A74006834F8 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = Frameworks;
+			files = (
+				F33708772DD92A74006834F8 /* ScrechKit in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+		};
 		F3965D962CB8F829004F3AFF /* Embed Foundation Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			dstPath = "";
@@ -376,6 +386,7 @@
 				F33182F42CB5B26F009D518A /* Frameworks */,
 				F33182F52CB5B26F009D518A /* Resources */,
 				F3965D962CB8F829004F3AFF /* Embed Foundation Extensions */,
+				F33708782DD92A74006834F8 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
