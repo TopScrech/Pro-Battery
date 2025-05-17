@@ -159,7 +159,7 @@
 		F3965D822CB8F828004F3AFF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		F3965D972CB8F82D004F3AFF /* Charge Config Intent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Config Intent.swift"; sourceTree = "<group>"; };
 		F3965D982CB8F82D004F3AFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F3965D992CB8F82D004F3AFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3965D992CB8F82D004F3AFF /* Widgets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Widgets.plist; sourceTree = "<group>"; };
 		F3965D9A2CB8F82D004F3AFF /* Widgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widgets.entitlements; sourceTree = "<group>"; };
 		F3965D9B2CB8F82D004F3AFF /* Charge Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Provider.swift"; sourceTree = "<group>"; };
 		F3965D9C2CB8F82D004F3AFF /* Widgets Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Widgets Bundle.swift"; sourceTree = "<group>"; };
@@ -352,7 +352,7 @@
 			isa = PBXGroup;
 			children = (
 				F3965D9C2CB8F82D004F3AFF /* Widgets Bundle.swift */,
-				F3965D992CB8F82D004F3AFF /* Info.plist */,
+				F3965D992CB8F82D004F3AFF /* Widgets.plist */,
 				F3965D9A2CB8F82D004F3AFF /* Widgets.entitlements */,
 				F3965D982CB8F82D004F3AFF /* Assets.xcassets */,
 				F370B2422CB9AE7F00D70865 /* Fetch Battery Props.swift */,
@@ -842,7 +842,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Widgets/Info.plist;
+				INFOPLIST_FILE = Widgets/Widgets.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Pro Battery";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -871,7 +871,7 @@
 				DEAD_CODE_STRIPPING = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Widgets/Info.plist;
+				INFOPLIST_FILE = Widgets/Widgets.plist;
 				INFOPLIST_KEY_CFBundleDisplayName = "Pro Battery";
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
