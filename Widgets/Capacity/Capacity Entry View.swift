@@ -3,7 +3,7 @@ import SwiftUI
 struct CapacityEntryView: View {
     @Environment(\.widgetFamily) private var family
     
-    private var entry: CapacityProvider.Entry
+    private let entry: CapacityProvider.Entry
     
     init(_ entry: CapacityProvider.Entry) {
         self.entry = entry
@@ -11,10 +11,10 @@ struct CapacityEntryView: View {
     
     var body: some View {
         switch family {
-        case .systemSmall:
+        case .systemSmall, .systemLarge:
             CapacitySmallView(entry)
             
-        case .systemMedium:
+        case .systemMedium, .systemExtraLarge:
             CapacityMediumView(entry)
             
         default:

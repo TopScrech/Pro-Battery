@@ -1,7 +1,9 @@
 import SwiftUI
 
 struct CyclesSmallView: View {
-    private var entry: CyclesProvider.Entry
+    @Environment(\.widgetFamily) private var widgetFamily
+    
+    private let entry: CyclesProvider.Entry
     
     init(_ entry: CyclesProvider.Entry) {
         self.entry = entry
@@ -15,7 +17,7 @@ struct CyclesSmallView: View {
             
             if entry.configuration.showDesignCycles {
                 Text("/\(entry.designCycles)")
-                    .foregroundStyle(.tertiary)
+                    .tertiary()
                     .fontSize(30)
                     .minimumScaleFactor(0.01)
                     .offset(y: -10)
@@ -24,6 +26,7 @@ struct CyclesSmallView: View {
             if entry.configuration.showTitle {
                 Text("Charge cycles")
                     .secondary()
+                    .font(widgetFamily == .systemLarge ? .title2 : .body)
             }
         }
         .rounded()

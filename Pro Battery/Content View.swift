@@ -26,7 +26,7 @@ struct ContentView: View {
 #warning("Have to be checked")
             ListParam("Below warning level", param: vm.isBelowWarningLevel ? "Yes" : "No")
             ListParam("Fully charged", param: vm.isFullyCharged ? "Yes" : "No")
-            //            ListParam("High Power Mode", param: vm.isHighPowerMode ? "Yes" : "No")
+            // ListParam("High Power Mode", param: vm.isHighPowerMode ? "Yes" : "No")
 #endif
             Section {
                 HStack {
@@ -41,7 +41,8 @@ struct ContentView: View {
                 }
             }
         }
-        .frame(width: 200)
+        .frame(width: 300)
+        .frame(maxHeight: 400)
     }
 }
 

@@ -2,7 +2,7 @@ import SwiftUI
 import WidgetKit
 
 struct ChargeWidgets: Widget {
-    let kind = "Charge"
+    private let kind = "Charge"
     
     var body: some WidgetConfiguration {
         AppIntentConfiguration(
@@ -13,6 +13,6 @@ struct ChargeWidgets: Widget {
             ChargeEntryView(entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
-        .supportedFamilies([.systemSmall, .systemMedium])
+        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge, .systemExtraLarge])
     }
 }

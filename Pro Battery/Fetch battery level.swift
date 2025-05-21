@@ -8,7 +8,7 @@ func fetchBatteryLevel() -> Double {
         let sources = IOPSCopyPowerSourcesList(snapshot)?.takeRetainedValue() as? [CFTypeRef],
         !sources.isEmpty
     else {
-        // No battery found (e.g., on a desktop Mac)
+        // No battery found / desktop Mac
         return percent
     }
     

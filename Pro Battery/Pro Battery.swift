@@ -27,7 +27,7 @@ struct ProBattery: App {
         .menuBarExtraStyle(.window)
         
         Settings {
-            SettingsView()
+            AppSettings()
         }
     }
 }

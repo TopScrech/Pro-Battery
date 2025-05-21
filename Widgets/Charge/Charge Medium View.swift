@@ -1,7 +1,9 @@
 import SwiftUI
 
 struct ChargeMediumView: View {
-    private var entry: ChargeProvider.Entry
+    @Environment(\.widgetFamily) private var widgetFamily
+    
+    private let entry: ChargeProvider.Entry
     
     init(_ entry: ChargeProvider.Entry) {
         self.entry = entry
@@ -15,11 +17,20 @@ struct ChargeMediumView: View {
         entry.configuration.capacityGauge
     }
     
+    private var isExtraLarge: Bool {
+        widgetFamily == .systemExtraLarge
+    }
+    
     var body: some View {
         HStack {
             BatteryGauge(entry.charge, isCapacity: isCapacity)
             
-            Spacer()
+            if isExtraLarge {
+                Spacer()
+                    .frame(maxWidth: 50)
+            } else {
+                Spacer()
+            }
             
             VStack(alignment: .leading, spacing: 5) {
                 Param("Max. capacity", param: "\(entry.capacity)%")
@@ -35,12 +46,13 @@ struct ChargeMediumView: View {
         }
         .padding(.leading, 35)
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .scaleEffect(isExtraLarge ? 2 : 1)
         .overlay(alignment: .topTrailing) {
             if showVersion {
                 Text(version())
-                    .caption2()
-                    .foregroundStyle(.tertiary)
-                    .offset(x: 12, y: -8)
+                    .tertiary()
+                    .font(isExtraLarge ? .title3 : .caption2)
+                    .offset(x: 4, y: -8)
             }
         }
     }

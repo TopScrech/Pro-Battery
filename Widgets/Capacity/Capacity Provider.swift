@@ -2,7 +2,6 @@ import WidgetKit
 
 struct CapacityProvider: AppIntentTimelineProvider {
     func placeholder(in context: Context) -> CapacityEntry {
-        
         CapacityEntry(
             date: Date(),
             capacity: fetchMaxCapacity(),

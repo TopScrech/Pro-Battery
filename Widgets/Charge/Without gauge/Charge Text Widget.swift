@@ -2,7 +2,7 @@ import SwiftUI
 import WidgetKit
 
 struct ChargeTextWidget: Widget {
-    let kind = "Charge Text"
+    private let kind = "Charge Text"
     
     var body: some WidgetConfiguration {
         AppIntentConfiguration(
@@ -13,6 +13,6 @@ struct ChargeTextWidget: Widget {
             ChargeTextEntryView(entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
-        .supportedFamilies([.systemSmall, .systemMedium])
+        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge, .systemExtraLarge])
     }
 }
