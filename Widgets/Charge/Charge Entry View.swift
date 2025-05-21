@@ -14,7 +14,7 @@ struct ChargeEntryView: View {
         case .systemSmall, .systemLarge:
             ChargeSmallView(entry)
             
-        case .systemMedium:
+        case .systemMedium, .systemExtraLarge:
             ChargeMediumView(entry)
             
         default:

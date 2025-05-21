@@ -13,6 +13,6 @@ struct ChargeWidgets: Widget {
             ChargeEntryView(entry)
                 .containerBackground(.fill.tertiary, for: .widget)
         }
-        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge])
+        .supportedFamilies([.systemSmall, .systemMedium, .systemLarge, .systemExtraLarge])
     }
 }
