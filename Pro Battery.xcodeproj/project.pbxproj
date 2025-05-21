@@ -174,7 +174,6 @@
 		F3965DA32CB8F8D9004F3AFF /* Charge Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Entry.swift"; sourceTree = "<group>"; };
 		F3965DA52CB8F8F4004F3AFF /* Charge Entry View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Entry View.swift"; sourceTree = "<group>"; };
 		F3965DA72CB8F90B004F3AFF /* Charge Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Widgets.swift"; sourceTree = "<group>"; };
-		F3A0BB502DCCB7E3007B303B /* File.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = File.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -236,7 +235,6 @@
 				F369EB392CBD22CA003F0AF6 /* Unit Tests */,
 				F3965D7F2CB8F828004F3AFF /* Frameworks */,
 				F33182F82CB5B26F009D518A /* Products */,
-				F3A0BB502DCCB7E3007B303B /* File.txt */,
 			);
 			sourceTree = "<group>";
 		};
