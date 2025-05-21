@@ -39,7 +39,7 @@ struct ChargeMediumView: View {
             if showVersion {
                 Text(version())
                     .caption2()
-                    .foregroundStyle(.tertiary)
+                    .tertiary()
                     .offset(x: 12, y: -8)
             }
         }

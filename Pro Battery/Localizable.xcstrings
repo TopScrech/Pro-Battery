@@ -109,6 +109,9 @@
         }
       }
     },
+    "Settings" : {
+
+    },
     "Show build number" : {
       "localizations" : {
         "ru" : {

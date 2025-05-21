@@ -16,7 +16,7 @@ struct CyclesMediumView: View {
                 
                 if entry.configuration.showDesignCycles {
                     Text("/\(entry.designCycles)")
-                        .foregroundStyle(.tertiary)
+                        .tertiary()
                         .fontSize(50)
                         .minimumScaleFactor(0.01)
                         .offset(y: -16)

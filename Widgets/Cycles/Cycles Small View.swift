@@ -15,7 +15,7 @@ struct CyclesSmallView: View {
             
             if entry.configuration.showDesignCycles {
                 Text("/\(entry.designCycles)")
-                    .foregroundStyle(.tertiary)
+                    .tertiary()
                     .fontSize(30)
                     .minimumScaleFactor(0.01)
                     .offset(y: -10)
