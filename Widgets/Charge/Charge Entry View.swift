@@ -3,7 +3,7 @@ import SwiftUI
 struct ChargeEntryView: View {
     @Environment(\.widgetFamily) private var family
     
-    private var entry: ChargeProvider.Entry
+    private let entry: ChargeProvider.Entry
     
     init(_ entry: ChargeProvider.Entry) {
         self.entry = entry
@@ -11,7 +11,7 @@ struct ChargeEntryView: View {
     
     var body: some View {
         switch family {
-        case .systemSmall:
+        case .systemSmall, .systemLarge:
             ChargeSmallView(entry)
             
         case .systemMedium:

@@ -1,7 +1,9 @@
 import SwiftUI
 
 struct ChargeSmallView: View {
-    private var entry: ChargeProvider.Entry
+    @Environment(\.widgetFamily) private var widgetFamily
+    
+    private let entry: ChargeProvider.Entry
     
     init(_ entry: ChargeProvider.Entry) {
         self.entry = entry
@@ -15,17 +17,22 @@ struct ChargeSmallView: View {
         entry.configuration.capacityGauge
     }
     
+    private var isLarge: Bool {
+        widgetFamily == .systemLarge
+    }
+    
     var body: some View {
         VStack {
             BatteryGauge(entry.charge, isCapacity: isCapacity)
         }
         .frame(maxWidth: .infinity, maxHeight: .infinity)
+        .scaleEffect(isLarge ? 2 : 1)
         .overlay(alignment: .topTrailing) {
             if showVersion {
                 Text(version())
-                    .caption2()
+                    .font(isLarge ? .title3 : .caption2)
                     .tertiary()
-                    .offset(x: 12, y: -8)
+                    .offset(x: 4, y: -8)
             }
         }
     }

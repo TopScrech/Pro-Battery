@@ -2,7 +2,7 @@ import SwiftUI
 import WidgetKit
 
 struct CyclesWidgets: Widget {
-    let kind = "Cycles"
+    private let kind = "Cycles"
     
     var body: some WidgetConfiguration {
         AppIntentConfiguration(

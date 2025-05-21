@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ChargeTextSmallView: View {
-    private var entry: ChargeTextProvider.Entry
+    private let entry: ChargeTextProvider.Entry
     
     init(_ entry: ChargeTextProvider.Entry) {
         self.entry = entry

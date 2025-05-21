@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CyclesSmallView: View {
-    private var entry: CyclesProvider.Entry
+    private let entry: CyclesProvider.Entry
     
     init(_ entry: CyclesProvider.Entry) {
         self.entry = entry

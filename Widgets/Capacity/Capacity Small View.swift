@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CapacitySmallView: View {
-    private var entry: CapacityProvider.Entry
+    private let entry: CapacityProvider.Entry
     
     init(_ entry: CapacityProvider.Entry) {
         self.entry = entry

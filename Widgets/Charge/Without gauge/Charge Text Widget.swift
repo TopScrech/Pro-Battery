@@ -2,7 +2,7 @@ import SwiftUI
 import WidgetKit
 
 struct ChargeTextWidget: Widget {
-    let kind = "Charge Text"
+    private let kind = "Charge Text"
     
     var body: some WidgetConfiguration {
         AppIntentConfiguration(

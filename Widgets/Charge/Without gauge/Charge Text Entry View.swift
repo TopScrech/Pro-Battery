@@ -3,7 +3,7 @@ import SwiftUI
 struct ChargeTextEntryView: View {
     @Environment(\.widgetFamily) private var family
     
-    private var entry: ChargeTextProvider.Entry
+    private let entry: ChargeTextProvider.Entry
     
     init(_ entry: ChargeTextProvider.Entry) {
         self.entry = entry

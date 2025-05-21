@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ChargeMediumView: View {
-    private var entry: ChargeProvider.Entry
+    private let entry: ChargeProvider.Entry
     
     init(_ entry: ChargeProvider.Entry) {
         self.entry = entry

@@ -3,7 +3,7 @@ import SwiftUI
 struct CapacityEntryView: View {
     @Environment(\.widgetFamily) private var family
     
-    private var entry: CapacityProvider.Entry
+    private let entry: CapacityProvider.Entry
     
     init(_ entry: CapacityProvider.Entry) {
         self.entry = entry
