@@ -23,14 +23,14 @@
 		F3237FFD2CBEA57C001C6D05 /* Fetch Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3237FFB2CBEA57C001C6D05 /* Fetch Temperature.swift */; };
 		F3237FFF2CBEA812001C6D05 /* Fetch Design Cycles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3237FFE2CBEA812001C6D05 /* Fetch Design Cycles.swift */; };
 		F32380002CBEA812001C6D05 /* Fetch Design Cycles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3237FFE2CBEA812001C6D05 /* Fetch Design Cycles.swift */; };
+		F32429E02DDDBFEB000A16E8 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F32429DF2DDDBFEB000A16E8 /* ScrechKit */; };
+		F32429E22DDDBFF1000A16E8 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F32429E12DDDBFF1000A16E8 /* ScrechKit */; };
 		F331831B2CB5B28D009D518A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33183152CB5B28D009D518A /* Assets.xcassets */; };
 		F331831C2CB5B28D009D518A /* Content View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183162CB5B28D009D518A /* Content View.swift */; };
 		F331831D2CB5B28D009D518A /* Pro Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183182CB5B28D009D518A /* Pro Battery.swift */; };
 		F33183202CB5B581009D518A /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331831F2CB5B581009D518A /* Battery VM.swift */; };
-		F33183232CB5B837009D518A /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F33183222CB5B837009D518A /* ScrechKit */; };
 		F33183262CB5B9E3009D518A /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F33183252CB5B9E3009D518A /* DeviceKit */; };
 		F33183282CB7C483009D518A /* Battery Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183272CB7C483009D518A /* Battery Gauge.swift */; };
-		F33708772DD92A74006834F8 /* ScrechKit in Embed Frameworks */ = {isa = PBXBuildFile; productRef = F33183222CB5B837009D518A /* ScrechKit */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F341DFB62CB909960001B5EF /* Nav Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFB52CB909960001B5EF /* Nav Container.swift */; };
 		F341DFB92CB90BD90001B5EF /* Charge Medium View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFB82CB90BD90001B5EF /* Charge Medium View.swift */; };
 		F341DFBB2CB90C400001B5EF /* Charge Small View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFBA2CB90C400001B5EF /* Charge Small View.swift */; };
@@ -74,7 +74,6 @@
 		F3965DA62CB8F8F4004F3AFF /* Charge Entry View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA52CB8F8F4004F3AFF /* Charge Entry View.swift */; };
 		F3965DA82CB8F90B004F3AFF /* Charge Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA72CB8F90B004F3AFF /* Charge Widgets.swift */; };
 		F3965DA92CB8F9B7004F3AFF /* Battery Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183272CB7C483009D518A /* Battery Gauge.swift */; };
-		F3965DAB2CB8F9C5004F3AFF /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F3965DAA2CB8F9C5004F3AFF /* ScrechKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,7 +99,6 @@
 			dstPath = "";
 			dstSubfolder = Frameworks;
 			files = (
-				F33708772DD92A74006834F8 /* ScrechKit in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 		};
@@ -183,8 +181,8 @@
 		F33182F42CB5B26F009D518A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
+				F32429E02DDDBFEB000A16E8 /* ScrechKit in Frameworks */,
 				F358F0392D2C1DC500BCC07B /* LaunchAtLogin in Frameworks */,
-				F33183232CB5B837009D518A /* ScrechKit in Frameworks */,
 				F33183262CB5B9E3009D518A /* DeviceKit in Frameworks */,
 			);
 		};
@@ -196,7 +194,7 @@
 		F3965D7B2CB8F828004F3AFF /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			files = (
-				F3965DAB2CB8F9C5004F3AFF /* ScrechKit in Frameworks */,
+				F32429E22DDDBFF1000A16E8 /* ScrechKit in Frameworks */,
 				F3965D832CB8F828004F3AFF /* SwiftUI.framework in Frameworks */,
 				F3965D812CB8F828004F3AFF /* WidgetKit.framework in Frameworks */,
 			);
@@ -395,9 +393,9 @@
 			);
 			name = "Pro Battery";
 			packageProductDependencies = (
-				F33183222CB5B837009D518A /* ScrechKit */,
 				F33183252CB5B9E3009D518A /* DeviceKit */,
 				F358F0382D2C1DC500BCC07B /* LaunchAtLogin */,
+				F32429DF2DDDBFEB000A16E8 /* ScrechKit */,
 			);
 			productName = "Pro Battery";
 			productReference = F33182F72CB5B26F009D518A /* Pro Battery.app */;
@@ -433,7 +431,7 @@
 			);
 			name = Widgets;
 			packageProductDependencies = (
-				F3965DAA2CB8F9C5004F3AFF /* ScrechKit */,
+				F32429E12DDDBFF1000A16E8 /* ScrechKit */,
 			);
 			productName = WidgetsExtension;
 			productReference = F3965D7E2CB8F828004F3AFF /* Widgets.appex */;
@@ -965,7 +963,12 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		F33183222CB5B837009D518A /* ScrechKit */ = {
+		F32429DF2DDDBFEB000A16E8 /* ScrechKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F33183212CB5B837009D518A /* XCRemoteSwiftPackageReference "ScrechKit" */;
+			productName = ScrechKit;
+		};
+		F32429E12DDDBFF1000A16E8 /* ScrechKit */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = F33183212CB5B837009D518A /* XCRemoteSwiftPackageReference "ScrechKit" */;
 			productName = ScrechKit;
@@ -979,11 +982,6 @@
 			isa = XCSwiftPackageProductDependency;
 			package = F358F0372D2C1DC500BCC07B /* XCRemoteSwiftPackageReference "LaunchAtLogin" */;
 			productName = LaunchAtLogin;
-		};
-		F3965DAA2CB8F9C5004F3AFF /* ScrechKit */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = F33183212CB5B837009D518A /* XCRemoteSwiftPackageReference "ScrechKit" */;
-			productName = ScrechKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
