@@ -50,7 +50,7 @@
 		F341DFDC2CB935C10001B5EF /* Capacity Entry View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFD92CB935C10001B5EF /* Capacity Entry View.swift */; };
 		F34484412CBD1A68009A1144 /* Charge Widget Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34484402CBD1A68009A1144 /* Charge Widget Info.swift */; };
 		F34484432CBD1A79009A1144 /* Fetch Charge Widget Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34484422CBD1A79009A1144 /* Fetch Charge Widget Info.swift */; };
-		F358F0352D2C1DA000BCC07B /* Settings View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F0342D2C1DA000BCC07B /* Settings View.swift */; };
+		F358F0352D2C1DA000BCC07B /* App Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F0342D2C1DA000BCC07B /* App Settings.swift */; };
 		F358F0392D2C1DC500BCC07B /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = F358F0382D2C1DC500BCC07B /* LaunchAtLogin */; };
 		F369EB3A2CBD22CA003F0AF6 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB382CBD22CA003F0AF6 /* Unit Tests.swift */; };
 		F369EB3C2CBD3267003F0AF6 /* Charge Text Medium View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB3B2CBD3267003F0AF6 /* Charge Text Medium View.swift */; };
@@ -154,7 +154,7 @@
 		F341DFDA2CB935C10001B5EF /* Capacity Small View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Capacity Small View.swift"; sourceTree = "<group>"; };
 		F34484402CBD1A68009A1144 /* Charge Widget Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Widget Info.swift"; sourceTree = "<group>"; };
 		F34484422CBD1A79009A1144 /* Fetch Charge Widget Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Charge Widget Info.swift"; sourceTree = "<group>"; };
-		F358F0342D2C1DA000BCC07B /* Settings View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Settings View.swift"; sourceTree = "<group>"; };
+		F358F0342D2C1DA000BCC07B /* App Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Settings.swift"; sourceTree = "<group>"; };
 		F369EB2F2CBD22C7003F0AF6 /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F369EB382CBD22CA003F0AF6 /* Unit Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit Tests.swift"; sourceTree = "<group>"; };
 		F369EB3B2CBD3267003F0AF6 /* Charge Text Medium View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Text Medium View.swift"; sourceTree = "<group>"; };
@@ -334,7 +334,7 @@
 		F358F0362D2C1DA600BCC07B /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				F358F0342D2C1DA000BCC07B /* Settings View.swift */,
+				F358F0342D2C1DA000BCC07B /* App Settings.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -524,7 +524,7 @@
 				F369EB3D2CBD3655003F0AF6 /* Fetch Capacity.swift in Sources */,
 				F3237FFD2CBEA57C001C6D05 /* Fetch Temperature.swift in Sources */,
 				F369EB3F2CBD36F8003F0AF6 /* Fetch Cycles.swift in Sources */,
-				F358F0352D2C1DA000BCC07B /* Settings View.swift in Sources */,
+				F358F0352D2C1DA000BCC07B /* App Settings.swift in Sources */,
 			);
 		};
 		F369EB2B2CBD22C7003F0AF6 /* Sources */ = {
