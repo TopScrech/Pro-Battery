@@ -11,10 +11,10 @@ struct CyclesEntryView: View {
     
     var body: some View {
         switch family {
-        case .systemSmall:
+        case .systemSmall, .systemLarge:
             CyclesSmallView(entry)
             
-        case .systemMedium:
+        case .systemMedium, .systemExtraLarge:
             CyclesMediumView(entry)
             
         default:
