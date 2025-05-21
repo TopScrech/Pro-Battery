@@ -11,10 +11,10 @@ struct CapacityEntryView: View {
     
     var body: some View {
         switch family {
-        case .systemSmall:
+        case .systemSmall, .systemLarge:
             CapacitySmallView(entry)
             
-        case .systemMedium:
+        case .systemMedium, .systemExtraLarge:
             CapacityMediumView(entry)
             
         default:
