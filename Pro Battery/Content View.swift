@@ -41,7 +41,8 @@ struct ContentView: View {
                 }
             }
         }
-        .frame(width: 200)
+        .frame(width: 300)
+        .frame(maxHeight: 400)
     }
 }
 
