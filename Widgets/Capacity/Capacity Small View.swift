@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct CapacitySmallView: View {
+    @Environment(\.widgetFamily) private var widgetFamily
+    
     private let entry: CapacityProvider.Entry
     
     init(_ entry: CapacityProvider.Entry) {
@@ -16,6 +18,7 @@ struct CapacitySmallView: View {
             if entry.configuration.showTitle {
                 Text("Max. capacity")
                     .secondary()
+                    .font(widgetFamily == .systemLarge ? .title2 : .caption2)
             }
         }
         .rounded()
