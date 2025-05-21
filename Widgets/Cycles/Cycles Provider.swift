@@ -2,7 +2,6 @@ import WidgetKit
 
 struct CyclesProvider: AppIntentTimelineProvider {
     func placeholder(in context: Context) -> CyclesEntry {
-        
         CyclesEntry(
             date: Date(),
             cycles: fetchCycleCount(),
@@ -38,7 +37,10 @@ struct CyclesProvider: AppIntentTimelineProvider {
             )
         ]
         
-        return Timeline(entries: entries, policy: .atEnd)
+        return Timeline(
+            entries: entries,
+            policy: .atEnd
+        )
     }
     
     //    func relevances() async -> WidgetRelevances<CyclesConfigIntent> {
