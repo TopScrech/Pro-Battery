@@ -24,7 +24,14 @@
       }
     },
     "Battery Level" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уровень заряда"
+          }
+        }
+      }
     },
     "Below warning level" : {
 
@@ -50,6 +57,12 @@
     },
     "Condition" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conditie"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -59,7 +72,14 @@
       }
     },
     "Cycle Count" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кол-во циклов"
+          }
+        }
+      }
     },
     "Design cycle count" : {
 
@@ -68,13 +88,32 @@
 
     },
     "Fully charged" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volledig opgeladen"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Полностью заряжен"
+          }
+        }
+      }
     },
     "Low Power Mode" : {
 
     },
     "Max. capacity" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Max. capaciteit"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -84,13 +123,32 @@
       }
     },
     "Maximum Capacity" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maximum capaciteit"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Максимальная ёмкость"
+          }
+        }
+      }
     },
     "Pro Battery" : {
       "shouldTranslate" : false
     },
     "Quit" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afsluiten"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -101,6 +159,12 @@
     },
     "Refresh" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verversen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -110,7 +174,20 @@
       }
     },
     "Settings" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instellingen"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки"
+          }
+        }
+      }
     },
     "Show build number" : {
       "localizations" : {
@@ -153,7 +230,14 @@
       }
     },
     "Time Remaining" : {
-
+      "localizations" : {
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оставшееся время"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
