@@ -15,6 +15,12 @@
     },
     "Battery level" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batterijniveau"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -24,16 +30,61 @@
       }
     },
     "Battery Level" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batterijniveau"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Уровень заряда"
+          }
+        }
+      }
     },
     "Below warning level" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Onder waarschuwingsniveau"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ниже критического уровня"
+          }
+        }
+      }
     },
     "Capacity gauge" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Batterijniveau-indicator"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Индикатор ёмкости"
+          }
+        }
+      }
     },
     "Charge cycles" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Laadcycli"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -43,13 +94,45 @@
       }
     },
     "Charging" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Bezig met opladen"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Заряжается"
+          }
+        }
+      }
     },
     "Charging with" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Opladen met"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Заряжается с мощностью"
+          }
+        }
+      }
     },
     "Condition" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Conditie"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -59,22 +142,93 @@
       }
     },
     "Cycle Count" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Aantal cycli"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Кол-во циклов"
+          }
+        }
+      }
     },
     "Design cycle count" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ontworpen aantal cycli"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Расчётное количество циклов"
+          }
+        }
+      }
     },
     "Discharging with" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Ontladen met"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Разряжается с мощностью"
+          }
+        }
+      }
     },
     "Fully charged" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Volledig opgeladen"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Полностью заряжен"
+          }
+        }
+      }
     },
     "Low Power Mode" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Energiebesparingsmodus"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Режим энергосбережения"
+          }
+        }
+      }
     },
     "Max. capacity" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Max. capaciteit"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -84,13 +238,32 @@
       }
     },
     "Maximum Capacity" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Maximum capaciteit"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Максимальная ёмкость"
+          }
+        }
+      }
     },
     "Pro Battery" : {
       "shouldTranslate" : false
     },
     "Quit" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Afsluiten"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -101,6 +274,12 @@
     },
     "Refresh" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Verversen"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -110,10 +289,29 @@
       }
     },
     "Settings" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Instellingen"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Настройки"
+          }
+        }
+      }
     },
     "Show build number" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toon buildnummer"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -124,6 +322,12 @@
     },
     "Show design cycles" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toon ontwerpcycli"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -134,6 +338,12 @@
     },
     "Show title" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Toon titel"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -144,6 +354,12 @@
     },
     "Temperature" : {
       "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Temperatuur"
+          }
+        },
         "ru" : {
           "stringUnit" : {
             "state" : "translated",
@@ -153,7 +369,20 @@
       }
     },
     "Time Remaining" : {
-
+      "localizations" : {
+        "nl" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Resterende tijd"
+          }
+        },
+        "ru" : {
+          "stringUnit" : {
+            "state" : "translated",
+            "value" : "Оставшееся время"
+          }
+        }
+      }
     }
   },
   "version" : "1.0"
