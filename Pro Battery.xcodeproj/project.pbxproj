@@ -174,6 +174,7 @@
 		F3965DA32CB8F8D9004F3AFF /* Charge Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Entry.swift"; sourceTree = "<group>"; };
 		F3965DA52CB8F8F4004F3AFF /* Charge Entry View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Entry View.swift"; sourceTree = "<group>"; };
 		F3965DA72CB8F90B004F3AFF /* Charge Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Widgets.swift"; sourceTree = "<group>"; };
+		F3AE99DF2E2F887D00D70249 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -230,6 +231,7 @@
 		F33182EE2CB5B26F009D518A = {
 			isa = PBXGroup;
 			children = (
+				F3AE99DF2E2F887D00D70249 /* README.md */,
 				F33183192CB5B28D009D518A /* Pro Battery */,
 				F3965D9D2CB8F82D004F3AFF /* Widgets */,
 				F369EB392CBD22CA003F0AF6 /* Unit Tests */,
