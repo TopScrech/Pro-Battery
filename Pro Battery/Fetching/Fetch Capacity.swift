@@ -22,5 +22,6 @@ func fetchMaxCapacity() -> Int {
     }
     
     let percentage = maxCapacity / designCapacity * 100
+    
     return Int(percentage)
 }
