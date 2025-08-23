@@ -6,7 +6,6 @@ func fetchDesignCycles() -> Int {
     } else {
         -1
     }
-    
 }
 
 func fetchDesignCycles(_ props: NSDictionary) -> Int {
