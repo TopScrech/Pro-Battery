@@ -1,15 +1,11 @@
 {
   "fill-specializations" : [
     {
-      "value" : {
-        "automatic-gradient" : "extended-gray:1.00000,1.00000"
-      }
+      "value" : "system-dark"
     },
     {
       "appearance" : "dark",
-      "value" : {
-        "automatic-gradient" : "extended-gray:0.00000,1.00000"
-      }
+      "value" : "system-dark"
     }
   ],
   "groups" : [
@@ -22,20 +18,15 @@
       ],
       "layers" : [
         {
-          "blend-mode" : "normal",
-          "fill" : {
-            "solid" : "extended-srgb:0.20392,0.78039,0.34902,1.00000"
-          },
           "glass" : false,
+          "hidden" : false,
           "image-name" : "Pro Battery 2.heic",
           "name" : "Pro Battery 2"
         },
         {
           "fill-specializations" : [
             {
-              "value" : {
-                "solid" : "extended-gray:0.00000,1.00000"
-              }
+              "value" : "none"
             },
             {
               "appearance" : "dark",
@@ -47,6 +38,7 @@
             }
           ],
           "glass" : false,
+          "hidden" : false,
           "image-name" : "12.heic",
           "name" : "12"
         }
