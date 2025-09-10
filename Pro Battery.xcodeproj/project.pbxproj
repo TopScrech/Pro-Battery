@@ -74,6 +74,8 @@
 		F3965DA62CB8F8F4004F3AFF /* Charge Entry View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA52CB8F8F4004F3AFF /* Charge Entry View.swift */; };
 		F3965DA82CB8F90B004F3AFF /* Charge Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA72CB8F90B004F3AFF /* Charge Widgets.swift */; };
 		F3965DA92CB8F9B7004F3AFF /* Battery Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183272CB7C483009D518A /* Battery Gauge.swift */; };
+		F3B75CCF2E7225CF0096E65E /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F3B75CCE2E7225CF0096E65E /* AppIcon.icon */; };
+		F3B75CD02E7225CF0096E65E /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F3B75CCE2E7225CF0096E65E /* AppIcon.icon */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -175,6 +177,7 @@
 		F3965DA52CB8F8F4004F3AFF /* Charge Entry View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Entry View.swift"; sourceTree = "<group>"; };
 		F3965DA72CB8F90B004F3AFF /* Charge Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Widgets.swift"; sourceTree = "<group>"; };
 		F3AE99DF2E2F887D00D70249 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F3B75CCE2E7225CF0096E65E /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +261,7 @@
 				F32F3AAF2D8EC32200E69B98 /* macOS.plist */,
 				F33183172CB5B28D009D518A /* macOS.entitlements */,
 				F33183152CB5B28D009D518A /* Assets.xcassets */,
+				F3B75CCE2E7225CF0096E65E /* AppIcon.icon */,
 				F369EB452CBD47F9003F0AF6 /* Localizable.xcstrings */,
 				F33183162CB5B28D009D518A /* Content View.swift */,
 				F331831F2CB5B581009D518A /* Battery VM.swift */,
@@ -445,7 +449,7 @@
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1600;
-				LastUpgradeCheck = 1630;
+				LastUpgradeCheck = 2600;
 				TargetAttributes = {
 					F33182F62CB5B26F009D518A = {
 						CreatedOnToolsVersion = 16.0;
@@ -492,6 +496,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F369EB462CBD47F9003F0AF6 /* Localizable.xcstrings in Resources */,
+				F3B75CD02E7225CF0096E65E /* AppIcon.icon in Resources */,
 				F331831B2CB5B28D009D518A /* Assets.xcassets in Resources */,
 			);
 		};
@@ -504,6 +509,7 @@
 			isa = PBXResourcesBuildPhase;
 			files = (
 				F369EB472CBD47F9003F0AF6 /* Localizable.xcstrings in Resources */,
+				F3B75CCF2E7225CF0096E65E /* AppIcon.icon in Resources */,
 				F3965D9E2CB8F82D004F3AFF /* Assets.xcassets in Resources */,
 			);
 		};
@@ -658,6 +664,7 @@
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -718,6 +725,7 @@
 				MARKETING_VERSION = 0.9.7;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 			};
@@ -732,8 +740,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Pro Battery/macOS.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Pro Battery";
@@ -772,8 +782,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 0;
 				DEAD_CODE_STRIPPING = YES;
+				ENABLE_APP_SANDBOX = YES;
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
+				ENABLE_USER_SELECTED_FILES = readonly;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "Pro Battery/macOS.plist";
 				INFOPLIST_KEY_CFBundleDisplayName = "Pro Battery";
