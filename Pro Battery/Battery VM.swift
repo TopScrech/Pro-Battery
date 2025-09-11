@@ -2,7 +2,7 @@ import Foundation
 import DeviceKit
 
 @Observable
-final class BatteryVM: ObservableObject {
+final class BatteryVM {
     // Charge Information
     var isBelowWarningLevel = false
     var isFullyCharged = false
