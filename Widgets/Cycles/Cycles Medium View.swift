@@ -37,4 +37,5 @@ struct CyclesMediumView: View {
 
 //#Preview {
 //    CyclesMediumView()
+//    .darkSchemePreferred()
 //}

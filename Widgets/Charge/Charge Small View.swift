@@ -40,4 +40,5 @@ struct ChargeSmallView: View {
 
 //#Preview {
 //    ChargeSmallView()
+//    .darkSchemePreferred()
 //}

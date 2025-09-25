@@ -31,4 +31,5 @@ struct ChargeTextMediumView: View {
 
 //#Preview {
 //    ChargeTextMediumView()
+//    .darkSchemePreferred()
 //}

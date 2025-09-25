@@ -71,4 +71,5 @@ struct BatteryGauge: View {
         }
     }
     .frame(width: 300, height: 750)
+    .darkSchemePreferred()
 }

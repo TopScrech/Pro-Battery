@@ -27,4 +27,5 @@ struct CapacitySmallView: View {
 
 //#Preview {
 //    CyclesSmallView()
+//    .darkSchemePreferred()
 //}
