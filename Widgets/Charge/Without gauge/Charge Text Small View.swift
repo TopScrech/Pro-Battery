@@ -31,4 +31,5 @@ struct ChargeTextSmallView: View {
 
 //#Preview {
 //    CyclesSmallView()
+//    .darkSchemePreferred()
 //}

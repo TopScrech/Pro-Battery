@@ -35,4 +35,5 @@ struct CyclesSmallView: View {
 
 //#Preview {
 //    CyclesSmallView()
+//    .darkSchemePreferred()
 //}

@@ -27,4 +27,5 @@ struct CapacityMediumView: View {
 
 //#Preview {
 //    CapacityMediumView()
+//    .darkSchemePreferred()
 //}

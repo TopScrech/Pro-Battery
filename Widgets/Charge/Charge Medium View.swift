@@ -60,4 +60,5 @@ struct ChargeMediumView: View {
 
 //#Preview {
 //    ChargeMediumView()
+//    .darkSchemePreferred()
 //}
