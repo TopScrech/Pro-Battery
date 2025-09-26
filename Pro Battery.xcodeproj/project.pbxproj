@@ -7,73 +7,73 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F30950062CBA59EF00DA2148 /* Fetch battery level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30950052CBA59EF00DA2148 /* Fetch battery level.swift */; };
-		F30950072CBA59FF00DA2148 /* Fetch battery level.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30950052CBA59EF00DA2148 /* Fetch battery level.swift */; };
-		F309500A2CBA5ED500DA2148 /* Charge Text Config Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30950092CBA5ED500DA2148 /* Charge Text Config Intent.swift */; };
-		F309500C2CBA5EFE00DA2148 /* Charge Text Small View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309500B2CBA5EFD00DA2148 /* Charge Text Small View.swift */; };
-		F309500E2CBA5F4D00DA2148 /* Charge Text Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309500D2CBA5F4D00DA2148 /* Charge Text Provider.swift */; };
-		F30950102CBA5F5D00DA2148 /* Charge Text Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309500F2CBA5F5D00DA2148 /* Charge Text Entry.swift */; };
-		F30950122CBA5FD000DA2148 /* Charge Text Entry View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30950112CBA5FD000DA2148 /* Charge Text Entry View.swift */; };
-		F30950142CBA600300DA2148 /* Charge Text Widget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30950132CBA600300DA2148 /* Charge Text Widget.swift */; };
-		F30A252C2CBBAAC10026D36E /* Fetch Capacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252B2CBBAAC10026D36E /* Fetch Capacity.swift */; };
-		F30A252E2CBBAB050026D36E /* Fetch Cycles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252D2CBBAB050026D36E /* Fetch Cycles.swift */; };
-		F30A25302CBBAB220026D36E /* Fetch Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252F2CBBAB220026D36E /* Fetch Condition.swift */; };
+		F30950062CBA59EF00DA2148 /* fetchBatteryLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30950052CBA59EF00DA2148 /* fetchBatteryLevel.swift */; };
+		F30950072CBA59FF00DA2148 /* fetchBatteryLevel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30950052CBA59EF00DA2148 /* fetchBatteryLevel.swift */; };
+		F309500A2CBA5ED500DA2148 /* ChargeTextConfigIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30950092CBA5ED500DA2148 /* ChargeTextConfigIntent.swift */; };
+		F309500C2CBA5EFE00DA2148 /* ChargeTextSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309500B2CBA5EFD00DA2148 /* ChargeTextSmallView.swift */; };
+		F309500E2CBA5F4D00DA2148 /* ChargeTextProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309500D2CBA5F4D00DA2148 /* ChargeTextProvider.swift */; };
+		F30950102CBA5F5D00DA2148 /* ChargeTextEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F309500F2CBA5F5D00DA2148 /* ChargeTextEntry.swift */; };
+		F30950122CBA5FD000DA2148 /* ChargeTextEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30950112CBA5FD000DA2148 /* ChargeTextEntryView.swift */; };
+		F30950142CBA600300DA2148 /* ChargeTextWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30950132CBA600300DA2148 /* ChargeTextWidget.swift */; };
+		F30A252C2CBBAAC10026D36E /* FetchCapacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252B2CBBAAC10026D36E /* FetchCapacity.swift */; };
+		F30A252E2CBBAB050026D36E /* FetchCycles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252D2CBBAB050026D36E /* FetchCycles.swift */; };
+		F30A25302CBBAB220026D36E /* FetchCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252F2CBBAB220026D36E /* FetchCondition.swift */; };
 		F30A25322CBBB53B0026D36E /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A25312CBBB53B0026D36E /* Extension.swift */; };
-		F3237FFC2CBEA57C001C6D05 /* Fetch Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3237FFB2CBEA57C001C6D05 /* Fetch Temperature.swift */; };
-		F3237FFD2CBEA57C001C6D05 /* Fetch Temperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3237FFB2CBEA57C001C6D05 /* Fetch Temperature.swift */; };
-		F3237FFF2CBEA812001C6D05 /* Fetch Design Cycles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3237FFE2CBEA812001C6D05 /* Fetch Design Cycles.swift */; };
-		F32380002CBEA812001C6D05 /* Fetch Design Cycles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3237FFE2CBEA812001C6D05 /* Fetch Design Cycles.swift */; };
+		F3237FFC2CBEA57C001C6D05 /* FetchTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3237FFB2CBEA57C001C6D05 /* FetchTemperature.swift */; };
+		F3237FFD2CBEA57C001C6D05 /* FetchTemperature.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3237FFB2CBEA57C001C6D05 /* FetchTemperature.swift */; };
+		F3237FFF2CBEA812001C6D05 /* FetchDesignCycles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3237FFE2CBEA812001C6D05 /* FetchDesignCycles.swift */; };
+		F32380002CBEA812001C6D05 /* FetchDesignCycles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3237FFE2CBEA812001C6D05 /* FetchDesignCycles.swift */; };
 		F32429E02DDDBFEB000A16E8 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F32429DF2DDDBFEB000A16E8 /* ScrechKit */; };
 		F32429E22DDDBFF1000A16E8 /* ScrechKit in Frameworks */ = {isa = PBXBuildFile; productRef = F32429E12DDDBFF1000A16E8 /* ScrechKit */; };
 		F331831B2CB5B28D009D518A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F33183152CB5B28D009D518A /* Assets.xcassets */; };
-		F331831C2CB5B28D009D518A /* Content View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183162CB5B28D009D518A /* Content View.swift */; };
-		F331831D2CB5B28D009D518A /* Pro Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183182CB5B28D009D518A /* Pro Battery.swift */; };
-		F33183202CB5B581009D518A /* Battery VM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331831F2CB5B581009D518A /* Battery VM.swift */; };
+		F331831C2CB5B28D009D518A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183162CB5B28D009D518A /* ContentView.swift */; };
+		F331831D2CB5B28D009D518A /* ProBattery.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183182CB5B28D009D518A /* ProBattery.swift */; };
+		F33183202CB5B581009D518A /* BatteryVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = F331831F2CB5B581009D518A /* BatteryVM.swift */; };
 		F33183262CB5B9E3009D518A /* DeviceKit in Frameworks */ = {isa = PBXBuildFile; productRef = F33183252CB5B9E3009D518A /* DeviceKit */; };
-		F33183282CB7C483009D518A /* Battery Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183272CB7C483009D518A /* Battery Gauge.swift */; };
-		F341DFB62CB909960001B5EF /* Nav Container.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFB52CB909960001B5EF /* Nav Container.swift */; };
-		F341DFB92CB90BD90001B5EF /* Charge Medium View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFB82CB90BD90001B5EF /* Charge Medium View.swift */; };
-		F341DFBB2CB90C400001B5EF /* Charge Small View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFBA2CB90C400001B5EF /* Charge Small View.swift */; };
+		F33183282CB7C483009D518A /* BatteryGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183272CB7C483009D518A /* BatteryGauge.swift */; };
+		F341DFB62CB909960001B5EF /* NavContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFB52CB909960001B5EF /* NavContainer.swift */; };
+		F341DFB92CB90BD90001B5EF /* ChargeMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFB82CB90BD90001B5EF /* ChargeMediumView.swift */; };
+		F341DFBB2CB90C400001B5EF /* ChargeSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFBA2CB90C400001B5EF /* ChargeSmallView.swift */; };
 		F341DFBD2CB9168A0001B5EF /* Param.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFBC2CB9168A0001B5EF /* Param.swift */; };
 		F341DFC02CB916E80001B5EF /* Get Version & Build.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFBE2CB916C50001B5EF /* Get Version & Build.swift */; };
-		F341DFC32CB92F370001B5EF /* Cycles Small View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFC22CB92F370001B5EF /* Cycles Small View.swift */; };
-		F341DFC72CB9301A0001B5EF /* Cycles Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFC62CB9301A0001B5EF /* Cycles Widgets.swift */; };
-		F341DFC92CB930310001B5EF /* Cycles Entry View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFC82CB930310001B5EF /* Cycles Entry View.swift */; };
-		F341DFCB2CB931900001B5EF /* Cycles Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFCA2CB931900001B5EF /* Cycles Provider.swift */; };
-		F341DFCD2CB931B20001B5EF /* Cycles Config Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFCC2CB931B20001B5EF /* Cycles Config Intent.swift */; };
-		F341DFCF2CB931F30001B5EF /* Cycles Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFCE2CB931F30001B5EF /* Cycles Entry.swift */; };
-		F341DFD22CB935B70001B5EF /* Capacity Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFD12CB935B70001B5EF /* Capacity Provider.swift */; };
-		F341DFD42CB935BA0001B5EF /* Capacity Config Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFD32CB935BA0001B5EF /* Capacity Config Intent.swift */; };
-		F341DFD62CB935BC0001B5EF /* Capacity Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFD52CB935BC0001B5EF /* Capacity Widgets.swift */; };
-		F341DFD82CB935BD0001B5EF /* Capacity Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFD72CB935BD0001B5EF /* Capacity Entry.swift */; };
-		F341DFDB2CB935C10001B5EF /* Capacity Small View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFDA2CB935C10001B5EF /* Capacity Small View.swift */; };
-		F341DFDC2CB935C10001B5EF /* Capacity Entry View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFD92CB935C10001B5EF /* Capacity Entry View.swift */; };
-		F34484412CBD1A68009A1144 /* Charge Widget Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34484402CBD1A68009A1144 /* Charge Widget Info.swift */; };
-		F34484432CBD1A79009A1144 /* Fetch Charge Widget Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34484422CBD1A79009A1144 /* Fetch Charge Widget Info.swift */; };
-		F358F0352D2C1DA000BCC07B /* App Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F0342D2C1DA000BCC07B /* App Settings.swift */; };
+		F341DFC32CB92F370001B5EF /* CyclesSmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFC22CB92F370001B5EF /* CyclesSmallView.swift */; };
+		F341DFC72CB9301A0001B5EF /* CyclesWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFC62CB9301A0001B5EF /* CyclesWidgets.swift */; };
+		F341DFC92CB930310001B5EF /* CyclesEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFC82CB930310001B5EF /* CyclesEntryView.swift */; };
+		F341DFCB2CB931900001B5EF /* CyclesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFCA2CB931900001B5EF /* CyclesProvider.swift */; };
+		F341DFCD2CB931B20001B5EF /* CyclesConfigIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFCC2CB931B20001B5EF /* CyclesConfigIntent.swift */; };
+		F341DFCF2CB931F30001B5EF /* CyclesEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFCE2CB931F30001B5EF /* CyclesEntry.swift */; };
+		F341DFD22CB935B70001B5EF /* CapacityProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFD12CB935B70001B5EF /* CapacityProvider.swift */; };
+		F341DFD42CB935BA0001B5EF /* CapacityConfigIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFD32CB935BA0001B5EF /* CapacityConfigIntent.swift */; };
+		F341DFD62CB935BC0001B5EF /* CapacityWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFD52CB935BC0001B5EF /* CapacityWidgets.swift */; };
+		F341DFD82CB935BD0001B5EF /* CapacityEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFD72CB935BD0001B5EF /* CapacityEntry.swift */; };
+		F341DFDB2CB935C10001B5EF /* CapacitySmallView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFDA2CB935C10001B5EF /* CapacitySmallView.swift */; };
+		F341DFDC2CB935C10001B5EF /* CapacityEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F341DFD92CB935C10001B5EF /* CapacityEntryView.swift */; };
+		F34484412CBD1A68009A1144 /* ChargeWidgetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34484402CBD1A68009A1144 /* ChargeWidgetInfo.swift */; };
+		F34484432CBD1A79009A1144 /* FetchChargeWidgetInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = F34484422CBD1A79009A1144 /* FetchChargeWidgetInfo.swift */; };
+		F358F0352D2C1DA000BCC07B /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = F358F0342D2C1DA000BCC07B /* AppSettings.swift */; };
 		F358F0392D2C1DC500BCC07B /* LaunchAtLogin in Frameworks */ = {isa = PBXBuildFile; productRef = F358F0382D2C1DC500BCC07B /* LaunchAtLogin */; };
-		F369EB3A2CBD22CA003F0AF6 /* Unit Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB382CBD22CA003F0AF6 /* Unit Tests.swift */; };
-		F369EB3C2CBD3267003F0AF6 /* Charge Text Medium View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB3B2CBD3267003F0AF6 /* Charge Text Medium View.swift */; };
-		F369EB3D2CBD3655003F0AF6 /* Fetch Capacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252B2CBBAAC10026D36E /* Fetch Capacity.swift */; };
-		F369EB3E2CBD365C003F0AF6 /* Fetch Battery Props.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B2422CB9AE7F00D70865 /* Fetch Battery Props.swift */; };
-		F369EB3F2CBD36F8003F0AF6 /* Fetch Cycles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252D2CBBAB050026D36E /* Fetch Cycles.swift */; };
-		F369EB402CBD3734003F0AF6 /* Fetch Condition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252F2CBBAB220026D36E /* Fetch Condition.swift */; };
-		F369EB422CBD4325003F0AF6 /* Capacity Medium View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB412CBD4325003F0AF6 /* Capacity Medium View.swift */; };
-		F369EB442CBD4351003F0AF6 /* Cycles Medium View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB432CBD4351003F0AF6 /* Cycles Medium View.swift */; };
+		F369EB3A2CBD22CA003F0AF6 /* UnitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB382CBD22CA003F0AF6 /* UnitTests.swift */; };
+		F369EB3C2CBD3267003F0AF6 /* ChargeTextMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB3B2CBD3267003F0AF6 /* ChargeTextMediumView.swift */; };
+		F369EB3D2CBD3655003F0AF6 /* FetchCapacity.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252B2CBBAAC10026D36E /* FetchCapacity.swift */; };
+		F369EB3E2CBD365C003F0AF6 /* FetchBatteryProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B2422CB9AE7F00D70865 /* FetchBatteryProps.swift */; };
+		F369EB3F2CBD36F8003F0AF6 /* FetchCycles.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252D2CBBAB050026D36E /* FetchCycles.swift */; };
+		F369EB402CBD3734003F0AF6 /* FetchCondition.swift in Sources */ = {isa = PBXBuildFile; fileRef = F30A252F2CBBAB220026D36E /* FetchCondition.swift */; };
+		F369EB422CBD4325003F0AF6 /* CapacityMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB412CBD4325003F0AF6 /* CapacityMediumView.swift */; };
+		F369EB442CBD4351003F0AF6 /* CyclesMediumView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F369EB432CBD4351003F0AF6 /* CyclesMediumView.swift */; };
 		F369EB462CBD47F9003F0AF6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F369EB452CBD47F9003F0AF6 /* Localizable.xcstrings */; };
 		F369EB472CBD47F9003F0AF6 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = F369EB452CBD47F9003F0AF6 /* Localizable.xcstrings */; };
-		F370B2432CB9AE7F00D70865 /* Fetch Battery Props.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B2422CB9AE7F00D70865 /* Fetch Battery Props.swift */; };
+		F370B2432CB9AE7F00D70865 /* FetchBatteryProps.swift in Sources */ = {isa = PBXBuildFile; fileRef = F370B2422CB9AE7F00D70865 /* FetchBatteryProps.swift */; };
 		F3965D812CB8F828004F3AFF /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3965D802CB8F828004F3AFF /* WidgetKit.framework */; };
 		F3965D832CB8F828004F3AFF /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3965D822CB8F828004F3AFF /* SwiftUI.framework */; };
 		F3965D912CB8F829004F3AFF /* Widgets.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = F3965D7E2CB8F828004F3AFF /* Widgets.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		F3965D9E2CB8F82D004F3AFF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3965D982CB8F82D004F3AFF /* Assets.xcassets */; };
-		F3965DA02CB8F82D004F3AFF /* Charge Config Intent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965D972CB8F82D004F3AFF /* Charge Config Intent.swift */; };
-		F3965DA12CB8F82D004F3AFF /* Charge Provider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965D9B2CB8F82D004F3AFF /* Charge Provider.swift */; };
-		F3965DA22CB8F82D004F3AFF /* Widgets Bundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965D9C2CB8F82D004F3AFF /* Widgets Bundle.swift */; };
-		F3965DA42CB8F8D9004F3AFF /* Charge Entry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA32CB8F8D9004F3AFF /* Charge Entry.swift */; };
-		F3965DA62CB8F8F4004F3AFF /* Charge Entry View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA52CB8F8F4004F3AFF /* Charge Entry View.swift */; };
-		F3965DA82CB8F90B004F3AFF /* Charge Widgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA72CB8F90B004F3AFF /* Charge Widgets.swift */; };
-		F3965DA92CB8F9B7004F3AFF /* Battery Gauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183272CB7C483009D518A /* Battery Gauge.swift */; };
+		F3965DA02CB8F82D004F3AFF /* ChargeConfigIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965D972CB8F82D004F3AFF /* ChargeConfigIntent.swift */; };
+		F3965DA12CB8F82D004F3AFF /* ChargeProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965D9B2CB8F82D004F3AFF /* ChargeProvider.swift */; };
+		F3965DA22CB8F82D004F3AFF /* WidgetsBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965D9C2CB8F82D004F3AFF /* WidgetsBundle.swift */; };
+		F3965DA42CB8F8D9004F3AFF /* ChargeEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA32CB8F8D9004F3AFF /* ChargeEntry.swift */; };
+		F3965DA62CB8F8F4004F3AFF /* ChargeEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA52CB8F8F4004F3AFF /* ChargeEntryView.swift */; };
+		F3965DA82CB8F90B004F3AFF /* ChargeWidgets.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3965DA72CB8F90B004F3AFF /* ChargeWidgets.swift */; };
+		F3965DA92CB8F9B7004F3AFF /* BatteryGauge.swift in Sources */ = {isa = PBXBuildFile; fileRef = F33183272CB7C483009D518A /* BatteryGauge.swift */; };
 		F3B75CCF2E7225CF0096E65E /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F3B75CCE2E7225CF0096E65E /* AppIcon.icon */; };
 		F3B75CD02E7225CF0096E65E /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = F3B75CCE2E7225CF0096E65E /* AppIcon.icon */; };
 /* End PBXBuildFile section */
@@ -116,66 +116,66 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		F30950052CBA59EF00DA2148 /* Fetch battery level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch battery level.swift"; sourceTree = "<group>"; };
-		F30950092CBA5ED500DA2148 /* Charge Text Config Intent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Text Config Intent.swift"; sourceTree = "<group>"; };
-		F309500B2CBA5EFD00DA2148 /* Charge Text Small View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Text Small View.swift"; sourceTree = "<group>"; };
-		F309500D2CBA5F4D00DA2148 /* Charge Text Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Text Provider.swift"; sourceTree = "<group>"; };
-		F309500F2CBA5F5D00DA2148 /* Charge Text Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Text Entry.swift"; sourceTree = "<group>"; };
-		F30950112CBA5FD000DA2148 /* Charge Text Entry View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Text Entry View.swift"; sourceTree = "<group>"; };
-		F30950132CBA600300DA2148 /* Charge Text Widget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Text Widget.swift"; sourceTree = "<group>"; };
-		F30A252B2CBBAAC10026D36E /* Fetch Capacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Capacity.swift"; sourceTree = "<group>"; };
-		F30A252D2CBBAB050026D36E /* Fetch Cycles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Cycles.swift"; sourceTree = "<group>"; };
-		F30A252F2CBBAB220026D36E /* Fetch Condition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Condition.swift"; sourceTree = "<group>"; };
+		F30950052CBA59EF00DA2148 /* fetchBatteryLevel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = fetchBatteryLevel.swift; sourceTree = "<group>"; };
+		F30950092CBA5ED500DA2148 /* ChargeTextConfigIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeTextConfigIntent.swift; sourceTree = "<group>"; };
+		F309500B2CBA5EFD00DA2148 /* ChargeTextSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeTextSmallView.swift; sourceTree = "<group>"; };
+		F309500D2CBA5F4D00DA2148 /* ChargeTextProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeTextProvider.swift; sourceTree = "<group>"; };
+		F309500F2CBA5F5D00DA2148 /* ChargeTextEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeTextEntry.swift; sourceTree = "<group>"; };
+		F30950112CBA5FD000DA2148 /* ChargeTextEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeTextEntryView.swift; sourceTree = "<group>"; };
+		F30950132CBA600300DA2148 /* ChargeTextWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeTextWidget.swift; sourceTree = "<group>"; };
+		F30A252B2CBBAAC10026D36E /* FetchCapacity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCapacity.swift; sourceTree = "<group>"; };
+		F30A252D2CBBAB050026D36E /* FetchCycles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCycles.swift; sourceTree = "<group>"; };
+		F30A252F2CBBAB220026D36E /* FetchCondition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchCondition.swift; sourceTree = "<group>"; };
 		F30A25312CBBB53B0026D36E /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
-		F3237FFB2CBEA57C001C6D05 /* Fetch Temperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Temperature.swift"; sourceTree = "<group>"; };
-		F3237FFE2CBEA812001C6D05 /* Fetch Design Cycles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Design Cycles.swift"; sourceTree = "<group>"; };
+		F3237FFB2CBEA57C001C6D05 /* FetchTemperature.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchTemperature.swift; sourceTree = "<group>"; };
+		F3237FFE2CBEA812001C6D05 /* FetchDesignCycles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchDesignCycles.swift; sourceTree = "<group>"; };
 		F32F3AAF2D8EC32200E69B98 /* macOS.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = macOS.plist; sourceTree = "<group>"; };
 		F33182F72CB5B26F009D518A /* Pro Battery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pro Battery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F33183152CB5B28D009D518A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		F33183162CB5B28D009D518A /* Content View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Content View.swift"; sourceTree = "<group>"; };
+		F33183162CB5B28D009D518A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F33183172CB5B28D009D518A /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
-		F33183182CB5B28D009D518A /* Pro Battery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Pro Battery.swift"; sourceTree = "<group>"; };
-		F331831F2CB5B581009D518A /* Battery VM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery VM.swift"; sourceTree = "<group>"; };
-		F33183272CB7C483009D518A /* Battery Gauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Battery Gauge.swift"; sourceTree = "<group>"; };
-		F341DFB52CB909960001B5EF /* Nav Container.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Nav Container.swift"; sourceTree = "<group>"; };
-		F341DFB82CB90BD90001B5EF /* Charge Medium View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Medium View.swift"; sourceTree = "<group>"; };
-		F341DFBA2CB90C400001B5EF /* Charge Small View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Small View.swift"; sourceTree = "<group>"; };
+		F33183182CB5B28D009D518A /* ProBattery.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProBattery.swift; sourceTree = "<group>"; };
+		F331831F2CB5B581009D518A /* BatteryVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryVM.swift; sourceTree = "<group>"; };
+		F33183272CB7C483009D518A /* BatteryGauge.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryGauge.swift; sourceTree = "<group>"; };
+		F341DFB52CB909960001B5EF /* NavContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavContainer.swift; sourceTree = "<group>"; };
+		F341DFB82CB90BD90001B5EF /* ChargeMediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeMediumView.swift; sourceTree = "<group>"; };
+		F341DFBA2CB90C400001B5EF /* ChargeSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeSmallView.swift; sourceTree = "<group>"; };
 		F341DFBC2CB9168A0001B5EF /* Param.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Param.swift; sourceTree = "<group>"; };
 		F341DFBE2CB916C50001B5EF /* Get Version & Build.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Get Version & Build.swift"; sourceTree = "<group>"; };
-		F341DFC22CB92F370001B5EF /* Cycles Small View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cycles Small View.swift"; sourceTree = "<group>"; };
-		F341DFC62CB9301A0001B5EF /* Cycles Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cycles Widgets.swift"; sourceTree = "<group>"; };
-		F341DFC82CB930310001B5EF /* Cycles Entry View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cycles Entry View.swift"; sourceTree = "<group>"; };
-		F341DFCA2CB931900001B5EF /* Cycles Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cycles Provider.swift"; sourceTree = "<group>"; };
-		F341DFCC2CB931B20001B5EF /* Cycles Config Intent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cycles Config Intent.swift"; sourceTree = "<group>"; };
-		F341DFCE2CB931F30001B5EF /* Cycles Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cycles Entry.swift"; sourceTree = "<group>"; };
-		F341DFD12CB935B70001B5EF /* Capacity Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Capacity Provider.swift"; sourceTree = "<group>"; };
-		F341DFD32CB935BA0001B5EF /* Capacity Config Intent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Capacity Config Intent.swift"; sourceTree = "<group>"; };
-		F341DFD52CB935BC0001B5EF /* Capacity Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Capacity Widgets.swift"; sourceTree = "<group>"; };
-		F341DFD72CB935BD0001B5EF /* Capacity Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Capacity Entry.swift"; sourceTree = "<group>"; };
-		F341DFD92CB935C10001B5EF /* Capacity Entry View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Capacity Entry View.swift"; sourceTree = "<group>"; };
-		F341DFDA2CB935C10001B5EF /* Capacity Small View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Capacity Small View.swift"; sourceTree = "<group>"; };
-		F34484402CBD1A68009A1144 /* Charge Widget Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Widget Info.swift"; sourceTree = "<group>"; };
-		F34484422CBD1A79009A1144 /* Fetch Charge Widget Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Charge Widget Info.swift"; sourceTree = "<group>"; };
-		F358F0342D2C1DA000BCC07B /* App Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "App Settings.swift"; sourceTree = "<group>"; };
+		F341DFC22CB92F370001B5EF /* CyclesSmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclesSmallView.swift; sourceTree = "<group>"; };
+		F341DFC62CB9301A0001B5EF /* CyclesWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclesWidgets.swift; sourceTree = "<group>"; };
+		F341DFC82CB930310001B5EF /* CyclesEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclesEntryView.swift; sourceTree = "<group>"; };
+		F341DFCA2CB931900001B5EF /* CyclesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclesProvider.swift; sourceTree = "<group>"; };
+		F341DFCC2CB931B20001B5EF /* CyclesConfigIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclesConfigIntent.swift; sourceTree = "<group>"; };
+		F341DFCE2CB931F30001B5EF /* CyclesEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclesEntry.swift; sourceTree = "<group>"; };
+		F341DFD12CB935B70001B5EF /* CapacityProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapacityProvider.swift; sourceTree = "<group>"; };
+		F341DFD32CB935BA0001B5EF /* CapacityConfigIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapacityConfigIntent.swift; sourceTree = "<group>"; };
+		F341DFD52CB935BC0001B5EF /* CapacityWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapacityWidgets.swift; sourceTree = "<group>"; };
+		F341DFD72CB935BD0001B5EF /* CapacityEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapacityEntry.swift; sourceTree = "<group>"; };
+		F341DFD92CB935C10001B5EF /* CapacityEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapacityEntryView.swift; sourceTree = "<group>"; };
+		F341DFDA2CB935C10001B5EF /* CapacitySmallView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapacitySmallView.swift; sourceTree = "<group>"; };
+		F34484402CBD1A68009A1144 /* ChargeWidgetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeWidgetInfo.swift; sourceTree = "<group>"; };
+		F34484422CBD1A79009A1144 /* FetchChargeWidgetInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchChargeWidgetInfo.swift; sourceTree = "<group>"; };
+		F358F0342D2C1DA000BCC07B /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
 		F369EB2F2CBD22C7003F0AF6 /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F369EB382CBD22CA003F0AF6 /* Unit Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Unit Tests.swift"; sourceTree = "<group>"; };
-		F369EB3B2CBD3267003F0AF6 /* Charge Text Medium View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Text Medium View.swift"; sourceTree = "<group>"; };
-		F369EB412CBD4325003F0AF6 /* Capacity Medium View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Capacity Medium View.swift"; sourceTree = "<group>"; };
-		F369EB432CBD4351003F0AF6 /* Cycles Medium View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Cycles Medium View.swift"; sourceTree = "<group>"; };
+		F369EB382CBD22CA003F0AF6 /* UnitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnitTests.swift; sourceTree = "<group>"; };
+		F369EB3B2CBD3267003F0AF6 /* ChargeTextMediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeTextMediumView.swift; sourceTree = "<group>"; };
+		F369EB412CBD4325003F0AF6 /* CapacityMediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapacityMediumView.swift; sourceTree = "<group>"; };
+		F369EB432CBD4351003F0AF6 /* CyclesMediumView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CyclesMediumView.swift; sourceTree = "<group>"; };
 		F369EB452CBD47F9003F0AF6 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
-		F370B2422CB9AE7F00D70865 /* Fetch Battery Props.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Fetch Battery Props.swift"; sourceTree = "<group>"; };
+		F370B2422CB9AE7F00D70865 /* FetchBatteryProps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchBatteryProps.swift; sourceTree = "<group>"; };
 		F3965D7E2CB8F828004F3AFF /* Widgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3965D802CB8F828004F3AFF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		F3965D822CB8F828004F3AFF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
-		F3965D972CB8F82D004F3AFF /* Charge Config Intent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Config Intent.swift"; sourceTree = "<group>"; };
+		F3965D972CB8F82D004F3AFF /* ChargeConfigIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeConfigIntent.swift; sourceTree = "<group>"; };
 		F3965D982CB8F82D004F3AFF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F3965D992CB8F82D004F3AFF /* Widgets.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Widgets.plist; sourceTree = "<group>"; };
 		F3965D9A2CB8F82D004F3AFF /* Widgets.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Widgets.entitlements; sourceTree = "<group>"; };
-		F3965D9B2CB8F82D004F3AFF /* Charge Provider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Provider.swift"; sourceTree = "<group>"; };
-		F3965D9C2CB8F82D004F3AFF /* Widgets Bundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Widgets Bundle.swift"; sourceTree = "<group>"; };
-		F3965DA32CB8F8D9004F3AFF /* Charge Entry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Entry.swift"; sourceTree = "<group>"; };
-		F3965DA52CB8F8F4004F3AFF /* Charge Entry View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Entry View.swift"; sourceTree = "<group>"; };
-		F3965DA72CB8F90B004F3AFF /* Charge Widgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Charge Widgets.swift"; sourceTree = "<group>"; };
+		F3965D9B2CB8F82D004F3AFF /* ChargeProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeProvider.swift; sourceTree = "<group>"; };
+		F3965D9C2CB8F82D004F3AFF /* WidgetsBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WidgetsBundle.swift; sourceTree = "<group>"; };
+		F3965DA32CB8F8D9004F3AFF /* ChargeEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeEntry.swift; sourceTree = "<group>"; };
+		F3965DA52CB8F8F4004F3AFF /* ChargeEntryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeEntryView.swift; sourceTree = "<group>"; };
+		F3965DA72CB8F90B004F3AFF /* ChargeWidgets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChargeWidgets.swift; sourceTree = "<group>"; };
 		F3AE99DF2E2F887D00D70249 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		F3B75CCE2E7225CF0096E65E /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -208,13 +208,13 @@
 		F30950082CBA5EAE00DA2148 /* Without gauge */ = {
 			isa = PBXGroup;
 			children = (
-				F309500D2CBA5F4D00DA2148 /* Charge Text Provider.swift */,
-				F30950092CBA5ED500DA2148 /* Charge Text Config Intent.swift */,
-				F30950132CBA600300DA2148 /* Charge Text Widget.swift */,
-				F30950112CBA5FD000DA2148 /* Charge Text Entry View.swift */,
-				F309500B2CBA5EFD00DA2148 /* Charge Text Small View.swift */,
-				F369EB3B2CBD3267003F0AF6 /* Charge Text Medium View.swift */,
-				F309500F2CBA5F5D00DA2148 /* Charge Text Entry.swift */,
+				F309500D2CBA5F4D00DA2148 /* ChargeTextProvider.swift */,
+				F30950092CBA5ED500DA2148 /* ChargeTextConfigIntent.swift */,
+				F30950132CBA600300DA2148 /* ChargeTextWidget.swift */,
+				F30950112CBA5FD000DA2148 /* ChargeTextEntryView.swift */,
+				F309500B2CBA5EFD00DA2148 /* ChargeTextSmallView.swift */,
+				F369EB3B2CBD3267003F0AF6 /* ChargeTextMediumView.swift */,
+				F309500F2CBA5F5D00DA2148 /* ChargeTextEntry.swift */,
 			);
 			path = "Without gauge";
 			sourceTree = "<group>";
@@ -222,11 +222,11 @@
 		F3237FFA2CBEA4BC001C6D05 /* Fetching */ = {
 			isa = PBXGroup;
 			children = (
-				F30A252D2CBBAB050026D36E /* Fetch Cycles.swift */,
-				F30A252B2CBBAAC10026D36E /* Fetch Capacity.swift */,
-				F30A252F2CBBAB220026D36E /* Fetch Condition.swift */,
-				F3237FFB2CBEA57C001C6D05 /* Fetch Temperature.swift */,
-				F3237FFE2CBEA812001C6D05 /* Fetch Design Cycles.swift */,
+				F30A252D2CBBAB050026D36E /* FetchCycles.swift */,
+				F30A252B2CBBAAC10026D36E /* FetchCapacity.swift */,
+				F30A252F2CBBAB220026D36E /* FetchCondition.swift */,
+				F3237FFB2CBEA57C001C6D05 /* FetchTemperature.swift */,
+				F3237FFE2CBEA812001C6D05 /* FetchDesignCycles.swift */,
 			);
 			path = Fetching;
 			sourceTree = "<group>";
@@ -256,17 +256,17 @@
 		F33183192CB5B28D009D518A /* Pro Battery */ = {
 			isa = PBXGroup;
 			children = (
-				F33183182CB5B28D009D518A /* Pro Battery.swift */,
+				F33183182CB5B28D009D518A /* ProBattery.swift */,
 				F341DFB72CB90A490001B5EF /* Nav */,
 				F32F3AAF2D8EC32200E69B98 /* macOS.plist */,
 				F33183172CB5B28D009D518A /* macOS.entitlements */,
 				F33183152CB5B28D009D518A /* Assets.xcassets */,
 				F3B75CCE2E7225CF0096E65E /* AppIcon.icon */,
 				F369EB452CBD47F9003F0AF6 /* Localizable.xcstrings */,
-				F33183162CB5B28D009D518A /* Content View.swift */,
-				F331831F2CB5B581009D518A /* Battery VM.swift */,
-				F33183272CB7C483009D518A /* Battery Gauge.swift */,
-				F30950052CBA59EF00DA2148 /* Fetch battery level.swift */,
+				F33183162CB5B28D009D518A /* ContentView.swift */,
+				F331831F2CB5B581009D518A /* BatteryVM.swift */,
+				F33183272CB7C483009D518A /* BatteryGauge.swift */,
+				F30950052CBA59EF00DA2148 /* fetchBatteryLevel.swift */,
 				F358F0362D2C1DA600BCC07B /* Settings */,
 				F3237FFA2CBEA4BC001C6D05 /* Fetching */,
 			);
@@ -276,7 +276,7 @@
 		F341DFB72CB90A490001B5EF /* Nav */ = {
 			isa = PBXGroup;
 			children = (
-				F341DFB52CB909960001B5EF /* Nav Container.swift */,
+				F341DFB52CB909960001B5EF /* NavContainer.swift */,
 			);
 			path = Nav;
 			sourceTree = "<group>";
@@ -293,15 +293,15 @@
 		F341DFC42CB92FCE0001B5EF /* Charge */ = {
 			isa = PBXGroup;
 			children = (
-				F3965D9B2CB8F82D004F3AFF /* Charge Provider.swift */,
-				F3965D972CB8F82D004F3AFF /* Charge Config Intent.swift */,
-				F3965DA72CB8F90B004F3AFF /* Charge Widgets.swift */,
-				F3965DA32CB8F8D9004F3AFF /* Charge Entry.swift */,
-				F3965DA52CB8F8F4004F3AFF /* Charge Entry View.swift */,
-				F341DFBA2CB90C400001B5EF /* Charge Small View.swift */,
-				F341DFB82CB90BD90001B5EF /* Charge Medium View.swift */,
-				F34484402CBD1A68009A1144 /* Charge Widget Info.swift */,
-				F34484422CBD1A79009A1144 /* Fetch Charge Widget Info.swift */,
+				F3965D9B2CB8F82D004F3AFF /* ChargeProvider.swift */,
+				F3965D972CB8F82D004F3AFF /* ChargeConfigIntent.swift */,
+				F3965DA72CB8F90B004F3AFF /* ChargeWidgets.swift */,
+				F3965DA32CB8F8D9004F3AFF /* ChargeEntry.swift */,
+				F3965DA52CB8F8F4004F3AFF /* ChargeEntryView.swift */,
+				F341DFBA2CB90C400001B5EF /* ChargeSmallView.swift */,
+				F341DFB82CB90BD90001B5EF /* ChargeMediumView.swift */,
+				F34484402CBD1A68009A1144 /* ChargeWidgetInfo.swift */,
+				F34484422CBD1A79009A1144 /* FetchChargeWidgetInfo.swift */,
 				F30950082CBA5EAE00DA2148 /* Without gauge */,
 			);
 			path = Charge;
@@ -310,13 +310,13 @@
 		F341DFC52CB92FD70001B5EF /* Cycles */ = {
 			isa = PBXGroup;
 			children = (
-				F341DFCA2CB931900001B5EF /* Cycles Provider.swift */,
-				F341DFCC2CB931B20001B5EF /* Cycles Config Intent.swift */,
-				F341DFC62CB9301A0001B5EF /* Cycles Widgets.swift */,
-				F341DFCE2CB931F30001B5EF /* Cycles Entry.swift */,
-				F341DFC82CB930310001B5EF /* Cycles Entry View.swift */,
-				F341DFC22CB92F370001B5EF /* Cycles Small View.swift */,
-				F369EB432CBD4351003F0AF6 /* Cycles Medium View.swift */,
+				F341DFCA2CB931900001B5EF /* CyclesProvider.swift */,
+				F341DFCC2CB931B20001B5EF /* CyclesConfigIntent.swift */,
+				F341DFC62CB9301A0001B5EF /* CyclesWidgets.swift */,
+				F341DFCE2CB931F30001B5EF /* CyclesEntry.swift */,
+				F341DFC82CB930310001B5EF /* CyclesEntryView.swift */,
+				F341DFC22CB92F370001B5EF /* CyclesSmallView.swift */,
+				F369EB432CBD4351003F0AF6 /* CyclesMediumView.swift */,
 			);
 			path = Cycles;
 			sourceTree = "<group>";
@@ -324,13 +324,13 @@
 		F341DFD02CB935AB0001B5EF /* Capacity */ = {
 			isa = PBXGroup;
 			children = (
-				F341DFD12CB935B70001B5EF /* Capacity Provider.swift */,
-				F341DFD32CB935BA0001B5EF /* Capacity Config Intent.swift */,
-				F341DFD52CB935BC0001B5EF /* Capacity Widgets.swift */,
-				F341DFD72CB935BD0001B5EF /* Capacity Entry.swift */,
-				F341DFD92CB935C10001B5EF /* Capacity Entry View.swift */,
-				F341DFDA2CB935C10001B5EF /* Capacity Small View.swift */,
-				F369EB412CBD4325003F0AF6 /* Capacity Medium View.swift */,
+				F341DFD12CB935B70001B5EF /* CapacityProvider.swift */,
+				F341DFD32CB935BA0001B5EF /* CapacityConfigIntent.swift */,
+				F341DFD52CB935BC0001B5EF /* CapacityWidgets.swift */,
+				F341DFD72CB935BD0001B5EF /* CapacityEntry.swift */,
+				F341DFD92CB935C10001B5EF /* CapacityEntryView.swift */,
+				F341DFDA2CB935C10001B5EF /* CapacitySmallView.swift */,
+				F369EB412CBD4325003F0AF6 /* CapacityMediumView.swift */,
 			);
 			path = Capacity;
 			sourceTree = "<group>";
@@ -338,7 +338,7 @@
 		F358F0362D2C1DA600BCC07B /* Settings */ = {
 			isa = PBXGroup;
 			children = (
-				F358F0342D2C1DA000BCC07B /* App Settings.swift */,
+				F358F0342D2C1DA000BCC07B /* AppSettings.swift */,
 			);
 			path = Settings;
 			sourceTree = "<group>";
@@ -346,7 +346,7 @@
 		F369EB392CBD22CA003F0AF6 /* Unit Tests */ = {
 			isa = PBXGroup;
 			children = (
-				F369EB382CBD22CA003F0AF6 /* Unit Tests.swift */,
+				F369EB382CBD22CA003F0AF6 /* UnitTests.swift */,
 			);
 			path = "Unit Tests";
 			sourceTree = "<group>";
@@ -363,11 +363,11 @@
 		F3965D9D2CB8F82D004F3AFF /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
-				F3965D9C2CB8F82D004F3AFF /* Widgets Bundle.swift */,
+				F3965D9C2CB8F82D004F3AFF /* WidgetsBundle.swift */,
 				F3965D992CB8F82D004F3AFF /* Widgets.plist */,
 				F3965D9A2CB8F82D004F3AFF /* Widgets.entitlements */,
 				F3965D982CB8F82D004F3AFF /* Assets.xcassets */,
-				F370B2422CB9AE7F00D70865 /* Fetch Battery Props.swift */,
+				F370B2422CB9AE7F00D70865 /* FetchBatteryProps.swift */,
 				F341DFC12CB916F50001B5EF /* Components */,
 				F341DFC42CB92FCE0001B5EF /* Charge */,
 				F341DFC52CB92FD70001B5EF /* Cycles */,
@@ -519,72 +519,72 @@
 		F33182F32CB5B26F009D518A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				F331831C2CB5B28D009D518A /* Content View.swift in Sources */,
-				F32380002CBEA812001C6D05 /* Fetch Design Cycles.swift in Sources */,
-				F30950062CBA59EF00DA2148 /* Fetch battery level.swift in Sources */,
-				F331831D2CB5B28D009D518A /* Pro Battery.swift in Sources */,
-				F33183282CB7C483009D518A /* Battery Gauge.swift in Sources */,
-				F369EB3E2CBD365C003F0AF6 /* Fetch Battery Props.swift in Sources */,
-				F33183202CB5B581009D518A /* Battery VM.swift in Sources */,
-				F341DFB62CB909960001B5EF /* Nav Container.swift in Sources */,
-				F369EB402CBD3734003F0AF6 /* Fetch Condition.swift in Sources */,
-				F369EB3D2CBD3655003F0AF6 /* Fetch Capacity.swift in Sources */,
-				F3237FFD2CBEA57C001C6D05 /* Fetch Temperature.swift in Sources */,
-				F369EB3F2CBD36F8003F0AF6 /* Fetch Cycles.swift in Sources */,
-				F358F0352D2C1DA000BCC07B /* App Settings.swift in Sources */,
+				F331831C2CB5B28D009D518A /* ContentView.swift in Sources */,
+				F32380002CBEA812001C6D05 /* FetchDesignCycles.swift in Sources */,
+				F30950062CBA59EF00DA2148 /* fetchBatteryLevel.swift in Sources */,
+				F331831D2CB5B28D009D518A /* ProBattery.swift in Sources */,
+				F33183282CB7C483009D518A /* BatteryGauge.swift in Sources */,
+				F369EB3E2CBD365C003F0AF6 /* FetchBatteryProps.swift in Sources */,
+				F33183202CB5B581009D518A /* BatteryVM.swift in Sources */,
+				F341DFB62CB909960001B5EF /* NavContainer.swift in Sources */,
+				F369EB402CBD3734003F0AF6 /* FetchCondition.swift in Sources */,
+				F369EB3D2CBD3655003F0AF6 /* FetchCapacity.swift in Sources */,
+				F3237FFD2CBEA57C001C6D05 /* FetchTemperature.swift in Sources */,
+				F369EB3F2CBD36F8003F0AF6 /* FetchCycles.swift in Sources */,
+				F358F0352D2C1DA000BCC07B /* AppSettings.swift in Sources */,
 			);
 		};
 		F369EB2B2CBD22C7003F0AF6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				F369EB3A2CBD22CA003F0AF6 /* Unit Tests.swift in Sources */,
+				F369EB3A2CBD22CA003F0AF6 /* UnitTests.swift in Sources */,
 			);
 		};
 		F3965D7A2CB8F828004F3AFF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			files = (
-				F341DFC32CB92F370001B5EF /* Cycles Small View.swift in Sources */,
-				F3965DA42CB8F8D9004F3AFF /* Charge Entry.swift in Sources */,
+				F341DFC32CB92F370001B5EF /* CyclesSmallView.swift in Sources */,
+				F3965DA42CB8F8D9004F3AFF /* ChargeEntry.swift in Sources */,
 				F341DFC02CB916E80001B5EF /* Get Version & Build.swift in Sources */,
-				F309500A2CBA5ED500DA2148 /* Charge Text Config Intent.swift in Sources */,
-				F341DFC92CB930310001B5EF /* Cycles Entry View.swift in Sources */,
-				F30A252C2CBBAAC10026D36E /* Fetch Capacity.swift in Sources */,
+				F309500A2CBA5ED500DA2148 /* ChargeTextConfigIntent.swift in Sources */,
+				F341DFC92CB930310001B5EF /* CyclesEntryView.swift in Sources */,
+				F30A252C2CBBAAC10026D36E /* FetchCapacity.swift in Sources */,
 				F341DFBD2CB9168A0001B5EF /* Param.swift in Sources */,
-				F341DFCF2CB931F30001B5EF /* Cycles Entry.swift in Sources */,
-				F341DFCB2CB931900001B5EF /* Cycles Provider.swift in Sources */,
-				F309500E2CBA5F4D00DA2148 /* Charge Text Provider.swift in Sources */,
-				F3237FFC2CBEA57C001C6D05 /* Fetch Temperature.swift in Sources */,
-				F3965DA82CB8F90B004F3AFF /* Charge Widgets.swift in Sources */,
-				F34484432CBD1A79009A1144 /* Fetch Charge Widget Info.swift in Sources */,
-				F30A25302CBBAB220026D36E /* Fetch Condition.swift in Sources */,
-				F341DFD22CB935B70001B5EF /* Capacity Provider.swift in Sources */,
-				F341DFD82CB935BD0001B5EF /* Capacity Entry.swift in Sources */,
-				F341DFD62CB935BC0001B5EF /* Capacity Widgets.swift in Sources */,
-				F3965DA02CB8F82D004F3AFF /* Charge Config Intent.swift in Sources */,
-				F30950072CBA59FF00DA2148 /* Fetch battery level.swift in Sources */,
-				F369EB422CBD4325003F0AF6 /* Capacity Medium View.swift in Sources */,
-				F30950122CBA5FD000DA2148 /* Charge Text Entry View.swift in Sources */,
-				F341DFB92CB90BD90001B5EF /* Charge Medium View.swift in Sources */,
-				F369EB442CBD4351003F0AF6 /* Cycles Medium View.swift in Sources */,
-				F34484412CBD1A68009A1144 /* Charge Widget Info.swift in Sources */,
-				F370B2432CB9AE7F00D70865 /* Fetch Battery Props.swift in Sources */,
-				F309500C2CBA5EFE00DA2148 /* Charge Text Small View.swift in Sources */,
-				F369EB3C2CBD3267003F0AF6 /* Charge Text Medium View.swift in Sources */,
-				F341DFBB2CB90C400001B5EF /* Charge Small View.swift in Sources */,
-				F3965DA12CB8F82D004F3AFF /* Charge Provider.swift in Sources */,
-				F341DFDB2CB935C10001B5EF /* Capacity Small View.swift in Sources */,
-				F341DFDC2CB935C10001B5EF /* Capacity Entry View.swift in Sources */,
-				F341DFD42CB935BA0001B5EF /* Capacity Config Intent.swift in Sources */,
-				F3965DA92CB8F9B7004F3AFF /* Battery Gauge.swift in Sources */,
-				F341DFC72CB9301A0001B5EF /* Cycles Widgets.swift in Sources */,
-				F30950102CBA5F5D00DA2148 /* Charge Text Entry.swift in Sources */,
-				F30950142CBA600300DA2148 /* Charge Text Widget.swift in Sources */,
+				F341DFCF2CB931F30001B5EF /* CyclesEntry.swift in Sources */,
+				F341DFCB2CB931900001B5EF /* CyclesProvider.swift in Sources */,
+				F309500E2CBA5F4D00DA2148 /* ChargeTextProvider.swift in Sources */,
+				F3237FFC2CBEA57C001C6D05 /* FetchTemperature.swift in Sources */,
+				F3965DA82CB8F90B004F3AFF /* ChargeWidgets.swift in Sources */,
+				F34484432CBD1A79009A1144 /* FetchChargeWidgetInfo.swift in Sources */,
+				F30A25302CBBAB220026D36E /* FetchCondition.swift in Sources */,
+				F341DFD22CB935B70001B5EF /* CapacityProvider.swift in Sources */,
+				F341DFD82CB935BD0001B5EF /* CapacityEntry.swift in Sources */,
+				F341DFD62CB935BC0001B5EF /* CapacityWidgets.swift in Sources */,
+				F3965DA02CB8F82D004F3AFF /* ChargeConfigIntent.swift in Sources */,
+				F30950072CBA59FF00DA2148 /* fetchBatteryLevel.swift in Sources */,
+				F369EB422CBD4325003F0AF6 /* CapacityMediumView.swift in Sources */,
+				F30950122CBA5FD000DA2148 /* ChargeTextEntryView.swift in Sources */,
+				F341DFB92CB90BD90001B5EF /* ChargeMediumView.swift in Sources */,
+				F369EB442CBD4351003F0AF6 /* CyclesMediumView.swift in Sources */,
+				F34484412CBD1A68009A1144 /* ChargeWidgetInfo.swift in Sources */,
+				F370B2432CB9AE7F00D70865 /* FetchBatteryProps.swift in Sources */,
+				F309500C2CBA5EFE00DA2148 /* ChargeTextSmallView.swift in Sources */,
+				F369EB3C2CBD3267003F0AF6 /* ChargeTextMediumView.swift in Sources */,
+				F341DFBB2CB90C400001B5EF /* ChargeSmallView.swift in Sources */,
+				F3965DA12CB8F82D004F3AFF /* ChargeProvider.swift in Sources */,
+				F341DFDB2CB935C10001B5EF /* CapacitySmallView.swift in Sources */,
+				F341DFDC2CB935C10001B5EF /* CapacityEntryView.swift in Sources */,
+				F341DFD42CB935BA0001B5EF /* CapacityConfigIntent.swift in Sources */,
+				F3965DA92CB8F9B7004F3AFF /* BatteryGauge.swift in Sources */,
+				F341DFC72CB9301A0001B5EF /* CyclesWidgets.swift in Sources */,
+				F30950102CBA5F5D00DA2148 /* ChargeTextEntry.swift in Sources */,
+				F30950142CBA600300DA2148 /* ChargeTextWidget.swift in Sources */,
 				F30A25322CBBB53B0026D36E /* Extension.swift in Sources */,
-				F3237FFF2CBEA812001C6D05 /* Fetch Design Cycles.swift in Sources */,
-				F341DFCD2CB931B20001B5EF /* Cycles Config Intent.swift in Sources */,
-				F3965DA62CB8F8F4004F3AFF /* Charge Entry View.swift in Sources */,
-				F30A252E2CBBAB050026D36E /* Fetch Cycles.swift in Sources */,
-				F3965DA22CB8F82D004F3AFF /* Widgets Bundle.swift in Sources */,
+				F3237FFF2CBEA812001C6D05 /* FetchDesignCycles.swift in Sources */,
+				F341DFCD2CB931B20001B5EF /* CyclesConfigIntent.swift in Sources */,
+				F3965DA62CB8F8F4004F3AFF /* ChargeEntryView.swift in Sources */,
+				F30A252E2CBBAB050026D36E /* FetchCycles.swift in Sources */,
+				F3965DA22CB8F82D004F3AFF /* WidgetsBundle.swift in Sources */,
 			);
 		};
 /* End PBXSourcesBuildPhase section */
