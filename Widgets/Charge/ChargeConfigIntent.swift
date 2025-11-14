@@ -1,8 +1,8 @@
 import AppIntents
 
 struct ChargeConfigIntent: WidgetConfigurationIntent {
-    static var title: LocalizedStringResource = "Pro Battery"
-    static var description: IntentDescription = "Battery level"
+    static let title: LocalizedStringResource = "Pro Battery"
+    static let description: IntentDescription = "Battery level"
     
     @Parameter(title: "Capacity gauge", default: true)
     var capacityGauge: Bool
