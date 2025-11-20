@@ -12,9 +12,7 @@ func fetchCycleCount() -> Int {
 }
 
 func fetchCyclesCount(_ props: NSDictionary) -> Int {
-    guard
-        let cycleCount = props["CycleCount"] as? Int
-    else {
+    guard let cycleCount = props["CycleCount"] as? Int else {
         return -1
     }
     
