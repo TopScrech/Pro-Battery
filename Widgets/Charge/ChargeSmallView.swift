@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ChargeSmallView: View {
-    @Environment(\.widgetFamily) private var widgetFamily
+    @Environment(\.widgetFamily) private var family
     
     private let entry: ChargeProvider.Entry
     
@@ -18,7 +18,7 @@ struct ChargeSmallView: View {
     }
     
     private var isLarge: Bool {
-        widgetFamily == .systemLarge
+        family == .systemLarge
     }
     
     var body: some View {

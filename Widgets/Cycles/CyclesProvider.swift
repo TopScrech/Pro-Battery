@@ -10,11 +10,7 @@ struct CyclesProvider: AppIntentTimelineProvider {
         )
     }
     
-    func snapshot(
-        for configuration: CyclesConfigIntent,
-        in context: Context
-    ) async -> CyclesEntry {
-        
+    func snapshot(for configuration: CyclesConfigIntent, in context: Context) async -> CyclesEntry {
         CyclesEntry(
             date: Date(),
             cycles: fetchCycleCount(),
@@ -23,11 +19,7 @@ struct CyclesProvider: AppIntentTimelineProvider {
         )
     }
     
-    func timeline(
-        for configuration: CyclesConfigIntent,
-        in context: Context
-    ) async -> Timeline<CyclesEntry> {
-        
+    func timeline(for configuration: CyclesConfigIntent, in context: Context) async -> Timeline<CyclesEntry> {
         let entries = [
             CyclesEntry(
                 date: Date(),
@@ -37,10 +29,7 @@ struct CyclesProvider: AppIntentTimelineProvider {
             )
         ]
         
-        return Timeline(
-            entries: entries,
-            policy: .atEnd
-        )
+        return Timeline(entries: entries, policy: .atEnd)
     }
     
     //    func relevances() async -> WidgetRelevances<CyclesConfigIntent> {

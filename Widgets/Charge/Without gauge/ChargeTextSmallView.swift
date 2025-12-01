@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ChargeTextSmallView: View {
-    @Environment(\.widgetFamily) private var widgetFamily
+    @Environment(\.widgetFamily) private var family
     
     private let entry: ChargeTextProvider.Entry
     
@@ -22,7 +22,7 @@ struct ChargeTextSmallView: View {
             if entry.configuration.showTitle {
                 Text("Battery level")
                     .secondary()
-                    .font(widgetFamily == .systemLarge ? .title2 : .body)
+                    .font(family == .systemLarge ? .title2 : .body)
             }
         }
         .rounded()

@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ChargeMediumView: View {
-    @Environment(\.widgetFamily) private var widgetFamily
+    @Environment(\.widgetFamily) private var family
     
     private let entry: ChargeProvider.Entry
     
@@ -18,7 +18,7 @@ struct ChargeMediumView: View {
     }
     
     private var isExtraLarge: Bool {
-        widgetFamily == .systemExtraLarge
+        family == .systemExtraLarge
     }
     
     var body: some View {
