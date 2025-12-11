@@ -9,12 +9,10 @@ struct ChargeTextSmallView: View {
         self.entry = entry
     }
     
-    private var charge: String {
-        String(format: "%.0f", entry.charge)
-    }
-    
     var body: some View {
         VStack {
+            let charge = String(format: "%.0f", entry.charge)
+            
             Text("\(charge)%")
                 .fontSize(250)
                 .minimumScaleFactor(0.01)
@@ -31,5 +29,5 @@ struct ChargeTextSmallView: View {
 
 //#Preview {
 //    CyclesSmallView()
-//    .darkSchemePreferred()
+//      .darkSchemePreferred()
 //}
