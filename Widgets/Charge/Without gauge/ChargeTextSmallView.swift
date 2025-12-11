@@ -11,9 +11,7 @@ struct ChargeTextSmallView: View {
     
     var body: some View {
         VStack {
-            let charge = String(format: "%.0f", entry.charge)
-            
-            Text("\(charge)%")
+            Text(entry.charge, format: .percentRounded)
                 .fontSize(250)
                 .minimumScaleFactor(0.01)
             
