@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ChargeTextSmallView: View {
-    @Environment(\.widgetFamily) private var widgetFamily
+    @Environment(\.widgetFamily) private var family
     
     private let entry: ChargeTextProvider.Entry
     
@@ -9,20 +9,16 @@ struct ChargeTextSmallView: View {
         self.entry = entry
     }
     
-    private var charge: String {
-        String(format: "%.0f", entry.charge)
-    }
-    
     var body: some View {
         VStack {
-            Text("\(charge)%")
+            Text(entry.charge, format: .percentRounded)
                 .fontSize(250)
                 .minimumScaleFactor(0.01)
             
             if entry.configuration.showTitle {
                 Text("Battery level")
                     .secondary()
-                    .font(widgetFamily == .systemLarge ? .title2 : .body)
+                    .font(family == .systemLarge ? .title2 : .body)
             }
         }
         .rounded()
@@ -31,5 +27,5 @@ struct ChargeTextSmallView: View {
 
 //#Preview {
 //    CyclesSmallView()
-//    .darkSchemePreferred()
+//      .darkSchemePreferred()
 //}

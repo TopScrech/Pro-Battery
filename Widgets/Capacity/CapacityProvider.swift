@@ -9,11 +9,7 @@ struct CapacityProvider: AppIntentTimelineProvider {
         )
     }
     
-    func snapshot(
-        for configuration: CapacityConfigIntent,
-        in context: Context
-    ) async -> CapacityEntry {
-        
+    func snapshot(for configuration: CapacityConfigIntent, in context: Context) async -> CapacityEntry {
         CapacityEntry(
             date: Date(),
             capacity: fetchMaxCapacity(),
@@ -21,11 +17,7 @@ struct CapacityProvider: AppIntentTimelineProvider {
         )
     }
     
-    func timeline(
-        for configuration: CapacityConfigIntent,
-        in context: Context
-    ) async -> Timeline<CapacityEntry> {
-        
+    func timeline(for configuration: CapacityConfigIntent, in context: Context) async -> Timeline<CapacityEntry> {
         let entries = [
             CapacityEntry(
                 date: Date(),

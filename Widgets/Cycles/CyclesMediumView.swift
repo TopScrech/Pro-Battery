@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct CyclesMediumView: View {
-    @Environment(\.widgetFamily) private var widgetFamily
+    @Environment(\.widgetFamily) private var family
     
     private let entry: CyclesProvider.Entry
     
@@ -28,7 +28,7 @@ struct CyclesMediumView: View {
             if entry.configuration.showTitle {
                 Text("Charge cycles")
                     .secondary()
-                    .font(widgetFamily == .systemExtraLarge ? .title : .body)
+                    .font(family == .systemExtraLarge ? .title : .body)
             }
         }
         .rounded()

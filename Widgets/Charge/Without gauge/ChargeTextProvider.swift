@@ -11,10 +11,7 @@ struct ChargeTextProvider: AppIntentTimelineProvider {
         previewEntry
     }
     
-    func snapshot(
-        for configuration: ChargeTextConfigIntent,
-        in context: Context
-    ) async -> ChargeTextEntry {
+    func snapshot(for configuration: ChargeTextConfigIntent, in context: Context) async -> ChargeTextEntry {
         ChargeTextEntry(
             date: Date(),
             charge: fetchBatteryLevel(),
@@ -22,11 +19,7 @@ struct ChargeTextProvider: AppIntentTimelineProvider {
         )
     }
     
-    func timeline(
-        for configuration: ChargeTextConfigIntent,
-        in context: Context
-    ) async -> Timeline<ChargeTextEntry> {
-        
+    func timeline(for configuration: ChargeTextConfigIntent, in context: Context) async -> Timeline<ChargeTextEntry> {
         let entries = [
             ChargeTextEntry(
                 date: Date(),

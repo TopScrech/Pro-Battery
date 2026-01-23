@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ChargeTextMediumView: View {
-    @Environment(\.widgetFamily) private var widgetFamily
+    @Environment(\.widgetFamily) private var family
     
     private let entry: ChargeTextProvider.Entry
     
@@ -9,20 +9,16 @@ struct ChargeTextMediumView: View {
         self.entry = entry
     }
     
-    private var charge: String {
-        String(format: "%.0f", entry.charge)
-    }
-    
     var body: some View {
         VStack {
-            Text("\(charge)%")
+            Text(entry.charge, format: .percentRounded)
                 .fontSize(300)
                 .minimumScaleFactor(0.01)
             
             if entry.configuration.showTitle {
                 Text("Battery level")
                     .secondary()
-                    .font(widgetFamily == .systemExtraLarge ? .title : .body)
+                    .font(family == .systemExtraLarge ? .title : .body)
             }
         }
         .rounded()

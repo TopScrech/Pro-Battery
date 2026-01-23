@@ -3,6 +3,26 @@ import WidgetKit
 struct ChargeProvider: AppIntentTimelineProvider {
     let info = fetchChargeWidgetInfo()
     
+    var charge: Double {
+        info.charge
+    }
+    
+    var capacity: Int {
+        info.capacity
+    }
+    
+    var cycles: Int {
+        info.cycles
+    }
+    
+    var condition: String {
+        info.condition
+    }
+    
+    var temperature: Double {
+        info.temperature
+    }
+    
     func placeholder(in context: Context) -> ChargeEntry {
         ChargeEntry(
             date: Date(),
@@ -15,11 +35,7 @@ struct ChargeProvider: AppIntentTimelineProvider {
         )
     }
     
-    func snapshot(
-        for configuration: ChargeConfigIntent,
-        in context: Context
-    ) async -> ChargeEntry {
-        
+    func snapshot(for configuration: ChargeConfigIntent, in context: Context) async -> ChargeEntry {
         ChargeEntry(
             date: Date(),
             charge: charge,
@@ -31,11 +47,7 @@ struct ChargeProvider: AppIntentTimelineProvider {
         )
     }
     
-    func timeline(
-        for configuration: ChargeConfigIntent,
-        in context: Context
-    ) async -> Timeline<ChargeEntry> {
-        
+    func timeline(for configuration: ChargeConfigIntent, in context: Context) async -> Timeline<ChargeEntry> {
         let entries = [
             ChargeEntry(
                 date: Date(),

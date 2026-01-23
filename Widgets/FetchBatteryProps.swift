@@ -1,13 +1,12 @@
 import Foundation
 
 func fetchBatteryProps() -> NSDictionary? {
-    // Create a matching dictionary to find the battery service
+    // Find the battery service
     guard let matchingDict = IOServiceMatching("AppleSmartBattery") else {
         print("Failed to create matching dictionary")
         return nil
     }
     
-    // Get the battery service
     let serviceObject = IOServiceGetMatchingService(kIOMainPortDefault, matchingDict)
     
     if serviceObject == 0 {
@@ -15,7 +14,7 @@ func fetchBatteryProps() -> NSDictionary? {
         return nil
     }
     
-    // Retrieve the properties of the battery
+    // Battery properties
     var properties: Unmanaged<CFMutableDictionary>?
     
     let result = IORegistryEntryCreateCFProperties(serviceObject, &properties, kCFAllocatorDefault, 0)
