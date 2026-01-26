@@ -1,8 +1,10 @@
 import Foundation
 import DeviceKit
+import OSLog
 
 @Observable
 final class BatteryVM {
+    private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "ProBattery", category: "BatteryVM")
     // Charge Information
     var isBelowWarningLevel = false
     var isFullyCharged = false
@@ -29,7 +31,7 @@ final class BatteryVM {
         DispatchQueue.global(qos: .background).async {
             // Create a matching dictionary to find the battery service
             guard let matchingDict = IOServiceMatching("AppleSmartBattery") else {
-                print("Failed to create matching dictionary")
+                self.logger.error("Failed to create matching dictionary")
                 return
             }
             
@@ -37,7 +39,7 @@ final class BatteryVM {
             let serviceObject = IOServiceGetMatchingService(kIOMainPortDefault, matchingDict)
             
             if serviceObject == 0 {
-                print("Battery service not found")
+                self.logger.warning("Battery service not found")
                 return
             }
             
@@ -48,13 +50,13 @@ final class BatteryVM {
             IOObjectRelease(serviceObject)
             
             if result != KERN_SUCCESS {
-                print("Failed to retrieve battery properties")
+                self.logger.error("Failed to retrieve battery properties")
                 return
             }
             
             // Extract the properties
             guard let props = properties?.takeRetainedValue() as NSDictionary? else {
-                print("Battery properties could not be read")
+                self.logger.error("Battery properties could not be read")
                 return
             }
             
