@@ -15,19 +15,17 @@ struct ContentView: View {
                 LabeledContent("Battery Level", value: vm.stateOfCharge.description)
                 LabeledContent("Temperature", value: "\(vm.temperature) °C")
             }
-#if DEBUG
+            
             let chargingOrDischarging: LocalizedStringKey = vm.amperage >= 0 ? "Charging with" : "Discharging with"
+            
             LabeledContent(chargingOrDischarging, value: "\(vm.amperage) Watts")
-            
             LabeledContent("Time Remaining", value: vm.timeRemaining.description)
-            
             LabeledContent("Charging", value: vm.isCharging ? "Yes" : "No")
-            
-#warning("Have to be checked")
             LabeledContent("Below warning level", value: vm.isBelowWarningLevel ? "Yes" : "No")
             LabeledContent("Fully charged", value: vm.isFullyCharged ? "Yes" : "No")
+            
             // LabeledContent("High Power Mode", value: vm.isHighPowerMode ? "Yes" : "No")
-#endif
+            
             Section {
                 HStack {
                     Button("Refresh") {
