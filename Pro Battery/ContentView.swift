@@ -23,8 +23,7 @@ struct ContentView: View {
             LabeledContent("Charging", value: vm.isCharging ? "Yes" : "No")
             LabeledContent("Below warning level", value: vm.isBelowWarningLevel ? "Yes" : "No")
             LabeledContent("Fully charged", value: vm.isFullyCharged ? "Yes" : "No")
-            
-            // LabeledContent("High Power Mode", value: vm.isHighPowerMode ? "Yes" : "No")
+            LabeledContent("High Power Mode", value: vm.isHighPowerMode ? "Yes" : "No")
             
             Section {
                 HStack {
