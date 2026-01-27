@@ -40,6 +40,9 @@ struct ContentView: View {
         }
         .frame(width: 300)
         .frame(maxHeight: 400)
+        .task {
+            vm.fetchBatteryInfo()
+        }
     }
 }
 
