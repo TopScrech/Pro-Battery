@@ -1,4 +1,7 @@
+import OSLog
 import Testing
+
+private let logger = Logger(subsystem: "ProBatteryTests", category: "UnitTests")
 
 struct UnitTests {
     @Test func example() async throws {
@@ -8,6 +11,6 @@ struct UnitTests {
         let percentage = maxCapacity / designCapacity * 100
         let intPercentage = Int(percentage)
         
-        print(intPercentage)
+        logger.info("intPercentage: \(intPercentage)")
     }
 }

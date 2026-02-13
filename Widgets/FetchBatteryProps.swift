@@ -1,16 +1,19 @@
 import Foundation
+import OSLog
+
+private let logger = Logger(subsystem: Bundle.main.bundleIdentifier ?? "ProBattery", category: "Battery")
 
 func fetchBatteryProps() -> NSDictionary? {
     // Find the battery service
     guard let matchingDict = IOServiceMatching("AppleSmartBattery") else {
-        print("Failed to create matching dictionary")
+        logger.error("Failed to create matching dictionary")
         return nil
     }
     
     let serviceObject = IOServiceGetMatchingService(kIOMainPortDefault, matchingDict)
     
     if serviceObject == 0 {
-        print("Battery service not found")
+        logger.warning("Battery service not found")
         return nil
     }
     
@@ -21,13 +24,13 @@ func fetchBatteryProps() -> NSDictionary? {
     IOObjectRelease(serviceObject)
     
     if result != KERN_SUCCESS {
-        print("Failed to retrieve battery properties")
+        logger.error("Failed to retrieve battery properties")
         return nil
     }
     
     // Extract the properties
     guard let props = properties?.takeRetainedValue() as NSDictionary? else {
-        print("Battery properties could not be read")
+        logger.error("Battery properties could not be read")
         return nil
     }
     
