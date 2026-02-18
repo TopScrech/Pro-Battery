@@ -60,6 +60,7 @@
 		F3965D802CB8F828004F3AFF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		F3965D822CB8F828004F3AFF /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		F3AE99DF2E2F887D00D70249 /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		F3E066462F467F20001B77CD /* LICENSE.txt */ = {isa = PBXFileReference; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
@@ -156,6 +157,7 @@
 			isa = PBXGroup;
 			children = (
 				F3AE99DF2E2F887D00D70249 /* README.md */,
+				F3E066462F467F20001B77CD /* LICENSE.txt */,
 				F383BB102ECF364100350A0F /* Pro Battery */,
 				F383BB9C2ECF366300350A0F /* Widgets */,
 				F3839DA02ECF2AB600350A0F /* Unit Tests */,
