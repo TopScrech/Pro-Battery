@@ -11,19 +11,19 @@ struct ContentView: View {
                 LabeledContent("Cycle Count", value: vm.cycleCount.description)
                 LabeledContent("Design cycle count", value: vm.designCycleCount.description)
                 LabeledContent("Maximum Capacity", value: vm.maximumCapacity.description)
-                LabeledContent("Low Power Mode", value: vm.isLowPowerMode ? "Yes" : "No")
+                LabeledContent("Low Power Mode", value: localizedBoolean(vm.isLowPowerMode))
                 LabeledContent("Battery Level", value: vm.stateOfCharge.description)
-                LabeledContent("Temperature", value: "\(vm.temperature) °C")
+                LabeledContent("Temperature", value: localizedTemperature(vm.temperature))
             }
             
             let chargingOrDischarging: LocalizedStringKey = vm.amperage >= 0 ? "Charging with" : "Discharging with"
             
-            LabeledContent(chargingOrDischarging, value: "\(vm.amperage) Watts")
+            LabeledContent(chargingOrDischarging, value: localizedPower(vm.amperage))
             LabeledContent("Time Remaining", value: vm.timeRemaining.description)
-            LabeledContent("Charging", value: vm.isCharging ? "Yes" : "No")
-            LabeledContent("Below warning level", value: vm.isBelowWarningLevel ? "Yes" : "No")
-            LabeledContent("Fully charged", value: vm.isFullyCharged ? "Yes" : "No")
-            LabeledContent("High Power Mode", value: vm.isHighPowerMode ? "Yes" : "No")
+            LabeledContent("Charging", value: localizedBoolean(vm.isCharging))
+            LabeledContent("Below warning level", value: localizedBoolean(vm.isBelowWarningLevel))
+            LabeledContent("Fully charged", value: localizedBoolean(vm.isFullyCharged))
+            LabeledContent("High Power Mode", value: localizedBoolean(vm.isHighPowerMode))
             
             Section {
                 HStack {
@@ -49,4 +49,16 @@ struct ContentView: View {
 #Preview {
     ContentView()
         .darkSchemePreferred()
+}
+
+private func localizedBoolean(_ value: Bool) -> String {
+    String(localized: value ? "Yes" : "No")
+}
+
+private func localizedPower(_ value: Int) -> String {
+    "\(value.formatted()) W"
+}
+
+private func localizedTemperature(_ value: Double) -> String {
+    "\(value.formatted(.number.precision(.fractionLength(1)))) °C"
 }

@@ -15,7 +15,7 @@ final class BatteryVM {
     // Health Information
     var cycleCount = 0
     var designCycleCount = 0
-    var condition = ""
+    var condition = String(localized: "Unknown")
     var maximumCapacity = 0
     var timeRemaining = 0
     var amperage = 0

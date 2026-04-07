@@ -288,6 +288,10 @@
 				Base,
 				ru,
 				nl,
+				de,
+				tr,
+				uk,
+				fr,
 			);
 			mainGroup = F33182EE2CB5B26F009D518A;
 			minimizedProjectReferenceProxies = 1;
