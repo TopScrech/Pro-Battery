@@ -4,7 +4,7 @@ func fetchChargeWidgetInfo() -> ChargeWidgetInfo {
             charge: -1,
             cycles: -1,
             capacity: -1,
-            condition: "Unknown",
+            condition: String(localized: "Unknown"),
             temperature: -1
         )
     }

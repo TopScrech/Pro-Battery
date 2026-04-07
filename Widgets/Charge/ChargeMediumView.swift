@@ -39,7 +39,7 @@ struct ChargeMediumView: View {
                 
                 Param("Condition", param: entry.condition)
                 
-                let temp = String(format: "%.1f °C", entry.temperature)
+                let temp = "\(entry.temperature.formatted(.number.precision(.fractionLength(1)))) °C"
                 Param("Temperature", param: temp)
             }
             .frame(maxWidth: 170)
