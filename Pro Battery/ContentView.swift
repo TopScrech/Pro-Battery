@@ -11,7 +11,7 @@ struct ContentView: View {
                 LabeledContent("Cycle Count", value: vm.cycleCount.description)
                 LabeledContent("Design cycle count", value: vm.designCycleCount.description)
                 LabeledContent("Maximum Capacity", value: vm.maximumCapacity.description)
-                LabeledContent("Low Power Mode", value: localizedBoolean(vm.isLowPowerMode))
+                LabeledContent("Low Power Mode", value: boolValue(vm.isLowPowerMode))
                 LabeledContent("Battery Level", value: vm.stateOfCharge.description)
                 LabeledContent("Temperature", value: localizedTemperature(vm.temperature))
             }
@@ -20,10 +20,10 @@ struct ContentView: View {
             
             LabeledContent(chargingOrDischarging, value: localizedPower(vm.amperage))
             LabeledContent("Time Remaining", value: vm.timeRemaining.description)
-            LabeledContent("Charging", value: localizedBoolean(vm.isCharging))
-            LabeledContent("Below warning level", value: localizedBoolean(vm.isBelowWarningLevel))
-            LabeledContent("Fully charged", value: localizedBoolean(vm.isFullyCharged))
-            LabeledContent("High Power Mode", value: localizedBoolean(vm.isHighPowerMode))
+            LabeledContent("Charging", value: boolValue(vm.isCharging))
+            LabeledContent("Below warning level", value: boolValue(vm.isBelowWarningLevel))
+            LabeledContent("Fully charged", value: boolValue(vm.isFullyCharged))
+            LabeledContent("High Power Mode", value: boolValue(vm.isHighPowerMode))
             
             Section {
                 HStack {
@@ -50,7 +50,7 @@ struct ContentView: View {
         .darkSchemePreferred()
 }
 
-private func localizedBoolean(_ value: Bool) -> String {
+private func boolValue(_ value: Bool) -> String {
     String(localized: value ? "Yes" : "No")
 }
 
