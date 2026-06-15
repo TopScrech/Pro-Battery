@@ -1,14 +1,12 @@
 import ScrechKit
+import WidgetKit
 
 @main
 struct WidgetsBundle: WidgetBundle {
     var body: some Widget {
         ChargeWidgets()
-        
         CyclesWidgets()
-        
         CapacityWidgets()
-        
         ChargeTextWidget()
     }
 }

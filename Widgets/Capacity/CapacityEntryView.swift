@@ -1,4 +1,5 @@
 import SwiftUI
+import WidgetKit
 
 struct CapacityEntryView: View {
     @Environment(\.widgetFamily) private var family
