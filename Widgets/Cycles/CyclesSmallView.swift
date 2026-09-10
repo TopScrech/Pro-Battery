@@ -1,4 +1,5 @@
 import SwiftUI
+import WidgetKit
 
 struct CyclesSmallView: View {
     @Environment(\.widgetFamily) private var family
