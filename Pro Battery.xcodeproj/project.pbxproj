@@ -55,6 +55,7 @@
 
 /* Begin PBXFileReference section */
 		F33182F72CB5B26F009D518A /* Pro Battery.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Pro Battery.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3653435305BDC6200EE541A /* AGENTS.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = AGENTS.md; sourceTree = "<group>"; };
 		F369EB2F2CBD22C7003F0AF6 /* Unit Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Unit Tests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3965D7E2CB8F828004F3AFF /* Widgets.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = Widgets.appex; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3965D802CB8F828004F3AFF /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
@@ -157,6 +158,7 @@
 			isa = PBXGroup;
 			children = (
 				F3AE99DF2E2F887D00D70249 /* README.md */,
+				F3653435305BDC6200EE541A /* AGENTS.md */,
 				F383BB102ECF364100350A0F /* Pro Battery */,
 				F383BB9C2ECF366300350A0F /* Widgets */,
 				F3839DA02ECF2AB600350A0F /* Unit Tests */,
