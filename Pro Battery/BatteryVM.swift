@@ -1,5 +1,4 @@
 import Foundation
-import DeviceKit
 import OSLog
 
 @Observable
