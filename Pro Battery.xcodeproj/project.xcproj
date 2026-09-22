@@ -25,12 +25,6 @@
       },
     }, {
       "kind": "remote",
-      "repository": "https://github.com/devicekit/DeviceKit",
-      "version": {
-        "up-to-next-major-version": "5.5.0",
-      },
-    }, {
-      "kind": "remote",
       "repository": "https://github.com/TopScrech/LaunchAtLogin",
       "version": {
         "up-to-next-major-version": "1.0.0",
@@ -131,10 +125,6 @@
       ],
       "package-product-members": [
         {
-          "package": "DeviceKit",
-          "product-name": "DeviceKit",
-          "build-phase": { "build-phase": "frameworks" },
-        }, {
           "package": "LaunchAtLogin",
           "product-name": "LaunchAtLogin",
           "build-phase": { "build-phase": "frameworks" },
