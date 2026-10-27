@@ -19,6 +19,13 @@
   "packages": [
     {
       "kind": "remote",
+      "repository": "https://github.com/SimplyDanny/SwiftLintPlugins",
+      "version": {
+        "up-to-next-major-version": "0.65.1",
+      },
+    },
+    {
+      "kind": "remote",
       "repository": "https://github.com/TopScrech/ScrechKit",
       "version": {
         "up-to-next-major-version": "1.0.0",
@@ -32,6 +39,7 @@
     },
   ],
   "files": [
+    { "path": ".swiftlint.yml" },
     { "path": "README.md" },
     { "path": "AGENTS.md" },
     {
@@ -107,6 +115,7 @@
       "product": "Products/Pro Battery.app",
       "product-type": "application",
       "dependencies": [
+        { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
         "Widgets",
       ],
       "build-phases": [
@@ -178,6 +187,9 @@
       "id": "F3965D7D2CB8F828004F3AFF",
       "product": "Products/Widgets.appex",
       "product-type": "app-extension",
+      "dependencies": [
+        { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
+      ],
       "build-phases": [
         "compile-sources",
         "frameworks",
@@ -222,6 +234,7 @@
       "product-type": "bundle.unit-test",
       "test-host-target": "Pro Battery",
       "dependencies": [
+        { "kind": "package", "package": "SwiftLintPlugins", "product-name": "SwiftLintBuildToolPlugin", "product-type": "build-tool-plugin" },
         "Pro Battery",
       ],
       "build-phases": [
